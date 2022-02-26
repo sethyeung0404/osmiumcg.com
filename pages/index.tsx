@@ -1,20 +1,21 @@
 import type { NextPage } from 'next'
+import Layout from '../components/layout'
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/navbar'
 
-const Home: NextPage = () => {
+export default function Contact() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Navbar />
-      </main>
-    </div>
+    <section>
+      <p>Home Page</p>
+    </section>
   )
 }
 
-export default Home
+Contact.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      <Navbar />
+      {page}
+    </Layout>
+  )
+}
