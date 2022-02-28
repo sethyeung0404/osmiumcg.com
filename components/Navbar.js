@@ -9,14 +9,14 @@ import { Popover } from '@headlessui/react'
 export default function Navbar() {
   return (
     <header className="mx-auto flex max-w-7xl justify-between p-5">
-      {/*Mobile View
-        <div className="">
-          <button className=" ml-auto inline-flex rounded p-3 outline-none hover:bg-green-600 lg:hidden">
-            <FontAwesomeIcon icon={faBars} />
-          </button>
-        </div>*/}
+      {/*Mobile View*/}
+      <div className="flex md:hidden">
+        <button className=" ml-auto inline-flex rounded p-3 outline-none hover:bg-gray-300 lg:hidden">
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+      </div>
 
-      <div className="flex items-center space-x-5">
+      <div className="hidden items-center space-x-5 sm:flex">
         {/*Logo*/}
         <Link href="/">
           <a className="mr-4 inline-flex items-center p-2 ">
@@ -25,7 +25,6 @@ export default function Navbar() {
               alt="OCG Logo"
               width={128}
               height={48}
-              layout="fixed"
             />
           </a>
         </Link>
@@ -93,7 +92,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="flex items-center space-x-5">
+      <div className="hidden items-center space-x-5 sm:flex">
         {/*Contact Method*/}
         <a
           style={{
