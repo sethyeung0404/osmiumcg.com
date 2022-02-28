@@ -1,14 +1,17 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import Script from 'next/script'
 
 export default function Layout({ children }) {
   return (
     <>
-      <Head>
-        <title>Osmium Consulting Group</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <main className={styles.main}>{children}</main>
+      <title>Osmium Consulting Group</title>
+      <main>
+        <Navbar />
+        {children}
+        <Footer />
+      </main>
     </>
   )
 }
