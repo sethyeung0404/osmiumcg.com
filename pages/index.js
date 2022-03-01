@@ -7,6 +7,7 @@ import HomeBanner from '../components/UI/HomeBanner'
 import HomePageContactUsButton from '../components/Buttons/HomePageContactUsButton'
 import JobSlot from '../components/UI/JobSlot'
 import RoundButton from '../components/Buttons/RoundButton'
+import SectorBlock from '../components/UI/SectorBlock'
 import Link from 'next/link'
 
 export default function Home() {
@@ -17,11 +18,13 @@ export default function Home() {
       {/* Main Page Text */}
       <section
         id="main_page_text"
-        className="mx-auto max-w-5xl items-center p-5"
+        className="mx-auto max-w-7xl items-center p-5"
       >
-        <div>
-          <h1>Osmium Consulting Group is a Leading Recruitment Firm</h1>
-          <p>
+        <div className="">
+          <h1 className="m-3 text-4xl font-bold">
+            Osmium Consulting Group is a Leading Recruitment Firm
+          </h1>
+          <p className="text-justify text-base">
             Osmium Consulting Group has quickly established a market reputation
             as a dedicated and value-adding recruitment firm. We offer our
             clients access to the very best candidates and our candidates the
@@ -34,7 +37,7 @@ export default function Home() {
 
       {/* Section: Intro */}
       <section id="intro_black" className="bg-black text-white">
-        <div className="mx-auto flex max-w-5xl items-center justify-between p-5 text-left">
+        <div className="mx-auto flex max-w-7xl items-center justify-between p-5 text-left">
           <div>
             <p>Would you like to speak to one of our Recruitment Consultant?</p>
             <br />
@@ -59,29 +62,13 @@ export default function Home() {
             <HomePageSectionTitle Title="The Practice Sectors We Cover" />
             <BlueDivider />
           </div>
-
-          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-16 text-left">
-            <div className="max-w-sm overflow-hidden rounded bg-purple-blue p-16 text-white shadow-lg">
-              <Link href="/specialization/banking-financial-services">
-                <a>
-                  <h3>BFSD</h3>
-                </a>
-              </Link>
-            </div>
-            <div className="max-w-sm overflow-hidden rounded p-16 shadow-md">
-              <Link href="/specialization/tmt">
-                <a>
-                  <h3>TMTD</h3>
-                </a>
-              </Link>
-            </div>
-          </div>
+          <SectorBlock />
         </div>
       </section>
 
       {/* Section: Jobs Openings */}
       <section id="home_job" className="items-center bg-gray-100 py-5">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-7xl">
           <div className="">
             <HomePageSectionTitle Title="Latest Job Openings" />
             <BlueDivider />
@@ -105,7 +92,7 @@ export default function Home() {
       </section>
 
       {/* Awards */}
-      <section id="Awards" className="">
+      <section id="Awards" className="mx-auto max-w-7xl">
         <div>
           <HomePageSectionTitle Title="Awards" />
           <BlueDivider />
