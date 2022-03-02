@@ -6,112 +6,7 @@ import { faEarthAsia } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuAlt4Icon, SearchIcon, XIcon } from '@heroicons/react/outline'
-
-const navigation = {
-  categories: [
-    {
-      id: 'about',
-      name: 'About',
-      featured: [
-        {
-          name: 'Basic Tees',
-          href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
-          imageAlt:
-            'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
-        },
-      ],
-      sections: [
-        {
-          id: 'clothing',
-          name: 'Clothing',
-          items: [
-            { name: 'Overview', href: '/about_us/overview' },
-            { name: 'Our Philosophy', href: '/about_us/our-philosophy' },
-            { name: 'Sustainability', href: '/about_us/sustainability' },
-          ],
-        },
-      ],
-    },
-    {
-      id: 'solutions',
-      name: 'Solutions',
-      featured: [
-        {
-          name: 'New Arrivals',
-          href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
-          imageAlt:
-            'Drawstring top with elastic loop closure and textured interior padding.',
-        },
-      ],
-      sections: [
-        {
-          id: 'clothing',
-          name: 'Clothing',
-          items: [
-            { name: 'Recruitment', href: '/solutions/recruitment' },
-            { name: 'HR Solutions', href: '/solutions/hr-solutions' },
-            {
-              name: 'Performance Management',
-              href: '/solutions/performance-management',
-            },
-          ],
-        },
-        {
-          id: 'accessories',
-          name: 'Accessories',
-          items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-          ],
-        },
-      ],
-    },
-    {
-      id: 'specialization',
-      name: 'Specialization',
-      featured: [],
-      sections: [
-        {
-          id: 'clothing',
-          name: 'Clothing',
-          items: [
-            {
-              name: 'Banking and Financial Services Recruitment',
-              href: '/specialization/banking-financial-services',
-            },
-            { name: 'TMT Recruitment', href: '/specialization/tmt' },
-          ],
-        },
-      ],
-    },
-  ],
-  pages: [
-    { name: 'Careers', href: '/careers' },
-    { name: 'Contact Us', href: '/contact_us' },
-  ],
-}
-const Language = [
-  {
-    name: 'English',
-    href: '/locale/en',
-  },
-  {
-    name: '繁体中文',
-    href: '/locale/zh_HK',
-  },
-  {
-    name: '简體中文',
-    href: '/locale/zh_CN',
-  },
-  {
-    name: '日本語',
-    href: '/locale/ja_JP',
-  },
-]
+import { navigation, language } from './Navigation'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -143,27 +38,16 @@ export default function SideNav() {
 
           <Transition.Child
             as={Fragment}
-            enter="transition ease-in-out duration-300 transform"
-            enterFrom="-translate-x-full"
-            enterTo="translate-x-0"
-            leave="transition ease-in-out duration-300 transform"
-            leaveFrom="translate-x-0"
-            leaveTo="-translate-x-full"
+            enter="transition ease-in-out duration-1000 transform"
+            enterFrom="-translate-y-full"
+            enterTo="translate-y-0"
+            leave="transition ease-in-out duration-1000 transform"
+            leaveFrom="translate-y-0"
+            leaveTo="-translate-y-full"
           >
-            <div className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
-              <div className="flex px-4 pt-5 pb-2">
-                <button
-                  type="button"
-                  className="-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
-                  onClick={() => setOpen(false)}
-                >
-                  <span className="sr-only">Close menu</span>
-                  <XIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
-
+            <div className="relative flex w-full flex-col overflow-y-auto bg-white pb-12 shadow-xl">
               {/* Links */}
-              <Tab.Group as="div" className="mt-2">
+              <Tab.Group as="div" className="mt-2 pt-14">
                 <div className="border-b border-gray-200">
                   <Tab.List className="-mb-px flex space-x-8 px-4">
                     {navigation.categories.map((category) => (
@@ -286,7 +170,7 @@ export default function SideNav() {
       </Transition.Root>
 
       {/* Navbar*/}
-      <header className="sticky-top fixed w-full bg-white">
+      <header className="sticky-top fixed z-50 w-full bg-white">
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6"
@@ -296,11 +180,25 @@ export default function SideNav() {
               {/*Bar Icons */}
               <button
                 type="button"
-                className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className={`${
+                  open
+                    ? 'hidden'
+                    : 'rounded-md bg-white p-2 text-gray-400 lg:hidden'
+                }`}
                 onClick={() => setOpen(true)}
               >
-                <span className="sr-only">Open menu</span>
                 <MenuAlt4Icon className="h-6 w-6" aria-hidden="true" />
+              </button>
+              <button
+                type="button"
+                className={`${
+                  open
+                    ? 'rounded-md bg-white p-2 text-gray-400 lg:hidden'
+                    : 'hidden'
+                }`}
+                onClick={() => setOpen(false)}
+              >
+                <XIcon className="h-6 w-6" aria-hidden="true" />
               </button>
 
               {/* Logo */}
@@ -512,7 +410,7 @@ export default function SideNav() {
                         <Popover.Panel className="absolute right-0 z-10 mt-3 w-screen max-w-[10rem] px-4 sm:px-0 2xl:left-0 2xl:-translate-x-1/2 ">
                           <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                             <div className="relative grid gap-8 bg-white p-4">
-                              {Language.map((item) => (
+                              {language.map((item) => (
                                 <Link key={item.name} href={item.href}>
                                   <a
                                     className="-m-3 flex items-center 
