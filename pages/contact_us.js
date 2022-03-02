@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import LayoutPage from '../components/LayoutPage'
+import Layout from '../components/Layout/Layout'
+import LayoutPage from '../components/Layout/LayoutPage'
 import ContactUsButton from '../components/Buttons/ContactUsButton'
 
 export default function ContactUs() {

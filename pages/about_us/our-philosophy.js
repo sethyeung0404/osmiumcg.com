@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-import LayoutPage from '../../components/LayoutPage'
+import Layout from '../../components/Layout/Layout'
+import LayoutPage from '../../components/Layout/LayoutPage'
 import SubPageHeading1 from '../../components/UI/SubPageHeading1'
 import SubPageHeading2 from '../../components/UI/SubPageHeading2'
 

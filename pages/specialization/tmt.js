@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-import LayoutPage from '../../components/LayoutPage'
-import ConsultantCarousel from '../../components/ConsultantCarousel'
+import LayoutCustom from '../../components/Layout/LayoutCustom'
+import LayoutPage from '../../components/Layout/LayoutPage'
+import ConsultantCarousel from '../../components/UI/ConsultantCarousel'
 
 export default function tmt() {
   return (
@@ -39,9 +39,9 @@ export default function tmt() {
 
 tmt.getLayout = function getLayout(page) {
   return (
-    <Layout>
+    <LayoutCustom>
       <LayoutPage />
       {page}
-    </Layout>
+    </LayoutCustom>
   )
 }

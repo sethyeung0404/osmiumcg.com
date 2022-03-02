@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-import LayoutPage from '../../components/LayoutPage'
-import ConsultantCarousel from '../../components/ConsultantCarousel'
+import Layout from '../../components/Layout/Layout'
+import LayoutPage from '../../components/Layout/LayoutPage'
+import ConsultantCarousel from '../../components/UI/ConsultantCarousel'
 
 export default function bfs() {
   return (

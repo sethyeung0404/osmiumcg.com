@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function LayoutPage() {
   return (
-    <div>
+    <>
       {/* Banner */}
       <div className="">
         <img
@@ -31,14 +31,15 @@ export default function LayoutPage() {
           layout="responsive"
         />
       </div>
-
       {/* Sitemap */}
       <div className="mx-auto flex max-w-7xl pt-3">
         <Link href="/">
           <div>Home</div>
         </Link>
-        <div>&nbsp;> About Us > Overview</div>
+        <div>
+          &nbsp;{'>'} About Us {'>'} Overview
+        </div>
       </div>
-    </div>
+    </>
   )
 }

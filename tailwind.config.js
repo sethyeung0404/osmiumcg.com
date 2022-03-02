@@ -9,6 +9,8 @@ module.exports = {
         'ocg-blue': '#45526e',
         'deep-blue': '#1C2331',
         'purple-blue': 'rgba(85, 108, 150, 1)',
+        'facebook-blue': '#3b5998',
+        'linkedin-blue': '#0e76a8',
       },
     },
   },

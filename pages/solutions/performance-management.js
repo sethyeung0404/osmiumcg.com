@@ -6,7 +6,7 @@ import SectorBlock from '../../components/UI/SectorBlock'
 import SubPageHeading1 from '../../components/UI/SubPageHeading1'
 import SubPageHeading2 from '../../components/UI/SubPageHeading2'
 
-export default function overview() {
+export default function performanceManagement() {
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
@@ -27,7 +27,7 @@ export default function overview() {
   )
 }
 
-overview.getLayout = function getLayout(page) {
+performanceManagement.getLayout = function getLayout(page) {
   return (
     <Layout>
       <LayoutPage />
@@ -35,7 +35,3 @@ overview.getLayout = function getLayout(page) {
     </Layout>
   )
 }
-
-
-
-

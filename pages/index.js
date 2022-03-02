@@ -1,4 +1,4 @@
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import HomePageSectionTitle from '../components/UI/HomePageSectionTitle'
