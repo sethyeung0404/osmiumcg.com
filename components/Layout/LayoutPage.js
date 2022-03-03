@@ -32,11 +32,13 @@ export default function LayoutPage() {
         />
       </div>
       {/* Sitemap */}
-      <div className="mx-auto flex max-w-7xl pt-3">
+      <div className="mx-auto flex max-w-7xl pt-3 text-sm">
         <Link href="/">
-          <div>Home</div>
+          <a>
+            <div className="text-blue-700">Home</div>
+          </a>
         </Link>
-        <div>
+        <div className="">
           &nbsp;{'>'} About Us {'>'} Overview
         </div>
       </div>

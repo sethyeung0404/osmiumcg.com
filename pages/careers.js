@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from '../components/Layout/Layout'
+import Layout from '@/Layout/Layout'
 
 export default function careers() {
   return (
-    <section style={{ marginLeft: '5%', marginRight: '5%' }}>
-      <div className="container-custom container">
+    <div className="mx-auto max-w-7xl">
+      <div>
         <div className="row">
           <div
             className="col-12 col-md-6 col-xl-7 align-self-center"
@@ -41,7 +41,7 @@ export default function careers() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

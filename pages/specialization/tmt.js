@@ -1,11 +1,11 @@
 import React from 'react'
-import LayoutCustom from '../../components/Layout/LayoutCustom'
-import LayoutPage from '../../components/Layout/LayoutPage'
-import ConsultantCarousel from '../../components/UI/ConsultantCarousel'
+import Layout from '@/Layout/Layout'
+import LayoutPage from '@/Layout/LayoutPage'
+import ConsultantCarousel from '@/UI/ConsultantCarousel'
 
 export default function tmt() {
   return (
-    <section className="pt-3">
+    <div className="mx-auto max-w-7xl">
       {/*--Grid row*/}
       <div className="row">
         {/*--Grid 1st column*/}
@@ -33,15 +33,15 @@ export default function tmt() {
         </div>
       </div>
       <hr className="mb-5" />
-    </section>
+    </div>
   )
 }
 
 tmt.getLayout = function getLayout(page) {
   return (
-    <LayoutCustom>
+    <Layout>
       <LayoutPage />
       {page}
-    </LayoutCustom>
+    </Layout>
   )
 }

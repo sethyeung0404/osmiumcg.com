@@ -5,8 +5,8 @@ import { navigation, language } from './Navigation'
 
 export default function footer() {
   return (
-    <footer className="bg-slate-200 text-xs text-slate-700">
-      <div className="mx-auto max-w-6xl leading-5">
+    <footer className="bg-gray-100 text-xs mt-5 text-slate-500">
+      <div className="mx-auto max-w-6xl px-2 leading-5">
         <div className="mb-6 flex justify-center">
           <a
             href="#!"
@@ -17,153 +17,45 @@ export default function footer() {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5">
-          <div className="mb-6">
-            <h5 className="mb-2.5 ">Links</h5>
-
-            <ul className="mb-0 list-none">
-              <li>
-                <a href="#!" className="">
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 4
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="mb-6">
-            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-            <ul className="mb-0 list-none">
-              <li>
-                <a href="#!" className="">
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 4
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="mb-6">
-            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-            <ul className="mb-0 list-none">
-              <li>
-                <a href="#!" className="">
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 4
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="mb-6">
-            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-            <ul className="mb-0 list-none">
-              <li>
-                <a href="#!" className="">
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 4
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="mb-6">
-            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-            <ul className="mb-0 list-none">
-              <li>
-                <a href="#!" className="">
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="">
-                  Link 4
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-6">
+          {navigation.categories.map((category) => (
+            <div className="mb-6">
+              <h5 className="my-2 font-bold text-slate-700">{category.name}</h5>
+              <ul className="list-none">
+                {category.items.map((item) => (
+                  <li className="my-2">
+                    <a href={item.href} className="">
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          {navigation.pages.map((page) => (
+            <div className="mb-6">
+              <a href={page.href}>
+                <h5 className="my-2 font-bold text-slate-700">{page.name}</h5>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-6xl justify-between leading-5">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 px-2 pb-6 leading-5 text-slate-500">
         {/*Copyright*/}
-        <div>
-          Osmium Consulting Group Limited ( EA Licence No. 66295 )
-          <br />
-          D-U-N-S Number : 68-638-4815
+        <div className="border-b-2 border-slate-300">
+          Looking for Recruiters? Find a Consultant by Calling (852) 3898 5500
+          or send an email to{' '}
+          <a href="mailto:info@osmiumcg.com">info@osmiumcg.com</a>
         </div>
-        <div>
-          Copyright &copy; All rights reserved by Osmium Consulting Group
+        <div></div>
+        <div className="flex justify-between">
+          <div>
+            Osmium Consulting Group Limited ( EA Licence No. 66295 ) | D-U-N-S
+            Number : 68-638-4815
+          </div>
+          <div>Hong Kong</div>
         </div>
       </div>
     </footer>

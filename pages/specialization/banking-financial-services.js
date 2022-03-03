@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
-import LayoutPage from '../../components/Layout/LayoutPage'
-import ConsultantCarousel from '../../components/UI/ConsultantCarousel'
+import Layout from '@/Layout/Layout'
+import LayoutPage from '@/Layout/LayoutPage'
+import ConsultantCarousel from '@/UI/ConsultantCarousel'
 
 export default function bfs() {
   return (
-    <section className="pt-3">
+    <div className="mx-auto max-w-7xl">
       {/*--Grid row*/}
       <div className="row">
         {/*--Grid 1st column*/}
@@ -33,7 +33,7 @@ export default function bfs() {
         </div>
       </div>
       <hr className="mb-5" />
-    </section>
+    </div>
   )
 }
 

@@ -1,0 +1,9 @@
+{
+  "locales": ["en-US", "zh-HK", "ja", "zh-CN"],
+  "defaultLocale": "en-US",
+  "pages": {
+    "*": ["common"],
+    "/": ["index"],
+    "/about_us/overview": ["overview"]
+  }
+}

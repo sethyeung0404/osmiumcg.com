@@ -1,11 +1,9 @@
 import React from 'react'
 
-function HomePageSectionTitle({Title}) {
+export default function HomePageSectionTitle({ Title }) {
   return (
     <div>
-      <h5 className="text-lg font-light">{Title}</h5>
+      <h5 className="text-4xl font-bold m-2">{Title}</h5>
     </div>
   )
 }
-
-export default HomePageSectionTitle

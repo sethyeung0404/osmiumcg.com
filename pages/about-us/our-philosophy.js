@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
-import LayoutPage from '../../components/Layout/LayoutPage'
-import SubPageHeading1 from '../../components/UI/SubPageHeading1'
-import SubPageHeading2 from '../../components/UI/SubPageHeading2'
+import Layout from '@/Layout/Layout'
+import LayoutPage from '@/Layout/LayoutPage'
+import SubPageHeading1 from '@/UI/SubPageHeading1'
+import SubPageHeading2 from '@/UI/SubPageHeading2'
 
 export default function ourPhilosophy() {
   return (
