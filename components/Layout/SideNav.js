@@ -2,11 +2,12 @@ import { Fragment, React, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { ChevronUpIcon } from '@heroicons/react/solid'
+import useTranslation from 'next-translate/useTranslation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEarthAsia,
   faMagnifyingGlass,
+  faChevronUp,
 } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Disclosure, Dialog, Popover, Transition } from '@headlessui/react'
@@ -19,13 +20,17 @@ function classNames(...classes) {
 
 export default function SideNav() {
   const [open, setOpen] = useState(false)
-
+  let { t } = useTranslation()
   let router = useRouter()
 
   return (
     <div className="bg-white">
       {/* Sidebar */}
-      <Transition.Root show={open} as={Fragment}>
+      <Transition.Root
+        style={{ fontFamily: 'Lato, Noto Sans TC, Noto Sans SC' }}
+        show={open}
+        as={Fragment}
+      >
         <Dialog
           as="div"
           className="fixed inset-0 z-40 flex lg:hidden"
@@ -64,11 +69,13 @@ export default function SideNav() {
                       {({ open }) => (
                         <>
                           <Disclosure.Button
+                            key={category.name}
                             className="flex w-full justify-between space-y-4 px-4 py-2 text-left font-medium 
                             text-gray-900 hover:text-zinc-500 hover:duration-500"
                           >
-                            <span>{category.name}</span>
-                            <ChevronUpIcon
+                            <span>{t('common:' + category.name)}</span>
+                            <FontAwesomeIcon
+                              icon={faChevronUp}
                               className={`${
                                 open ? '' : 'rotate-180'
                               } h-5 w-5 text-purple-500`}
@@ -94,7 +101,7 @@ export default function SideNav() {
                                       href={item.href}
                                       className="-m-2 block p-2 text-gray-500 hover:text-zinc-400 hover:duration-500"
                                     >
-                                      {item.name}
+                                      {t('common:' + item.name)}
                                     </a>
                                   </li>
                                 ))}
@@ -115,7 +122,7 @@ export default function SideNav() {
                         href={page.href}
                         className="-m-2 block px-2 py-3 font-medium text-gray-900"
                       >
-                        {page.name}
+                        {t('common:' + page.name)}
                       </a>
                     </div>
                   ))}
@@ -130,18 +137,65 @@ export default function SideNav() {
                       Sign in
                     </a>
                   </div>
+
+                  {/* Translations */}
                   <div className="flow-root">
-                    <ul role="list" className="w-40 space-y-3 ">
-                      {language.map((item) => (
-                        <li key={item.name} className="">
-                          <Link href={router.asPath} locale={item.locale}>
-                            <a className="-m-3 flex items-start py-4 px-6 hover:bg-slate-50 hover:text-blue-600">
-                              {item.name}
-                            </a>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    <Disclosure>
+                      {({ open }) => (
+                        <>
+                          <Disclosure.Button
+                            key="Translations"
+                            className="flex w-full justify-between space-y-4 py-2 text-left font-medium 
+                            text-gray-900 hover:text-zinc-500 hover:duration-500"
+                          >
+                            <div className="flex space-x-2">
+                              <div>
+                                <FontAwesomeIcon icon={faEarthAsia} />
+                              </div>
+                              <div>{t('common:Language')}</div>
+                            </div>
+                            <FontAwesomeIcon
+                              icon={faChevronUp}
+                              className={`${
+                                open ? '' : 'rotate-180'
+                              } h-5 w-5 text-purple-500`}
+                            />
+                          </Disclosure.Button>
+                          <Transition
+                            enter="transition ease-out duration-500"
+                            enterFrom="-translate-y-1/3 opacity-0"
+                            enterTo="translate-y-0 opacity-100"
+                            leave="transition-opacity duration-150"
+                            leaveFrom="opacity-100"
+                            leaveTo="opacity-0"
+                          >
+                            <Disclosure.Panel className="pl-10 pt-1">
+                              <ul
+                                role="list"
+                                aria-labelledby="language-heading-mobile"
+                                className="flex flex-col space-y-5"
+                              >
+                                {language.map((item) => (
+                                  <li key={item.name} className="flow-root">
+                                    <Link
+                                      href={router.asPath}
+                                      locale={item.locale}
+                                    >
+                                      <a
+                                        onClick={() => setOpen(false)}
+                                        className="-m-2 block p-2 text-gray-500 hover:text-zinc-400 hover:duration-500"
+                                      >
+                                        {item.name}
+                                      </a>
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </Disclosure.Panel>
+                          </Transition>
+                        </>
+                      )}
+                    </Disclosure>
                   </div>
                 </div>
               </div>
@@ -216,7 +270,7 @@ export default function SideNav() {
                                 'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
                               )}
                             >
-                              {category.name}
+                              {t('common:' + category.name)}
                             </Popover.Button>
                           </div>
 
@@ -239,7 +293,7 @@ export default function SideNav() {
                                           href={item.href}
                                           className="-m-3 flex items-start py-4 px-6 hover:bg-slate-50 hover:text-blue-600"
                                         >
-                                          {item.name}
+                                          {t('common:' + item.name)}
                                         </a>
                                       </li>
                                     ))}
@@ -259,7 +313,7 @@ export default function SideNav() {
                       href={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-blue-600"
                     >
-                      {page.name}
+                      {t('common:' + page.name)}
                     </a>
                   ))}
                 </div>
@@ -273,7 +327,7 @@ export default function SideNav() {
                     href="https://learning.osmiumcg.com/"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
-                    Sign in
+                    {t('common:SignIn')}
                   </a>
                 </div>
 

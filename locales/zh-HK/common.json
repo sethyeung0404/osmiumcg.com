@@ -1,10 +1,10 @@
 {
   "Home": "首頁",
-  "HOME": "首頁",
 
   "About": "關於我們",
+
   "Overview": "關於我們",
-  "Methodology": "我們的工作流程",
+  "Philosophy": "我們的工作流程",
   "Sustainability": "企業責任",
 
   "Solutions": "服務介紹",
@@ -13,15 +13,16 @@
   "Performance": "績效管理",
 
   "Specialization": "行業",
-  "Banking": "銀行及金融服務業",
+  "BFS": "銀行及金融服務業",
   "TMT": "科技、傳媒及電信業",
-  "Corporate": "企業",
 
+  "Events": "活動及宣傳",
   "Careers": "加入我們！",
+  "Contact": "聯絡我們",
 
-  "Contact_Us": "聯絡我們",
+  "SignIn": "登入",
 
-  "ContactNum": "電話 : (852) 3898 5500<br>星期一 至 星期五",
+  "ViewMore": "查看更多",
 
   "Language": "其他語言",
   "Facebook": "Facebook",

@@ -1,5 +1,4 @@
 import Layout from '@/Layout/layout'
-import Head from 'next/head'
 import Image from 'next/image'
 import HomePageSectionTitle from '@/UI/HomePageSectionTitle'
 import BlueDivider from '@/UI/BlueDivider'
@@ -8,63 +7,60 @@ import JobSlot from '@/UI/JobSlot'
 import SectorBlock from '@/UI/SectorBlock'
 import HomePageContactUsButton from '@/Buttons/HomePageContactUsButton'
 import RoundButton from '@/Buttons/RoundButton'
-import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
 
 export default function Home() {
   let { t } = useTranslation()
 
   return (
-    <main className="text-center">
+    <main className="pt-[65px] text-center">
       <HomeBanner />
 
       {/* Main Page Text */}
       <section
         id="main_page_text"
-        className="mx-auto max-w-7xl items-center p-5"
+        className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
       >
         <div className="">
-          <h1 className="m-3 text-4xl font-bold">{t('index:Header1')}</h1>
-          <p className="text-justify text-base">{t('index:Header2')}</p>
+          <h1 className="text-[40px] font-bold">{t('index:mainTextTitle')}</h1>
+          <p className="text-justify text-base">{t('index:mainTextContent')}</p>
         </div>
       </section>
 
       {/* Section: Intro */}
-      <section id="intro_black" className="bg-black text-white">
+      <section id="intro_black" className="my-2 bg-black p-5 text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between p-5 text-left">
           <div>
-            <p>Would you like to speak to one of our Recruitment Consultant?</p>
+            <p>{t('index:s2a')}</p>
             <br />
             <p>
-              Please feel free to&nbsp;
+              {t('index:s2b')}
               <a href="https://www.linkedin.com/company/osmium-consulting-group">
-                <u>Connect Us</u>
+                <u>{t('index:s2button1')}</u>
               </a>
-              &nbsp;through Our LinkedIn
+              &nbsp;{t('index:s2c')}
             </p>
           </div>
           <div>
-            <HomePageContactUsButton />
+            <HomePageContactUsButton text={t('index:s2button2')} />
           </div>
         </div>
       </section>
 
       {/* Section: Sector Coverage */}
-      <section id="sector_coverage" className="py-5">
+      <section id="sector_coverage" className="my-2 p-5">
         <div className="mx-auto max-w-7xl bg-white">
-          <div className="col-12">
-            <HomePageSectionTitle Title="The Practice Sectors We Cover" />
-            <BlueDivider />
-          </div>
+          <HomePageSectionTitle Title={t('index:Sector')} />
+          <BlueDivider />
           <SectorBlock />
         </div>
       </section>
 
       {/* Section: Jobs Openings */}
-      <section id="home_job" className="items-center bg-gray-100 py-5">
+      <section id="home_job" className="my-2 items-center bg-gray-100 p-5">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1">
-            <HomePageSectionTitle Title="Latest Job Openings" />
+            <HomePageSectionTitle Title={t('index:JobOpenings')} />
             <BlueDivider />
           </div>
           <div className="grid grid-cols-3 gap-5">
@@ -72,23 +68,25 @@ export default function Home() {
             <JobSlot />
             <JobSlot />
           </div>
-          <RoundButton />
+          <div className="mt-2">
+            <RoundButton />
+          </div>
         </div>
       </section>
 
       {/* Articles */}
-      <section id="home_article" className="py-5">
+      <section id="home_article" className="my-2 p-5">
         <div className="grid grid-cols-1">
-          <HomePageSectionTitle Title="Articles" />
+          <HomePageSectionTitle Title={t('index:Articles')} />
           <BlueDivider />
         </div>
         <div>Articles *9</div>
       </section>
 
       {/* Awards */}
-      <section id="Awards" className="mx-auto max-w-7xl">
+      <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">
         <div className="grid grid-cols-1">
-          <HomePageSectionTitle Title="Awards" />
+          <HomePageSectionTitle Title={t('index:Awards')} />
           <BlueDivider />
         </div>
         <div className="flex items-center justify-center px-5">

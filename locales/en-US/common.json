@@ -1,25 +1,34 @@
 {
   "Home": "Home",
-  "HOME": "HOME",
-  "About": "ABOUT US",
+
+  "About": "About",
+
   "Overview": "Overview",
-  "Methodology": "Our Philosophy",
+  "Philosophy": "Our Philosophy",
   "Sustainability": "Sustainability",
-  "Solutions": "SOLUTIONS",
+
+  "Solutions": "Solutions",
   "Recruitment": "Recruitment",
   "HR": "HR Solutions",
   "Performance": "Performance Management",
-  "Specialization": "SPECIALIZATION",
-  "Banking": "Banking and Financial Services",
+
+  "Specialization": "Specialization",
+  "BFS": "Banking and Financial Services",
   "TMT": "TMT",
-  "Corporate": "Corporate",
-  "Careers": "CAREERS",
-  "Contact_Us": "CONTACT US",
-  "ContactNum": "TEL : (852) 3898 5500<br>MONDAY - FRIDAY",
+
+  "Events": "Events",
+  "Careers": "Careers",
+  "Contact": "Contact Us",
+
+  "ViewMore": "View More",
+
+  "SignIn": "Sign In",
+
   "Language": "Language",
   "Facebook": "Facebook",
   "Instagram": "Instagram",
   "LinkedIn": "LinkedIn",
+
   "Rights": "All rights reserved by",
   "Copyright": "Copyright",
   "OCG": "Osmium Consulting Group",

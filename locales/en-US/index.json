@@ -1,18 +1,17 @@
 {
   "pageTitle": "Osmium Consulting Group - Recruitment Professionals",
-  "Header1": "Osmium Consulting Group is a Leading Recruitment Firm",
-  "Header2": "Osmium Consulting Group has quickly established a market reputation as a dedicated and value-adding recruitment firm. We offer our clients access to the very best candidates and our candidates the opportunity to\r\n                  develop a global career. We possess a number of unparalleled and unique features that define and set us apart from other service providers in the recruitment industry.",
-  "Header2.1": "Would you like to speak to one of our Recruitment Consultant?",
-  "Header2.2": "Please feel free to",
-  "Button2.3": "Connect Us",
-  "Header2.4": "through Our LinkedIn",
-  "Button2.5": "CONTACT US",
+
+  "mainTextTitle": "Osmium Consulting Group is a Leading Recruitment Firm",
+  "mainTextContent": "Osmium Consulting Group has quickly established a market reputation as a dedicated and value-adding recruitment firm. We offer our clients access to the very best candidates and our candidates the opportunity to\r\n                  develop a global career. We possess a number of unparalleled and unique features that define and set us apart from other service providers in the recruitment industry.",
+
+  "s2a": "Would you like to speak to one of our Recruitment Consultant?",
+  "s2b": "Please feel free to ",
+  "s2button1": "Connect Us",
+  "s2c": "through Our LinkedIn",
+  "s2button2": "CONTACT US",
+  
   "Sector": "The Practice Sectors We Cover",
-  "Banking": "BANKING AND FINANCIAL SERVICES",
-  "TMT": "TMT",
-  "Corporate": "CORPORATE",
   "JobOpenings": "Latest Job Openings",
-  "ViewMore": "view more",
   "Articles": "Articles",
   "Awards": "Awards"
 }

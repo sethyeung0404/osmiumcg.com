@@ -5,7 +5,7 @@ export const navigation = {
       name: 'About',
       items: [
         { name: 'Overview', href: '/about-us/overview' },
-        { name: 'Our Philosophy', href: '/about-us/our-philosophy' },
+        { name: 'Philosophy', href: '/about-us/our-philosophy' },
         { name: 'Sustainability', href: '/about-us/sustainability' },
       ],
     },
@@ -14,9 +14,9 @@ export const navigation = {
       name: 'Solutions',
       items: [
         { name: 'Recruitment', href: '/solutions/recruitment' },
-        { name: 'HR Solutions', href: '/solutions/hr-solutions' },
+        { name: 'HR', href: '/solutions/hr-solutions' },
         {
-          name: 'Performance Management',
+          name: 'Performance',
           href: '/solutions/performance-management',
         },
       ],
@@ -26,17 +26,17 @@ export const navigation = {
       name: 'Specialization',
       items: [
         {
-          name: 'Banking and Financial Services Recruitment',
+          name: 'BFS',
           href: '/specialization/banking-financial-services',
         },
-        { name: 'TMT Recruitment', href: '/specialization/tmt' },
+        { name: 'TMT', href: '/specialization/tmt' },
       ],
     },
   ],
   pages: [
-    { name: 'Events', href: '/contact_us' },
+    { name: 'Events', href: '/events' },
     { name: 'Careers', href: '/careers' },
-    { name: 'Contact Us', href: '/contact-us' },
+    { name: 'Contact', href: '/contact-us' },
   ],
 }
 
