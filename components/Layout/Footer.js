@@ -1,31 +1,58 @@
 import React from 'react'
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { navigation, language } from './Navigation'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function footer() {
+  let { t } = useTranslation()
+
   return (
-    <footer className="bg-gray-100 text-xs mt-5 text-slate-500">
+    <footer className="mt-5 bg-gray-100 text-xs text-slate-500">
       <div className="mx-auto max-w-6xl px-2 leading-5">
-        <div className="mb-6 flex justify-center">
-          <a
-            href="#!"
-            type="button"
-            className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal  transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
-          >
-            *6
-          </a>
+        <div className="flex items-center justify-center gap-2 p-3 text-center">
+          {/* Facebook Icons*/}
+          <Link href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/">
+            <a
+              className="h-9 w-9 rounded-full border-2 border-white text-base text-facebook-blue transition  duration-150 ease-in-out
+               hover:bg-black hover:bg-opacity-5 hover:text-gray-500 focus:outline-none focus:ring-0"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                className="translate-y-0.5"
+                icon={faFacebookF}
+                aria-hidden="true"
+              />
+            </a>
+          </Link>
+          {/* LinkedIn Icons*/}
+          <Link href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/">
+            <a
+              className="h-9 w-9 rounded-full border-2 border-white text-base text-linkedin-blue transition  duration-150 ease-in-out
+               hover:bg-black hover:bg-opacity-5 hover:text-gray-500 focus:outline-none focus:ring-0"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                className="translate-y-1"
+                icon={faLinkedinIn}
+                aria-hidden="true"
+              />
+            </a>
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-6">
           {navigation.categories.map((category) => (
-            <div className="mb-6">
-              <h5 className="my-2 font-bold text-slate-700">{category.name}</h5>
+            <div key={category.name} className="mb-6">
+              <h5 className="my-2 font-bold text-slate-700">
+                {t('common:' + category.name)}
+              </h5>
               <ul className="list-none">
                 {category.items.map((item) => (
-                  <li className="my-2">
+                  <li key={item.name} className="my-2">
                     <a href={item.href} className="">
-                      {item.name}
+                      {t('common:' + item.name)}
                     </a>
                   </li>
                 ))}
@@ -34,8 +61,10 @@ export default function footer() {
           ))}
           {navigation.pages.map((page) => (
             <div className="mb-6">
-              <a href={page.href}>
-                <h5 className="my-2 font-bold text-slate-700">{page.name}</h5>
+              <a key={page.name} href={page.href}>
+                <h5 className="my-2 font-bold text-slate-700">
+                  {t('common:' + page.name)}
+                </h5>
               </a>
             </div>
           ))}

@@ -16,6 +16,9 @@
   "BFS": "Banking and Financial Services",
   "TMT": "TMT",
 
+  "Sector": "The Practice Sectors We Cover",
+  "JobOpenings": "Latest Job Openings",
+  
   "Events": "Events",
   "Careers": "Careers",
   "Contact": "Contact Us",
@@ -32,5 +35,6 @@
   "Rights": "All rights reserved by",
   "Copyright": "Copyright",
   "OCG": "Osmium Consulting Group",
-  "OCGL": "Osmium Consulting Group Limited ( EA Licence No. 66295 )"
+  "OCGL": "Osmium Consulting Group Limited",
+  "License": "Osmium Consulting Group Limited ( EA Licence No. 66295 )"
 }

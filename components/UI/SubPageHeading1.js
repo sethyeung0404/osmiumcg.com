@@ -2,8 +2,8 @@ import React from 'react'
 
 function SubPageHeading1({ Title }) {
   return (
-    <div>
-      <h5 className="text-lg font-light">{Title}</h5>
+    <div className="mb-10 border-b-2 py-3">
+      <h5 className="text-3xl font-bold">{Title}</h5>
     </div>
   )
 }

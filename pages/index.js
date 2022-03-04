@@ -1,4 +1,4 @@
-import Layout from '@/Layout/layout'
+import Layout from '@/Layout/Layout'
 import Image from 'next/image'
 import HomePageSectionTitle from '@/UI/HomePageSectionTitle'
 import BlueDivider from '@/UI/BlueDivider'
@@ -50,8 +50,8 @@ export default function Home() {
       {/* Section: Sector Coverage */}
       <section id="sector_coverage" className="my-2 p-5">
         <div className="mx-auto max-w-7xl bg-white">
-          <HomePageSectionTitle Title={t('index:Sector')} />
-          <BlueDivider />
+          <HomePageSectionTitle Title={t('common:Sector')} />
+          <BlueDivider center="true" />
           <SectorBlock />
         </div>
       </section>
@@ -60,8 +60,8 @@ export default function Home() {
       <section id="home_job" className="my-2 items-center bg-gray-100 p-5">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1">
-            <HomePageSectionTitle Title={t('index:JobOpenings')} />
-            <BlueDivider />
+            <HomePageSectionTitle Title={t('common:JobOpenings')} />
+            <BlueDivider center="true" />
           </div>
           <div className="grid grid-cols-3 gap-5">
             <JobSlot />
@@ -78,7 +78,7 @@ export default function Home() {
       <section id="home_article" className="my-2 p-5">
         <div className="grid grid-cols-1">
           <HomePageSectionTitle Title={t('index:Articles')} />
-          <BlueDivider />
+          <BlueDivider center="true" />
         </div>
         <div>Articles *9</div>
       </section>
@@ -87,7 +87,7 @@ export default function Home() {
       <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">
         <div className="grid grid-cols-1">
           <HomePageSectionTitle Title={t('index:Awards')} />
-          <BlueDivider />
+          <BlueDivider center="true" />
         </div>
         <div className="flex items-center justify-center px-5">
           <Image width={200} height={200} src="/img/awards/gec2020.webp" />

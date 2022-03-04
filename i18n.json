@@ -4,6 +4,6 @@
   "pages": {
     "*": ["common"],
     "/": ["index"],
-    "/about_us/overview": ["overview"]
+    "/about-us/overview": ["overview"]
   }
 }

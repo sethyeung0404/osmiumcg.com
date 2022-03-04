@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function LayoutPage() {
+export default function LayoutPage({ children }) {
   return (
     <>
       {/* Banner */}
@@ -31,16 +31,20 @@ export default function LayoutPage() {
           layout="responsive"
         />
       </div>
-      {/* Sitemap */}
-      <div className="mx-auto flex max-w-7xl pt-3 text-sm">
-        <Link href="/">
-          <a>
-            <div className="text-blue-700">Home</div>
-          </a>
-        </Link>
-        <div className="">
-          &nbsp;{'>'} About Us {'>'} Overview
+
+      <div className="mx-auto max-w-3xl p-5 text-sm lg:max-w-7xl">
+        {/* Sitemap */}
+        <div className="flex">
+          <Link href="/">
+            <a>
+              <div className="text-blue-700">Home</div>
+            </a>
+          </Link>
+          <div className="">
+            &nbsp;{'>'} About Us {'>'} Overview
+          </div>
         </div>
+        {children}
       </div>
     </>
   )

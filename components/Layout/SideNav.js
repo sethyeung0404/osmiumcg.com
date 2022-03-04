@@ -13,10 +13,7 @@ import { faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Disclosure, Dialog, Popover, Transition } from '@headlessui/react'
 import { MenuAlt4Icon, XIcon } from '@heroicons/react/outline'
 import { navigation, language } from './Navigation'
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+import ClassNames from '../../utils/ClassNames'
 
 export default function SideNav() {
   const [open, setOpen] = useState(false)
@@ -60,10 +57,10 @@ export default function SideNav() {
             leaveTo="-translate-y-full"
           >
             {/* Dropdown Sidebar */}
-            <div className="relative flex w-full flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+            <div className="relative z-20 flex w-full flex-col overflow-y-auto bg-white pb-12 shadow-xl">
               <div className="mx-auto w-10/12">
                 {/* Links with submenu */}
-                <div className="mt-16 pt-6 pb-2">
+                <div className="translate-y- mt-16 pt-6 pb-2">
                   {navigation.categories.map((category) => (
                     <Disclosure>
                       {({ open }) => (
@@ -82,9 +79,10 @@ export default function SideNav() {
                             />
                           </Disclosure.Button>
                           <Transition
+                            as={Fragment}
                             enter="transition ease-out duration-500"
-                            enterFrom="-translate-y-1/3 opacity-0"
-                            enterTo="translate-y-0 opacity-100"
+                            enterFrom="-translate-y-8 opacity-0"
+                            enterTo="translate-y-0 opacity-500"
                             leave="transition-opacity duration-150"
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
@@ -128,7 +126,9 @@ export default function SideNav() {
                   ))}
                 </div>
 
-                <div className="space-y-4 border-t border-gray-200 py-6 px-4">
+                {/* Icons */}
+                <div className="space-y-4 border-t border-gray-200 py-6 px-4 text-base font-medium">
+                  {/* Sign In */}
                   <div className="flow-root">
                     <a
                       href="#"
@@ -138,6 +138,60 @@ export default function SideNav() {
                     </a>
                   </div>
 
+                  {/* Search */}
+                  <div className="flex w-full space-x-2 text-left font-medium text-gray-900 hover:text-zinc-500">
+                    <div>
+                      <Link href="#" alt="">
+                        <a className="text-gray-400 hover:text-gray-500">
+                          <FontAwesomeIcon
+                            icon={faMagnifyingGlass}
+                            className="h-5 w-5"
+                            aria-hidden="true"
+                          />
+                        </a>
+                      </Link>
+                    </div>
+                    <div>Search</div>
+                  </div>
+
+                  {/* Facebook Icon*/}
+                  <div className="flex w-full space-x-2 text-left font-medium text-gray-900 hover:text-zinc-500">
+                    <div>
+                      <Link href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/">
+                        <a
+                          className="text-facebook-blue hover:text-gray-500"
+                          target="_blank"
+                        >
+                          <FontAwesomeIcon
+                            icon={faFacebookF}
+                            className="h-5 w-5"
+                            aria-hidden="true"
+                          />
+                        </a>
+                      </Link>
+                    </div>
+                    <div>Facebook</div>
+                  </div>
+
+                  {/* LinkedIn Icon*/}
+                  <div className="flex w-full space-x-2 text-left font-medium text-gray-900 hover:text-zinc-500">
+                    <div>
+                      <Link href="https://www.linkedin.com/company/osmium-consulting-group">
+                        <a
+                          className="text-linkedin-blue hover:text-gray-500"
+                          target="_blank"
+                        >
+                          <FontAwesomeIcon
+                            icon={faLinkedin}
+                            className="h-5 w-5"
+                            aria-hidden="true"
+                          />
+                        </a>
+                      </Link>
+                    </div>
+                    <div>LinkedIn</div>
+                  </div>
+
                   {/* Translations */}
                   <div className="flow-root">
                     <Disclosure>
@@ -145,12 +199,16 @@ export default function SideNav() {
                         <>
                           <Disclosure.Button
                             key="Translations"
-                            className="flex w-full justify-between space-y-4 py-2 text-left font-medium 
+                            className="flex w-full justify-between space-y-4 text-left 
                             text-gray-900 hover:text-zinc-500 hover:duration-500"
                           >
-                            <div className="flex space-x-2">
+                            <div className="flex space-x-2 ">
                               <div>
-                                <FontAwesomeIcon icon={faEarthAsia} />
+                                <FontAwesomeIcon
+                                  icon={faEarthAsia}
+                                  className="h-5 w-5"
+                                  aria-hidden="true"
+                                />
                               </div>
                               <div>{t('common:Language')}</div>
                             </div>
@@ -263,7 +321,7 @@ export default function SideNav() {
                         <>
                           <div className="relative flex">
                             <Popover.Button
-                              className={classNames(
+                              className={ClassNames(
                                 open
                                   ? 'border-ocg-blue text-blue-600'
                                   : 'border-transparent text-gray-700 hover:text-blue-600',
@@ -286,7 +344,7 @@ export default function SideNav() {
                             <Popover.Panel className="relative z-10 -ml-4 px-2 text-sm">
                               <div className="overflow-hidden">
                                 <div className=" absolute left-0 mt-[65px] -translate-x-32 gap-6 bg-white p-3">
-                                  <ul role="list" className="w-80 space-y-5 ">
+                                  <ul role="list" className="w-80 space-y-3 ">
                                     {category.items.map((item) => (
                                       <li key={item.name} className="">
                                         <a
@@ -373,7 +431,7 @@ export default function SideNav() {
                     <>
                       <div className="relative flex">
                         <Popover.Button
-                          className={classNames(
+                          className={ClassNames(
                             open
                               ? 'border-2 border-ocg-blue text-blue-600'
                               : 'border-transparent text-gray-700 hover:text-blue-600',

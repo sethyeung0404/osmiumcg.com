@@ -26,8 +26,7 @@ export default function ourPhilosophy() {
 ourPhilosophy.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <LayoutPage />
-      {page}
+      <LayoutPage>{page}</LayoutPage>
     </Layout>
   )
 }
