@@ -1,21 +1,23 @@
 {
   "pageTitle": "OCG - Our Philosophy",
-  "subtitle1": "About Us",
-  "subtitle2": "Our Philosophy",
-  "subtitle3": "Our Methodlogy",
+
   "Step1": "STEP 1 : Understanding Your Company & The Vacancy",
-  "Content1.1": "\u201cWe begin by advising you on the vacancy itself, the availability of relevant candidates, the competitiveness of your offering, and the most suitable means of screening and selection to ensure you don\u2019t miss out on top talent.",
-  "Content1.2": "Upon receiving the job specification and briefing from you, we start developing a thorough understanding of the organization as a whole and the expectations of the hiring managers, so as to pinpoint those professionals\r\n                  who would best match the criteria of the vacancies.",
+  "S1Content1": "\u201cWe begin by advising you on the vacancy itself, the availability of relevant candidates, the competitiveness of your offering, and the most suitable means of screening and selection to ensure you don't miss out on top talent.",
+  "S1Content2": "Upon receiving the job specification and briefing from you, we start developing a thorough understanding of the organization as a whole and the expectations of the hiring managers, so as to pinpoint those professionals who would best match the criteria of the vacancies.",
+
   "Step2": "STEP 2 : Candidate Search",
-  "Content2.1": "By understanding the candidate market, we know which attraction techniques are most likely to target suitable applicants and would use a wide range of methods ( From advertising to executive search ) to ensure we identify a\r\n                  diverse pool of potential employees following the below process :",
-  "List2.2": "<ul>\r\n                    <li>Compile the target company list for approaching potential candidates</li>\r\n                    <li>Complete sophisticated market mapping by the use of our extensive business intelligence and industry expertise</li>\r\n                    <li>Source for benchmark candidate via our database, online and offline libraries and directories, and through referrals from our existing network</li>\r\n                    <li>Identify and contact prospective candidates and present them the opportunity in a professional manner</li>\r\n                  </ul>",
+  "S2Content1": "By understanding the candidate market, we know which attraction techniques are most likely to target suitable applicants and would use a wide range of methods ( From advertising to executive search ) to ensure we identify a diverse pool of potential employees following the below process :",
+  "S2List1": "<ul><li>Compile the target company list for approaching potential candidates</li><li>Complete sophisticated market mapping by the use of our extensive business intelligence and industry expertise</li><li>Source for benchmark candidate via our database, online and offline libraries and directories, and through referrals from our existing network</li><li>Identify and contact prospective candidates and present them the opportunity in a professional manner</li></ul>",
+
   "Step3": "STEP 3 : Candidate Screening",
   "Content3.1": "Using competency-based screening tools and testing software, all candidates we identified are assessed against a tiered rating scale linked to your job description, allowing us to present you with a refined shortlist that matches your exact requirements.",
-  "List3.2": "<ul>\r\n                    <li>Meet and interview candidates to identify their career aspirations, motivations to take up a new job, capability to take up the new position in terms of competence, technical skills, leadership, personality, and corporate cultural fit</li>\r\n                    <li>Complete competency-based candidate assessments to unveil the competencies and leadership behaviours of our candidates</li>\r\n                  </ul>",
+  "List3.2": "<ul><li>Meet and interview candidates to identify their career aspirations, motivations to take up a new job, capability to take up the new position in terms of competence, technical skills, leadership, personality, and corporate cultural fit</li><li>Complete competency-based candidate assessments to unveil the competencies and leadership behaviours of our candidates</li>\r\n                  </ul>",
+
   "Step4": "STEP 4 : Candidate Presentation, Interviews And Management",
   "Content4.1": "Our expert consultants are on-hand to advise you throughout the process and handle all aspects of candidate communication such as arranging interviews, providing feedback, and managing the job offer.",
-  "List4.2": "<ul>\r\n                    <li>Presentation of Shortlisted Candidates</li>\r\n                    <li>Client Candidate Interviews</li>\r\n                    <li>Package & Offer Negotiation</li>\r\n                    <li>Reference Checking</li>\r\n                  </ul>",
+  "List4.2": "<ul><li>Presentation of Shortlisted Candidates</li><li>Client Candidate Interviews</li><li>Package & Offer Negotiation</li><li>Reference Checking</li>\r\n                  </ul>",
+
   "Step5": "STEP 5 : Candidate On-Boarding",
   "Content5.1": "We provide on-going client support and candidate care to ensure your new joiner has everything they need. On top of that, we offer a 12-week free replacement guarantee to make sure your needs would be fulfilled.",
-  "List5.2": "<ul>\r\n                    <li>Keep the candidate warm before the commencement date</li>\r\n                    <li>Candidate Care for the first 3 months of employment</li>\r\n                  </ul>"
+  "List5.2": "<ul><li>Keep the candidate warm before the commencement date</li><li>Candidate Care for the first 3 months of employment</li>\r\n                  </ul>"
 }

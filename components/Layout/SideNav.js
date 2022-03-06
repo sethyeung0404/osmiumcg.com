@@ -62,11 +62,10 @@ export default function SideNav() {
                 {/* Links with submenu */}
                 <div className="translate-y- mt-16 pt-6 pb-2">
                   {navigation.categories.map((category) => (
-                    <Disclosure>
+                    <Disclosure key={category.name}>
                       {({ open }) => (
                         <>
                           <Disclosure.Button
-                            key={category.name}
                             className="flex w-full justify-between space-y-4 px-4 py-2 text-left font-medium 
                             text-gray-900 hover:text-zinc-500 hover:duration-500"
                           >

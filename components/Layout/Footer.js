@@ -60,8 +60,8 @@ export default function footer() {
             </div>
           ))}
           {navigation.pages.map((page) => (
-            <div className="mb-6">
-              <a key={page.name} href={page.href}>
+            <div key={page.name} className="mb-6">
+              <a href={page.href}>
                 <h5 className="my-2 font-bold text-slate-700">
                   {t('common:' + page.name)}
                 </h5>

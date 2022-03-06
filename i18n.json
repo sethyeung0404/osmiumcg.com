@@ -4,6 +4,7 @@
   "pages": {
     "*": ["common"],
     "/": ["index"],
-    "/about-us/overview": ["overview"]
+    "/about-us/overview": ["overview"],
+    "/about-us/our-philosophy": ["our-philosophy"]
   }
 }
