@@ -5,7 +5,7 @@ import SubPageHeading1 from '@/UI/SubPageHeading1'
 import SubPageHeading2 from '@/UI/SubPageHeading2'
 import SubPageParagraph1 from '@/UI/SubPageParagraph1'
 import SubPageList1 from '@/UI/SubPageList1'
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation } from 'next-i18next'
 import Divider from '@/UI/Divider'
 
 export default function ourPhilosophy() {

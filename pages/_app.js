@@ -3,9 +3,11 @@ import '../styles/style.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import Head from 'next/head'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { appWithTranslation } from 'next-i18next'
+
 config.autoAddCss = false
 
-export default function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   const getLayout = Component.getLayout || ((page) => page)
 
   return getLayout(
@@ -20,3 +22,5 @@ export default function MyApp({ Component, pageProps }) {
     </Component>
   )
 }
+
+export default appWithTranslation(MyApp)

@@ -18,7 +18,7 @@
     "cross-env": "^7.0.3",
     "dayjs": "^1.10.8",
     "next": "lastest",
-    "next-translate": "^1.3.5",
+    "next-i18next": "^10.5.0",
     "postcss-preset-env": "^7.4.2",
     "react": "lastest",
     "react-dom": "lastest",

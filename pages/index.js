@@ -7,10 +7,11 @@ import JobSlot from '@/UI/JobSlot'
 import SectorBlock from '@/UI/SectorBlock'
 import HomePageContactUsButton from '@/Buttons/HomePageContactUsButton'
 import RoundButton from '@/Buttons/RoundButton'
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home() {
-  let { t } = useTranslation()
+  const { t } = useTranslation('index')
 
   return (
     <main className="pt-[65px] text-center">
@@ -22,8 +23,8 @@ export default function Home() {
         className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
       >
         <div className="">
-          <h1 className="text-[40px] font-bold">{t('index:mainTextTitle')}</h1>
-          <p className="text-justify text-base">{t('index:mainTextContent')}</p>
+          <h1 className="text-[40px] font-bold">{t('mainTextTitle')}</h1>
+          <p className="text-justify text-base">{t('mainTextContent')}</p>
         </div>
       </section>
 
@@ -31,18 +32,18 @@ export default function Home() {
       <section id="intro_black" className="my-2 bg-black p-5 text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between p-5 text-left">
           <div>
-            <p>{t('index:s2a')}</p>
+            <p>{t('s2a')}</p>
             <br />
             <p>
-              {t('index:s2b')}
+              {t('s2b')}
               <a href="https://www.linkedin.com/company/osmium-consulting-group">
-                <u>{t('index:s2button1')}</u>
+                <u>{t('s2button1')}</u>
               </a>
-              &nbsp;{t('index:s2c')}
+              &nbsp;{t('s2c')}
             </p>
           </div>
           <div>
-            <HomePageContactUsButton text={t('index:s2button2')} />
+            <HomePageContactUsButton text={t('s2button2')} />
           </div>
         </div>
       </section>
@@ -77,7 +78,7 @@ export default function Home() {
       {/* Articles */}
       <section id="home_article" className="my-2 p-5">
         <div className="grid grid-cols-1">
-          <HomePageSectionTitle Title={t('index:Articles')} />
+          <HomePageSectionTitle Title={t('Articles')} />
           <BlueDivider center="true" />
         </div>
         <div>Articles *9</div>
@@ -86,7 +87,7 @@ export default function Home() {
       {/* Awards */}
       <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">
         <div className="grid grid-cols-1">
-          <HomePageSectionTitle Title={t('index:Awards')} />
+          <HomePageSectionTitle Title={t('Awards')} />
           <BlueDivider center="true" />
         </div>
         <div className="flex items-center justify-center px-5">
@@ -104,3 +105,9 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'index'])),
+  },
+})

@@ -6,7 +6,7 @@ import SubPageHeading1 from '@/UI/SubPageHeading1'
 import SubPageHeading2 from '@/UI/SubPageHeading2'
 import SubPageParagraph1 from '@/UI/SubPageParagraph1'
 import SectorBlock from '@/UI/SectorBlock'
-import useTranslation from 'next-translate/useTranslation'
+import { appWithTranslation } from 'next-i18next';
 
 export default function overview() {
   let { t } = useTranslation()

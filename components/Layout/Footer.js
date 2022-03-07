@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { navigation, language } from './Navigation'
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation } from 'next-i18next'
 
 export default function footer() {
-  let { t } = useTranslation()
+  const { t } = useTranslation('common')
 
   return (
     <footer className="mt-5 bg-gray-100 text-xs text-slate-500">
@@ -46,13 +46,13 @@ export default function footer() {
           {navigation.categories.map((category) => (
             <div key={category.name} className="mb-6">
               <h5 className="my-2 font-bold text-slate-700">
-                {t('common:' + category.name)}
+                {t(category.name)}
               </h5>
               <ul className="list-none">
                 {category.items.map((item) => (
                   <li key={item.name} className="my-2">
                     <a href={item.href} className="">
-                      {t('common:' + item.name)}
+                      {t(item.name)}
                     </a>
                   </li>
                 ))}
@@ -63,7 +63,7 @@ export default function footer() {
             <div key={page.name} className="mb-6">
               <a href={page.href}>
                 <h5 className="my-2 font-bold text-slate-700">
-                  {t('common:' + page.name)}
+                  {t(page.name)}
                 </h5>
               </a>
             </div>

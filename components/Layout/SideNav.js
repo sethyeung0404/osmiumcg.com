@@ -2,7 +2,7 @@ import { Fragment, React, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation } from 'next-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEarthAsia,
@@ -17,16 +17,13 @@ import ClassNames from '../../utils/ClassNames'
 
 export default function SideNav() {
   const [open, setOpen] = useState(false)
-  let { t } = useTranslation()
+  const { t } = useTranslation('common')
   let router = useRouter()
 
   return (
     <div className="bg-white">
       {/* Sidebar */}
-      <Transition.Root
-        show={open}
-        as={Fragment}
-      >
+      <Transition.Root show={open} as={Fragment}>
         <Dialog
           as="div"
           className="fixed inset-0 z-40 flex lg:hidden"
@@ -68,7 +65,7 @@ export default function SideNav() {
                             className="flex w-full justify-between space-y-4 px-4 py-2 text-left font-medium 
                             text-gray-900 hover:text-zinc-500 hover:duration-500"
                           >
-                            <span>{t('common:' + category.name)}</span>
+                            <span>{t(category.name)}</span>
                             <FontAwesomeIcon
                               icon={faChevronUp}
                               className={`${
@@ -97,7 +94,7 @@ export default function SideNav() {
                                       href={item.href}
                                       className="-m-2 block p-2 text-gray-500 hover:text-zinc-400 hover:duration-500"
                                     >
-                                      {t('common:' + item.name)}
+                                      {t(item.name)}
                                     </a>
                                   </li>
                                 ))}
@@ -118,7 +115,7 @@ export default function SideNav() {
                         href={page.href}
                         className="-m-2 block px-2 py-3 font-medium text-gray-900"
                       >
-                        {t('common:' + page.name)}
+                        {t(page.name)}
                       </a>
                     </div>
                   ))}
@@ -208,7 +205,7 @@ export default function SideNav() {
                                   aria-hidden="true"
                                 />
                               </div>
-                              <div>{t('common:Language')}</div>
+                              <div>{t('Language')}</div>
                             </div>
                             <FontAwesomeIcon
                               icon={faChevronUp}
@@ -326,7 +323,7 @@ export default function SideNav() {
                                 'relative z-10 -mb-px flex items-center border-b-2 pt-px text-base font-medium transition-colors duration-200 ease-out'
                               )}
                             >
-                              {t('common:' + category.name)}
+                              {t(category.name)}
                             </Popover.Button>
                           </div>
 
@@ -349,7 +346,7 @@ export default function SideNav() {
                                           href={item.href}
                                           className="-m-3 flex items-start py-4 px-6 hover:bg-slate-50 hover:text-blue-600"
                                         >
-                                          {t('common:' + item.name)}
+                                          {t(item.name)}
                                         </a>
                                       </li>
                                     ))}
@@ -369,7 +366,7 @@ export default function SideNav() {
                       href={page.href}
                       className="flex items-center text-base font-medium text-gray-700 hover:text-blue-600"
                     >
-                      {t('common:' + page.name)}
+                      {t(page.name)}
                     </a>
                   ))}
                 </div>
@@ -383,7 +380,7 @@ export default function SideNav() {
                     href="https://learning.osmiumcg.com/"
                     className="text-base font-medium text-gray-700 hover:text-gray-800"
                   >
-                    {t('common:SignIn')}
+                    {t('SignIn')}
                   </a>
                 </div>
 
