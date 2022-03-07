@@ -24,7 +24,6 @@ export default function SideNav() {
     <div className="bg-white">
       {/* Sidebar */}
       <Transition.Root
-        style={{ fontFamily: 'Lato, Noto Sans TC, Noto Sans SC' }}
         show={open}
         as={Fragment}
       >
@@ -324,7 +323,7 @@ export default function SideNav() {
                                 open
                                   ? 'border-ocg-blue text-blue-600'
                                   : 'border-transparent text-gray-700 hover:text-blue-600',
-                                'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
+                                'relative z-10 -mb-px flex items-center border-b-2 pt-px text-base font-medium transition-colors duration-200 ease-out'
                               )}
                             >
                               {t('common:' + category.name)}
@@ -340,7 +339,7 @@ export default function SideNav() {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                           >
-                            <Popover.Panel className="relative z-10 -ml-4 px-2 text-sm">
+                            <Popover.Panel className="relative z-10 -ml-4 px-2 text-base">
                               <div className="overflow-hidden">
                                 <div className=" absolute left-0 mt-[65px] -translate-x-32 gap-6 bg-white p-3">
                                   <ul role="list" className="w-80 space-y-3 ">
@@ -368,7 +367,7 @@ export default function SideNav() {
                     <a
                       key={page.name}
                       href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-blue-600"
+                      className="flex items-center text-base font-medium text-gray-700 hover:text-blue-600"
                     >
                       {t('common:' + page.name)}
                     </a>
@@ -382,7 +381,7 @@ export default function SideNav() {
                 <div className="ml-4 inline-flex">
                   <a
                     href="https://learning.osmiumcg.com/"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                    className="text-base font-medium text-gray-700 hover:text-gray-800"
                   >
                     {t('common:SignIn')}
                   </a>
@@ -434,7 +433,7 @@ export default function SideNav() {
                             open
                               ? 'border-2 border-ocg-blue text-blue-600'
                               : 'border-transparent text-gray-700 hover:text-blue-600',
-                            'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
+                            'relative z-10 -mb-px flex items-center border-b-2 pt-px text-base font-medium transition-colors duration-200 ease-out'
                           )}
                         >
                           <div className="flex items-center">
@@ -452,7 +451,7 @@ export default function SideNav() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 translate-y-1"
                       >
-                        <Popover.Panel className="relative z-10 -ml-4 px-2 text-sm">
+                        <Popover.Panel className="relative z-10 -ml-4 px-2 text-base">
                           <div className="overflow-hidden">
                             <div className=" absolute right-0 mt-6 gap-6 bg-white p-3">
                               <ul role="list" className="w-40 space-y-3 ">

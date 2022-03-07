@@ -4,7 +4,9 @@ import LayoutPage from '@/Layout/LayoutPage'
 import SubPageHeading1 from '@/UI/SubPageHeading1'
 import SubPageHeading2 from '@/UI/SubPageHeading2'
 import SubPageParagraph1 from '@/UI/SubPageParagraph1'
+import SubPageList1 from '@/UI/SubPageList1'
 import useTranslation from 'next-translate/useTranslation'
+import Divider from '@/UI/Divider'
 
 export default function ourPhilosophy() {
   let { t } = useTranslation()
@@ -16,17 +18,45 @@ export default function ourPhilosophy() {
         <div>Animation EUR - tbc</div>
         <SubPageHeading1 Title=" Our Methodlogy" />
         <div>
-          <SubPageHeading2 Title={t('our-philosophy:Step1')} />
-          <SubPageParagraph1 Text={t('our-philosophy:S1Content1')} />
-          <SubPageParagraph1 Text={t('our-philosophy:S1Content2')} />
+          <SubPageHeading2 Title={t('about-us:Step1')} />
+          <SubPageParagraph1 Text={t('about-us:S1Content1')} />
+          <SubPageParagraph1 Text={t('about-us:S1Content2')} />
 
-          <SubPageHeading2 Title={t('our-philosophy:Step2')} />
-          <SubPageParagraph1 Text={t('our-philosophy:S2Content1')} />
-          <SubPageParagraph1 Text={t('our-philosophy:S2List1')} />
+          <Divider />
+          <SubPageHeading2 Title={t('about-us:Step2')} />
+          <SubPageParagraph1 Text={t('about-us:S2Content1')} />
+          <ul className="list-disc pt-0">
+            <SubPageList1 Text={t('about-us:S2List1')} />
+            <SubPageList1 Text={t('about-us:S2List2')} />
+            <SubPageList1 Text={t('about-us:S2List3')} />
+            <SubPageList1 Text={t('about-us:S2List4')} />
+          </ul>
 
-          <SubPageHeading2 Title={t('our-philosophy:Step3')} />
-          <SubPageHeading2 Title={t('our-philosophy:Step4')} />
-          <SubPageHeading2 Title={t('our-philosophy:Step5')} />
+          <Divider />
+          <SubPageHeading2 Title={t('about-us:Step3')} />
+          <SubPageParagraph1 Text={t('about-us:S3Content1')} />
+          <ul className="list-disc pt-0">
+            <SubPageList1 Text={t('about-us:S3List1')} />
+            <SubPageList1 Text={t('about-us:S3List2')} />
+          </ul>
+
+          <Divider />
+          <SubPageHeading2 Title={t('about-us:Step4')} />
+          <SubPageParagraph1 Text={t('about-us:S4Content1')} />
+          <ul className="list-disc pt-0">
+            <SubPageList1 Text={t('about-us:S4List1')} />
+            <SubPageList1 Text={t('about-us:S4List2')} />
+            <SubPageList1 Text={t('about-us:S4List3')} />
+            <SubPageList1 Text={t('about-us:S4List4')} />
+          </ul>
+
+          <Divider />
+          <SubPageHeading2 Title={t('about-us:Step5')} />
+          <SubPageParagraph1 Text={t('about-us:S5Content1')} />
+          <ul className="list-disc pt-0">
+            <SubPageList1 Text={t('about-us:S5List1')} />
+            <SubPageList1 Text={t('about-us:S5List2')} />
+          </ul>
         </div>
       </section>
     </div>

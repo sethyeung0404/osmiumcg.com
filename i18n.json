@@ -4,7 +4,6 @@
   "pages": {
     "*": ["common"],
     "/": ["index"],
-    "/about-us/overview": ["overview"],
-    "/about-us/our-philosophy": ["our-philosophy"]
+    "rgx:^/about-us": ["about-us"]
   }
 }

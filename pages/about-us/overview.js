@@ -14,14 +14,14 @@ export default function overview() {
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
-        <SubPageHeading1 Title={t('common:Overview')} />
+        <SubPageHeading1 Title={t('common:about-us')} />
         <div>
           <SubPageHeading2 Title={t('common:OCGL')} />
-          <SubPageParagraph1 Text={t('overview:CompanyDescription1')} />
-          <SubPageParagraph1 Text={t('overview:CompanyDescription2')} />
-          <SubPageHeading2 Title={t('overview:OurGoal')} />
-          <SubPageParagraph1 Text={t('overview:OurGoal1')} />
-          <SubPageParagraph1 Text={t('overview:OurGoal2')} />
+          <SubPageParagraph1 Text={t('about-us:CompanyDescription1')} />
+          <SubPageParagraph1 Text={t('about-us:CompanyDescription2')} />
+          <SubPageHeading2 Title={t('about-us:OurGoal')} />
+          <SubPageParagraph1 Text={t('about-us:OurGoal1')} />
+          <SubPageParagraph1 Text={t('about-us:OurGoal2')} />
         </div>
 
         <div className="row pt-2">

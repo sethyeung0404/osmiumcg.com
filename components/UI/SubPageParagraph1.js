@@ -3,9 +3,8 @@ import React from 'react'
 function SubPageParagraph1({ Text }) {
   return (
     <div>
-      <p className="text-base">
+      <p className="text-base pb-3">
         {Text}
-        <br />
         <br />
       </p>
     </div>

@@ -17,8 +17,13 @@ export default function ourPhilosophy() {
         </div>
         <div>
           <SubPageHeading2 Title="Our Responsibilities" />
+          <SubPageParagraph1 Text={t('our-philosophy:S2Content1')} />
+
           <SubPageHeading2 Title="Our Aim" />
+          <SubPageParagraph1 Text={t('our-philosophy:S2Content1')} />
+
           <SubPageHeading2 Title="Our Four Pillars on Substainability :" />
+          <SubPageParagraph1 Text={t('our-philosophy:S2Content1')} />
           <BlueDivider />
           <div>4 Blocks</div>
         </div>
