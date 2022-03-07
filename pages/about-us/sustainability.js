@@ -4,8 +4,14 @@ import LayoutPage from '@/Layout/LayoutPage'
 import BlueDivider from '@/UI/BlueDivider'
 import SubPageHeading1 from '@/UI/SubPageHeading1'
 import SubPageHeading2 from '@/UI/SubPageHeading2'
+import SubPageParagraph1 from '@/UI/SubPageParagraph1'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 
 export default function ourPhilosophy() {
+  const { t } = useTranslation('about-us')
+
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
@@ -17,13 +23,13 @@ export default function ourPhilosophy() {
         </div>
         <div>
           <SubPageHeading2 Title="Our Responsibilities" />
-          <SubPageParagraph1 Text={t('our-philosophy:S2Content1')} />
+          <SubPageParagraph1 Text={t('S2Content1')} />
 
           <SubPageHeading2 Title="Our Aim" />
-          <SubPageParagraph1 Text={t('our-philosophy:S2Content1')} />
+          <SubPageParagraph1 Text={t('S2Content1')} />
 
           <SubPageHeading2 Title="Our Four Pillars on Substainability :" />
-          <SubPageParagraph1 Text={t('our-philosophy:S2Content1')} />
+          <SubPageParagraph1 Text={t('S2Content1')} />
           <BlueDivider />
           <div>4 Blocks</div>
         </div>
@@ -39,3 +45,9 @@ ourPhilosophy.getLayout = function getLayout(page) {
     </Layout>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'about-us'])),
+  },
+})
