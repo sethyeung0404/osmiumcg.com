@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/Buttons/*": ["components/Buttons/*"],
+      "@/Layout/*": ["components/Layout/*"],
+      "@/UI/*": ["components/UI/*"]
+    }
+  }
+}
