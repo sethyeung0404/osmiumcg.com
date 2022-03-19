@@ -344,7 +344,7 @@ export default function SideNav() {
                                       <li key={item.name} className="">
                                         <a
                                           href={item.href}
-                                          className="-m-3 flex items-start py-4 px-6 hover:bg-slate-50 hover:text-blue-600"
+                                          className="-m-3 flex items-start py-[14px] px-6 hover:bg-slate-50 hover:text-blue-600"
                                         >
                                           {t(item.name)}
                                         </a>

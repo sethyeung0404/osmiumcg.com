@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function LayoutPage({ children }) {
+export default function LayoutPage({ children, headContent, title, subtitle }) {
   return (
     <>
+      {headContent}
       {/* Banner */}
       <div className="">
         <img
@@ -32,7 +33,7 @@ export default function LayoutPage({ children }) {
         />
       </div>
 
-      <div className="mx-auto max-w-3xl p-5 text-sm lg:max-w-7xl">
+      <div className="mx-auto max-w-4xl p-5 text-sm lg:max-w-7xl">
         {/* Sitemap */}
         <div className="flex">
           <Link href="/">
@@ -41,7 +42,7 @@ export default function LayoutPage({ children }) {
             </a>
           </Link>
           <div className="">
-            &nbsp;{'>'} About Us {'>'} Overview
+            &nbsp;{'>'} {title} {'>'} {subtitle}
           </div>
         </div>
         {children}

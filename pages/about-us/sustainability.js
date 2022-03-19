@@ -13,7 +13,7 @@ export default function ourPhilosophy() {
   const { t } = useTranslation('about-us')
 
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="">
       <section className="mt-3">
         <SubPageHeading1 Title=" Sustainability" />
         <div>

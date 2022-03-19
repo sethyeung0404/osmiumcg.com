@@ -8,12 +8,13 @@ import SubPageParagraph1 from '@/UI/SubPageParagraph1'
 import SectorBlock from '@/UI/SectorBlock'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Head from 'next/head'
 
 export default function overview() {
   const { t } = useTranslation('about-us')
 
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="">
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:About')} />
         <div>
@@ -38,9 +39,22 @@ export default function overview() {
 }
 
 overview.getLayout = function getLayout(page) {
+  const { t } = useTranslation('about-us')
+
   return (
     <Layout>
-      <LayoutPage>{page}</LayoutPage>
+      <LayoutPage
+        headContent={
+          <Head>
+            <title>🥱🥱🥱</title>
+            <meta name="description" content="🥱🥱🥱" />
+          </Head>
+        }
+        title={t('common:About')}
+        subtitle={t('common:About')}
+      >
+        {page}
+      </LayoutPage>
     </Layout>
   )
 }
