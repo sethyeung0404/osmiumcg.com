@@ -14,7 +14,7 @@ export default function Home() {
   const { t } = useTranslation('index')
 
   return (
-    <main className="pt-[65px] text-center">
+    <main className="text-center">
       <HomeBanner />
 
       {/* Main Page Text */}

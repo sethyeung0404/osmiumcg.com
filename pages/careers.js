@@ -1,26 +1,26 @@
 import React from 'react'
 import Layout from '@/Layout/Layout'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Head from 'next/head'
 
-export default function careers() {
+export default function Careers() {
   return (
-    <div className="mx-auto max-w-7xl">
-      <div>
-        <div className="row">
+    <div>
+      <header className="sticky-top fixed z-50 w-full bg-slate-700 p-4">
+        <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
+          <p className="text-white text-2xl">Careers at OCG</p>
+        </div>
+      </header>
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-12">
           <div
-            className="col-12 col-md-6 col-xl-7 align-self-center"
+            className="col-span-12 self-center md:col-span-6 xl:col-span-7"
             align="center"
           >
-            <h1
-              className="my-4 text-center"
-              style={{ fontSize: '70px', lineHeight: '60px' }}
-            >
-              Careers
-            </h1>
-            <h4 style={{ letterSpacing: '0.15em' }}>Careers at OCG</h4>
-            <br />
-            <br />
+            <p className="my-4 text-center text-7xl font-bold">CAREERS</p>
           </div>
-          <div className="col-xl-5">
+          <div className="hidden md:col-span-5 md:grid">
             <div
               id="carouselExampleSlidesOnly"
               className="carousel slide"
@@ -45,6 +45,12 @@ export default function careers() {
   )
 }
 
-careers.getLayout = function getLayout(page) {
+Careers.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})

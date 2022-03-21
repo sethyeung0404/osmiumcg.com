@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <title>Osmium Consulting Group</title>
       <main>
         <SideNav />
-        {children}
+        <div className="pt-16">{children}</div>
         <Footer />
       </main>
     </>

@@ -8,6 +8,7 @@ import SubPageList1 from '@/Text/SubPageList1'
 import Divider from '@/UI/Divider'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Head from 'next/head'
 
 export default function ourPhilosophy() {
   const { t } = useTranslation('about-us')
@@ -65,9 +66,22 @@ export default function ourPhilosophy() {
 }
 
 ourPhilosophy.getLayout = function getLayout(page) {
+  const { t } = useTranslation('about-us')
+
   return (
     <Layout>
-      <LayoutPage>{page}</LayoutPage>
+      <LayoutPage
+        headContent={
+          <Head>
+            <title>OCG - Our Philosophy</title>
+            <meta name="description" content="🥱🥱🥱" />
+          </Head>
+        }
+        title={t('common:About')}
+        subtitle={t('common:Philosophy')}
+      >
+        {page}
+      </LayoutPage>
     </Layout>
   )
 }
