@@ -3,8 +3,8 @@ import Layout from '@/Layout/Layout'
 import LayoutPage from '@/Layout/LayoutPage'
 import BlueDivider from '@/UI/BlueDivider'
 import SectorBlock from '@/UI/SectorBlock'
-import SubPageHeading1 from '@/UI/SubPageHeading1'
-import SubPageHeading2 from '@/UI/SubPageHeading2'
+import SubPageHeading1 from '@/Text/SubPageHeading1'
+import SubPageHeading2 from '@/Text/SubPageHeading2'
 
 export default function recruitment() {
   let title = 'hello'

@@ -1,84 +1,76 @@
 import React from 'react'
 import Layout from '@/Layout/Layout'
 import LayoutPage from '@/Layout/LayoutPage'
-import ContactUsButton from '@/Buttons/ContactUsButton'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Head from 'next/head'
+import SubPageHeading1 from '@/Text/SubPageHeading1'
+import MapWrapper from '@/UI/MapWrapper'
+import MapDescription from '@/UI/MapDescription'
 
 export default function ContactUs() {
+  const { t } = useTranslation('common')
+
   return (
-    <div className="container">
-      {/*Contact Us */}
-      <section className="wow fadeIn mt-2">
-        {/*Grid row*/}
-        <div className="row">
-          {/*Grid column Map*/}
-          <div className="col-sm-7 text-md-left text-center">
-            {/*Google map*/}
-            <div id="map1" className="map-container"></div>
-            {/*Google Maps*/}
+    <div className="">
+      <section className="mt-3">
+        <SubPageHeading1 Title={t('Contact')} />
+
+        <div className="grid grid-cols-12 my-6">
+          <div className="col-span-7 text-center">
+            <MapWrapper />
           </div>
-          {/*Grid column Map*/}
-          {/*Grid column Contact Us*/}
-          <div className="col-sm-5 map-text bg-white pt-3">
-            {/* Heading */}
-            <div className="contact-meto-info">
-              <h4>Hong Kong Office</h4>
-              <hr />
-              <div className="pl-3">
-                <h5>Wan Chai</h5>
-                <small className="text-black-50">Office</small>
-                <p className="indigo-text">+852 3898 5500</p>
-                <small className="text-black-50">Email</small>
-                <p className="indigo-text">info@osmiumcg.com</p>
-                <small className="text-black-50">Address</small>
-                <p>
-                  1802, 18/F, Fortis Tower, 77 Gloucester Road, Wan Chai, Hong
-                  Kong
-                </p>
-              </div>
-              <ContactUsButton />
-            </div>
+          <div className="col-span-5">
+            <MapDescription
+              Country={t('HK')}
+              District={t('HKAddress2')}
+              EmailAddress="info@osmiumcg.com"
+              FullAddress={t('HKAddress')}
+            />
           </div>
         </div>
 
-        <br />
-        <br />
-
-        <div className="row">
-          {/*Grid column Map*/}
-          <div className="col-sm-7 text-md-left text-center">
-            {/*Google map*/}
-            <div id="map2" className="map-container"></div>
-            {/*Google Maps*/}
+        <div className="grid grid-cols-12 my-6">
+          <div className="col-span-7 text-center">
+            <MapWrapper />
           </div>
-          {/*Grid column Map*/}
-          {/*Grid column Contact Us*/}
-          <div className="col-sm-5 map-text bg-white pt-3">
-            {/* Heading */}
-            <div className="contact-meto-info">
-              <h4>Singapore Office</h4>
-              <hr />
-              <div className="pl-3">
-                <h5>Central Business District</h5>
-                <small className="text-black-50">Email</small>
-                <p className="indigo-text">info+sg@osmiumcg.com</p>
-                <small className="text-black-50">Address</small>
-                <p>Level 42, Six Battery Road, 049909 Singapore</p>
-              </div>
-              <ContactUsButton />
-            </div>
+          <div className="col-span-5">
+            <MapDescription
+              Country={t('SG')}
+              District={t('SGAddress2')}
+              EmailAddress="info+sg@osmiumcg.com"
+              FullAddress={t('SGAddress')}
+            />
           </div>
         </div>
-        <hr className="mt-5 mb-5" />
       </section>
     </div>
   )
 }
 
 ContactUs.getLayout = function getLayout(page) {
+  const { t } = useTranslation('common')
+
   return (
     <Layout>
-      <LayoutPage />
-      {page}
+      <LayoutPage
+        headContent={
+          <Head>
+            <title>OCG - Contact Us</title>
+            <meta name="description" content="🥱🥱🥱" />
+          </Head>
+        }
+        title={t('Contact')}
+        subtitle={t('Contact')}
+      >
+        {page}
+      </LayoutPage>
     </Layout>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})

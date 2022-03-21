@@ -18,7 +18,7 @@
 
   "Sector": "The Practice Sectors We Cover",
   "JobOpenings": "Latest Job Openings",
-  
+
   "Events": "Events",
   "Careers": "Careers",
   "Contact": "Contact Us",
@@ -36,5 +36,17 @@
   "Copyright": "Copyright",
   "OCG": "Osmium Consulting Group",
   "OCGL": "Osmium Consulting Group Limited",
-  "License": "Osmium Consulting Group Limited ( EA Licence No. 66295 )"
+  "License": "Osmium Consulting Group Limited ( EA Licence No. 66295 )",
+
+  "Office": "Office Hotline",
+  "Email": "Email",
+  "Address": "Address",
+
+  "HK": "Hong Kong Office",
+  "HKAddress": "1802, 18/F, Fortis Tower, 77 Gloucester Road, Wan Chai, Hong Kong",
+  "HKAddress2": "Wan Chai",
+
+  "SG": "Singapore Office",
+  "SGAddress": "Level 42, Six Battery Road, 049909 Singapore",
+  "SGAddress2": "Central Business District"
 }

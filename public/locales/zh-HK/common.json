@@ -23,9 +23,9 @@
   "Careers": "加入我們！",
   "Contact": "聯絡我們",
 
-  "SignIn": "登入",
-
   "ViewMore": "查看更多",
+
+  "SignIn": "登入",
 
   "Language": "其他語言",
   "Facebook": "Facebook",
@@ -36,5 +36,17 @@
   "Copyright": "",
   "OCG": "OCG 奧氏策略顧問 版權所有",
   "OCGL": "奧氏策略顧問有限公司",
-  "License": "奧氏策略顧問有限公司 ( 招聘牌照號碼 66295 )"
+  "License": "奧氏策略顧問有限公司 ( 招聘牌照號碼 66295 )",
+  
+	"Office": "辦公室電話",
+	"Email": "電郵",
+	"Address": "地址",
+
+  "HK": "香港辦事處",
+  "HKAddress": "香港 灣仔告士打道77號富通大廈18樓1802室",
+	"HKAddress2": "灣仔",
+
+	"SG": "新加坡辦事處",
+  "SGAddress": "新加坡 百得利路6號42樓, 郵遞區號049909",
+  "SGAddress2": "中央商業區 CBD"
 }

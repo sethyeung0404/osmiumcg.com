@@ -1,6 +1,6 @@
 import Layout from '@/Layout/Layout'
 import Image from 'next/image'
-import HomePageSectionTitle from '@/UI/HomePageSectionTitle'
+import HomePageSectionTitle from '@/Text/HomePageSectionTitle'
 import BlueDivider from '@/UI/BlueDivider'
 import HomeBanner from '@/UI/HomeBanner'
 import JobSlot from '@/UI/JobSlot'

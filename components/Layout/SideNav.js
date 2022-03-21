@@ -291,17 +291,15 @@ export default function SideNav() {
 
               {/* Logo */}
               <div
-                className="absolute left-1/2 flex -translate-x-1/2 
-              lg:static lg:left-0 lg:translate-x-0"
+                className="absolute left-1/2 flex h-12 
+              w-32 -translate-x-1/2 lg:static lg:left-0 lg:translate-x-0"
               >
                 <Link href="/">
                   <a className="inline-flex">
                     <Image
                       src="/img/nav/logo.png"
                       alt="OCG Logo"
-                      width={128}
-                      height={48}
-                      layout="fixed"
+                      layout="fill"
                     />
                   </a>
                 </Link>

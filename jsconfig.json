@@ -5,7 +5,8 @@
       "@/components/*": ["components/*"],
       "@/Buttons/*": ["components/Buttons/*"],
       "@/Layout/*": ["components/Layout/*"],
-      "@/UI/*": ["components/UI/*"]
+      "@/UI/*": ["components/UI/*"],
+      "@/Text/*": ["components/Text/*"]
     }
   }
 }

@@ -4,7 +4,7 @@ import LayoutPage from '@/Layout/LayoutPage'
 import ConsultantCarousel from '@/UI/ConsultantCarousel'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import SubPageHeading1 from '@/UI/SubPageHeading1'
+import SubPageHeading1 from '@/Text/SubPageHeading1'
 
 export default function tmt() {
   const { t } = useTranslation('specialization')
