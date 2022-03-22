@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '@/Layout/Layout'
 import LayoutPage from '@/Layout/LayoutPage'
-import BlueDivider from '@/UI/BlueDivider'
-import SectorBlock from '@/UI/SectorBlock'
+import SubPageList1 from '@/components/Text/SubPageList1'
 import SubPageHeading1 from '@/Text/SubPageHeading1'
-import SubPageHeading2 from '@/Text/SubPageHeading2'
+import SubPageHeading3 from '@/Text/SubPageHeading3'
+import SubPageImage1 from '@/components/UI/SubPageImage1'
+import SubPageParagraph2 from '@/components/Text/SubPageParagraph2'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
@@ -16,7 +17,35 @@ export default function recruitment() {
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:Recruitment')} />
-        <div class="col-md-12 mb-4">{/* Content */}</div>
+        <div class="my-6 ">
+          <SubPageImage1 href="/img/pages/solutions/r1.webp" name="r1" />
+          <div className="">
+            <SubPageHeading3 Title={t('RTitle1')} />
+            <SubPageParagraph2 Text={t('R1Content1')} />
+          </div>
+        </div>
+        <div class="my-6">
+          <SubPageImage1 href="/img/pages/solutions/r2.webp" name="r2" />
+          <div className="">
+            <SubPageHeading3 Title={t('RTitle2')} />
+            <SubPageParagraph2 Text={t('R2Content1')} />
+            <SubPageParagraph2 Text={t('R2Content2')} />
+          </div>
+        </div>
+        <div class="my-6 ">
+          <SubPageImage1 href="/img/pages/solutions/r3.webp" name="r3" />
+          <div className="">
+            <SubPageHeading3 Title={t('RTitle3')} />
+            <SubPageParagraph2 Text={t('R3Content1')} />
+            <SubPageParagraph2 Text={t('R3Content2')} />
+            <SubPageParagraph2 Text={t('R3Content3')} />
+            <ul className="list-disc pt-0">
+              <SubPageList1 Text={t('R3List1')} />
+              <SubPageList1 Text={t('R3List2')} />
+              <SubPageList1 Text={t('R3List3')} />
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   )
@@ -34,7 +63,7 @@ recruitment.getLayout = function getLayout(page) {
         </Head>
       }
     >
-      <LayoutPage title={t('About')} subtitle={t('Recruitment')}>
+      <LayoutPage title={t('Solutions')} subtitle={t('Recruitment')}>
         {page}
       </LayoutPage>
     </Layout>

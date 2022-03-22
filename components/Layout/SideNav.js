@@ -297,7 +297,7 @@ export default function SideNav() {
                 <Link href="/">
                   <a className="inline-flex">
                     <Image
-                      src="/img/nav/logo.png"
+                      src="/img/pages/nav/logo.png"
                       alt="OCG Logo"
                       layout="fill"
                     />

@@ -6,6 +6,7 @@ function JobSlot() {
     <>
       {Jobs.map((item) => (
         <div
+          key={item.id}
           style={{ fontFamily: 'Roboto' }}
           className="max-w-sm overflow-hidden rounded-md bg-white px-6 py-8 text-left hover:shadow-xl "
         >

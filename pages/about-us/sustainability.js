@@ -7,9 +7,9 @@ import SubPageHeading2 from '@/Text/SubPageHeading2'
 import SubPageParagraph1 from '@/Text/SubPageParagraph1'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Head from 'next/head'
 
-
-export default function ourPhilosophy() {
+export default function substainability() {
   const { t } = useTranslation('about-us')
 
   return (
