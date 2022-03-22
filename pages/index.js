@@ -92,10 +92,10 @@ export default function Home() {
           <BlueDivider center="true" />
         </div>
         <div className="flex items-center justify-center px-5">
-          <Image width={200} height={200} src="/img/pages/index/awards/gec2020.webp" />
-          <Image width={200} height={200} src="/img/pages/index/awards/ffge2020.webp" />
+          <Image width={200} height={200} src="/img/pages/index/awards/gec2020.webp" alt="GEC Award"/>
+          <Image width={200} height={200} src="/img/pages/index/awards/ffge2020.webp" alt="FFGE Award"/>
           <div className="fill-current">
-            <Image width={380} height={150} src="/img/pages/index/awards/EOELogo-F.webp" />
+            <Image width={380} height={150} src="/img/pages/index/awards/EOELogo-F.webp" alt="EOE Award"/>
           </div>
         </div>
       </section>

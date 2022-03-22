@@ -17,9 +17,9 @@ export default function substainability() {
       <section className="mt-3">
         <SubPageHeading1 Title=" Sustainability" />
         <div>
-          Sustainable Development is defined as "development that meets the
+          {/* Sustainable Development is defined as "development that meets the
           needs of the present without compromising the ability of future
-          generations to meet their own needs"
+          generations to meet their own needs" */}
         </div>
         <div>
           <SubPageHeading2 Title="Our Responsibilities" />

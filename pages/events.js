@@ -14,12 +14,14 @@ export default function Events() {
           height={2481}
           width={1755}
           layout="responsive"
+          alt="Case Comp 2022 Brief Intro"
         />
         <Image
           src="/img/pages/events/casecomp2022details.jpg"
           height={2481}
           width={1755}
           layout="responsive"
+          alt="Case Comp 2022 Details"
         />
       </div>
     </div>

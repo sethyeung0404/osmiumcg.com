@@ -18,7 +18,7 @@ export default function recruitment() {
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:Recruitment')} />
 
-        <div class="align-center my-6 flex flex-col items-center sm:flex-row">
+        <div className="align-center my-6 flex flex-col items-center sm:flex-row">
           <SubPageImage1 href="/img/pages/solutions/r1.webp" name="r1" />
           <div className=" basis-full  md:basis-1/2">
             <SubPageHeading3 Title={t('RTitle1')} />
@@ -26,7 +26,7 @@ export default function recruitment() {
           </div>
         </div>
 
-        <div class="align-center my-6 flex flex-col items-center sm:flex-row-reverse">
+        <div className="align-center my-6 flex flex-col items-center sm:flex-row-reverse">
           <SubPageImage1 href="/img/pages/solutions/r2.webp" name="r2" />
           <div className="basis-full sm:basis-1/2">
             <SubPageHeading3 Title={t('RTitle2')} />
@@ -35,7 +35,7 @@ export default function recruitment() {
           </div>
         </div>
 
-        <div class="align-center my-6 flex flex-col items-center sm:flex-row">
+        <div className="align-center my-6 flex flex-col items-center sm:flex-row">
           <SubPageImage1 href="/img/pages/solutions/r3.webp" name="r3" />
           <div className="basis-full md:basis-1/2">
             <SubPageHeading3 Title={t('RTitle3')} />

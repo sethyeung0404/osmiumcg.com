@@ -3,13 +3,13 @@ import Layout from '@/Layout/Layout'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-
+import Image from 'next/image'
 export default function Careers() {
   return (
     <div>
       <header className="sticky-top fixed z-20 w-full bg-slate-700 p-4">
         <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
-          <p className="text-white text-2xl">Careers at OCG</p>
+          <p className="text-2xl text-white">Careers at OCG</p>
         </div>
       </header>
       <div className="mx-auto max-w-7xl">
@@ -29,11 +29,12 @@ export default function Careers() {
               <div className="carousel-inner">
                 {/*--Copy this if there are more photos in future-->*/}
                 <div className="carousel-item active">
-                  <img
+                  <Image
                     src="/img/joinus/Careers.jpg"
                     alt="Office View"
-                    width="100%"
-                    style={{ maxHeight: '650px' }}
+                    height={650}
+                    width={100}
+                    layout="responsive"
                   />
                 </div>
               </div>

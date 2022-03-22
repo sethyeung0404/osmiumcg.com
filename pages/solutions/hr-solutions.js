@@ -16,7 +16,7 @@ export default function hrSolutions() {
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:HR')} />
-        <div class="col-md-12 mb-4">{/* Content */}</div>
+        <div className="col-md-12 mb-4">{/* Content */}</div>
       </section>
     </div>
   )
