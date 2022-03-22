@@ -7,7 +7,7 @@ import Head from 'next/head'
 export default function Careers() {
   return (
     <div>
-      <header className="sticky-top fixed z-50 w-full bg-slate-700 p-4">
+      <header className="sticky-top fixed z-20 w-full bg-slate-700 p-4">
         <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
           <p className="text-white text-2xl">Careers at OCG</p>
         </div>

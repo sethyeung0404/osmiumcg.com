@@ -26,17 +26,15 @@ hrSolutions.getLayout = function getLayout(page) {
   const { t } = useTranslation('common')
 
   return (
-    <Layout>
-      <LayoutPage
-        headContent={
-          <Head>
-            <title>OCG - HR Solutions</title>
-            <meta name="description" content="🥱🥱🥱" />
-          </Head>
-        }
-        title={t('About')}
-        subtitle={t('HR')}
-      >
+    <Layout
+      headContent={
+        <Head>
+          <title>OCG - HR Solutions</title>
+          <meta name="description" content="🥱🥱🥱" />
+        </Head>
+      }
+    >
+      <LayoutPage title={t('About')} subtitle={t('HR')}>
         {page}
       </LayoutPage>
     </Layout>

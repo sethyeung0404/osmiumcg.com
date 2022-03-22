@@ -26,17 +26,15 @@ performanceManagement.getLayout = function getLayout(page) {
   const { t } = useTranslation('common')
 
   return (
-    <Layout>
-      <LayoutPage
-        headContent={
-          <Head>
-            <title>OCG - Performance Management</title>
-            <meta name="description" content="🥱🥱🥱" />
-          </Head>
-        }
-        title={t('About')}
-        subtitle={t('Performance')}
-      >
+    <Layout
+      headContent={
+        <Head>
+          <title>OCG - Performance Management</title>
+          <meta name="description" content="🥱🥱🥱" />
+        </Head>
+      }
+    >
+      <LayoutPage title={t('About')} subtitle={t('Performance')}>
         {page}
       </LayoutPage>
     </Layout>

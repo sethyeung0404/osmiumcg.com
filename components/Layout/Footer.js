@@ -10,7 +10,7 @@ export default function footer() {
 
   return (
     <footer className="mt-5 bg-gray-100 text-xs text-slate-500">
-      <div className="mx-auto max-w-4xl px-5 lg:max-w-7xl leading-5">
+      <div className="mx-auto max-w-4xl px-5 leading-5 lg:max-w-7xl">
         <div className="flex items-center justify-center gap-2 p-3 text-center">
           {/* Facebook Icons*/}
           <Link href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/">
@@ -27,7 +27,7 @@ export default function footer() {
             </a>
           </Link>
           {/* LinkedIn Icons*/}
-          <Link href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/">
+          <Link href="https://www.linkedin.com/company/osmium-consulting-group">
             <a
               className="h-9 w-9 rounded-full border-2 border-white text-base text-linkedin-blue transition  duration-150 ease-in-out
                hover:bg-black hover:bg-opacity-5 hover:text-gray-500 focus:outline-none focus:ring-0"
@@ -71,7 +71,7 @@ export default function footer() {
         </div>
       </div>
 
-      <div className="mx-auto grid max-w-4xl px-5 lg:max-w-7xl grid-cols-1 pb-6 leading-5 text-slate-500">
+      <div className="mx-auto grid max-w-4xl grid-cols-1 px-5 pb-6 leading-5 text-slate-500 lg:max-w-7xl">
         {/*Copyright*/}
         <div className="border-b-2 border-slate-300">
           Looking for Recruiters? Find a Consultant by Calling (852) 3898 5500

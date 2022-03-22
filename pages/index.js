@@ -9,6 +9,7 @@ import HomePageContactUsButton from '@/Buttons/HomePageContactUsButton'
 import RoundButton from '@/Buttons/RoundButton'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Link from 'next/link'
 
 export default function Home() {
   const { t } = useTranslation('index')
@@ -22,29 +23,29 @@ export default function Home() {
         id="main_page_text"
         className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
       >
-        <div className="">
-          <h1 className="text-[40px] font-bold">{t('mainTextTitle')}</h1>
-          <p className="text-justify text-base">{t('mainTextContent')}</p>
+        <div className="m-4 mx-auto max-w-4xl xl:max-w-7xl">
+          <p className="pb-4 text-[40px] font-bold leading-tight">
+            {t('mainTextTitle')}
+          </p>
+          <p className="text-justify text-lg">{t('mainTextContent')}</p>
         </div>
       </section>
 
       {/* Section: Intro */}
-      <section id="intro_black" className="my-2 bg-black p-5 text-white">
+      {/* Do it like a pop up later -> tbc */}
+      <section id="intro_black" className="my-2 bg-black px-8 text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between p-5 text-left">
           <div>
-            <p>{t('s2a')}</p>
-            <br />
-            <p>
+            <p className="pb-4 text-xl">{t('s2a')}</p>
+            <p className="text-base">
               {t('s2b')}
-              <a href="https://www.linkedin.com/company/osmium-consulting-group">
-                <u>{t('s2button1')}</u>
-              </a>
+              <Link href="https://www.linkedin.com/company/osmium-consulting-group">
+                <a className="underline">{t('s2button1')}</a>
+              </Link>
               &nbsp;{t('s2c')}
             </p>
           </div>
-          <div>
-            <HomePageContactUsButton text={t('s2button2')} />
-          </div>
+          <HomePageContactUsButton text={t('s2button2')} />
         </div>
       </section>
 
@@ -66,16 +67,15 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-3 gap-5">
             <JobSlot />
-            <JobSlot />
-            <JobSlot />
           </div>
-          <div className="mt-2">
+          <div className="mt-5">
             <RoundButton />
           </div>
         </div>
       </section>
 
-      {/* Articles */}
+      {/* tbc.. no time */}
+      {/* Articles 
       <section id="home_article" className="my-2 p-5">
         <div className="grid grid-cols-1">
           <HomePageSectionTitle Title={t('Articles')} />
@@ -83,6 +83,7 @@ export default function Home() {
         </div>
         <div>Articles *9</div>
       </section>
+      */}
 
       {/* Awards */}
       <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">
@@ -91,10 +92,10 @@ export default function Home() {
           <BlueDivider center="true" />
         </div>
         <div className="flex items-center justify-center px-5">
-          <Image width={200} height={200} src="/img/awards/gec2020.webp" />
-          <Image width={200} height={200} src="/img/awards/ffge2020.webp" />
+          <Image width={200} height={200} src="/img/pages/index/awards/gec2020.webp" />
+          <Image width={200} height={200} src="/img/pages/index/awards/ffge2020.webp" />
           <div className="fill-current">
-            <Image width={380} height={150} src="/img/awards/EOELogo-F.webp" />
+            <Image width={380} height={150} src="/img/pages/index/awards/EOELogo-F.webp" />
           </div>
         </div>
       </section>

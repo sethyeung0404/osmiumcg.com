@@ -38,10 +38,21 @@ export default function ourPhilosophy() {
   )
 }
 
-ourPhilosophy.getLayout = function getLayout(page) {
+substainability.getLayout = function getLayout(page) {
+  const { t } = useTranslation('common')
+
   return (
-    <Layout>
-      <LayoutPage>{page}</LayoutPage>
+    <Layout
+      headContent={
+        <Head>
+          <title>OCG - Substainability</title>
+          <meta name="description" content="🥱🥱🥱" />
+        </Head>
+      }
+    >
+      <LayoutPage title={t('About')} subtitle={t('Substainability')}>
+        {page}
+      </LayoutPage>
     </Layout>
   )
 }

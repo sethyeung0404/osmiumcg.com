@@ -39,20 +39,18 @@ export default function overview() {
 }
 
 overview.getLayout = function getLayout(page) {
-  const { t } = useTranslation('about-us')
+  const { t } = useTranslation('common')
 
   return (
-    <Layout>
-      <LayoutPage
-        headContent={
-          <Head>
-            <title>OCG - Overview</title>
-            <meta name="description" content="🥱🥱🥱" />
-          </Head>
-        }
-        title={t('common:About')}
-        subtitle={t('common:About')}
-      >
+    <Layout
+      headContent={
+        <Head>
+          <title>OCG - Overview</title>
+          <meta name="description" content="🥱🥱🥱" />
+        </Head>
+      }
+    >
+      <LayoutPage title={t('About')} subtitle={t('Overview')}>
         {page}
       </LayoutPage>
     </Layout>

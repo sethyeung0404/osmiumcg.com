@@ -3,10 +3,10 @@ import SideNav from './SideNav'
 import Footer from './Footer'
 import Script from 'next/script'
 
-export default function Layout({ children }) {
+export default function Layout({ children, headContent }) {
   return (
     <>
-      <title>Osmium Consulting Group</title>
+      {headContent}
       <main>
         <SideNav />
         <div className="pt-16">{children}</div>

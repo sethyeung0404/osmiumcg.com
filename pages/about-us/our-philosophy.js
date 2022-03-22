@@ -9,7 +9,7 @@ import Divider from '@/UI/Divider'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-
+import EURAnimation from '@/components/UI/EURAnimation'
 export default function ourPhilosophy() {
   const { t } = useTranslation('about-us')
 
@@ -17,7 +17,7 @@ export default function ourPhilosophy() {
     <div className="">
       <section className="mt-3">
         <SubPageHeading1 Title=" Our Philosophy" />
-        <div>Animation EUR - tbc</div>
+        <EURAnimation />
         <SubPageHeading1 Title=" Our Methodlogy" />
         <div>
           <SubPageHeading2 Title={t('Step1')} />
@@ -66,20 +66,18 @@ export default function ourPhilosophy() {
 }
 
 ourPhilosophy.getLayout = function getLayout(page) {
-  const { t } = useTranslation('about-us')
+  const { t } = useTranslation('common')
 
   return (
-    <Layout>
-      <LayoutPage
-        headContent={
-          <Head>
-            <title>OCG - Our Philosophy</title>
-            <meta name="description" content="🥱🥱🥱" />
-          </Head>
-        }
-        title={t('common:About')}
-        subtitle={t('common:Philosophy')}
-      >
+    <Layout
+      headContent={
+        <Head>
+          <title>OCG - Our Philosophy</title>
+          <meta name="description" content="🥱🥱🥱" />
+        </Head>
+      }
+    >
+      <LayoutPage title={t('About')} subtitle={t('Philosophy')}>
         {page}
       </LayoutPage>
     </Layout>
