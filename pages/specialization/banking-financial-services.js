@@ -6,7 +6,7 @@ import SubPageHeading1 from '@/Text/SubPageHeading1'
 import SubPageHeading2 from '@/Text/SubPageHeading2'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
+import Head from 'next/head'
 export default function bfs() {
   const { t } = useTranslation('specialization')
 

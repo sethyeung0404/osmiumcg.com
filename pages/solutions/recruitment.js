@@ -17,24 +17,27 @@ export default function recruitment() {
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:Recruitment')} />
-        <div class="my-6 ">
+
+        <div class="align-center my-6 flex flex-col items-center sm:flex-row">
           <SubPageImage1 href="/img/pages/solutions/r1.webp" name="r1" />
-          <div className="">
+          <div className=" basis-full  md:basis-1/2">
             <SubPageHeading3 Title={t('RTitle1')} />
             <SubPageParagraph2 Text={t('R1Content1')} />
           </div>
         </div>
-        <div class="my-6">
+
+        <div class="align-center my-6 flex flex-col items-center sm:flex-row-reverse">
           <SubPageImage1 href="/img/pages/solutions/r2.webp" name="r2" />
-          <div className="">
+          <div className="basis-full sm:basis-1/2">
             <SubPageHeading3 Title={t('RTitle2')} />
             <SubPageParagraph2 Text={t('R2Content1')} />
             <SubPageParagraph2 Text={t('R2Content2')} />
           </div>
         </div>
-        <div class="my-6 ">
+
+        <div class="align-center my-6 flex flex-col items-center sm:flex-row">
           <SubPageImage1 href="/img/pages/solutions/r3.webp" name="r3" />
-          <div className="">
+          <div className="basis-full md:basis-1/2">
             <SubPageHeading3 Title={t('RTitle3')} />
             <SubPageParagraph2 Text={t('R3Content1')} />
             <SubPageParagraph2 Text={t('R3Content2')} />
