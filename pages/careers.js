@@ -42,7 +42,7 @@ export default function Careers() {
             />
           </div>
         </div>
-        <div className="mx-auto max-w-7xl pt-20">
+        <div className="mx-4 max-w-7xl pt-20 xl:mx-auto">
           <InhouseJobs />
         </div>
         {/* Search with Pagination */}
