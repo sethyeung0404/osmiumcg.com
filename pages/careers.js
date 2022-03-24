@@ -3,44 +3,50 @@ import Layout from '@/Layout/Layout'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
+import InhouseJobs from '@/components/UI/InhouseJobs'
+import { SearchIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
+
 export default function Careers() {
+  const onSearch = (value) => console.log(value)
+
   return (
     <div>
-      <header className="sticky-top fixed z-20 w-full bg-slate-700 p-4">
-        <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
-          <p className="text-2xl text-white">Careers at OCG</p>
-        </div>
-      </header>
-      <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-12">
-          <div
-            className="col-span-12 self-center md:col-span-6 xl:col-span-7"
-            align="center"
-          >
-            <p className="my-4 text-center text-7xl font-bold">CAREERS</p>
+      {/* Main */}
+      <div className="mx-2 max-w-7xl md:mx-2 xl:mx-auto">
+        <section className="relative ">
+          <Image
+            className="-z-10"
+            layout="fill"
+            src="/img/pages/careers/rectangle-orange-1.svg"
+            alt="Orange Background"
+            objectFit="cover"
+            quality={100}
+          />
+          <div className="z-50 py-28 px-10 font-semibold md:py-32 lg:py-36">
+            <p className="text-5xl">All aboard!</p>
+            <br />
+            <p className="text-4xl">Join us at OCG.</p>
           </div>
-          <div className="hidden md:col-span-5 md:grid">
-            <div
-              id="carouselExampleSlidesOnly"
-              className="carousel slide"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-                {/*--Copy this if there are more photos in future-->*/}
-                <div className="carousel-item active">
-                  <Image
-                    src="/img/joinus/Careers.jpg"
-                    alt="Office View"
-                    height={650}
-                    width={100}
-                    layout="responsive"
-                  />
-                </div>
-              </div>
-            </div>
+        </section>
+        {/* Heading */}
+        <div className="pt-8 text-center">
+          <p className="text-3xl font-extrabold">搜尋最適合你的職位</p>
+
+          <div className="my-6 mx-6 flex max-w-4xl items-center rounded-lg border-2 border-gray-300 bg-gray-100 p-4 md:mx-8 md:p-5 lg:mx-auto">
+            <SearchIcon className="h-7 text-gray-600 md:h-9 lg:h-10" />
+            <input
+              className="ml-3 flex flex-shrink items-center bg-transparent text-lg placeholder-gray-400 outline-none md:ml-6 md:text-xl lg:text-2xl"
+              type="text"
+              placeholder="以職位或關鍵字搜尋"
+            />
           </div>
         </div>
+        <div className="mx-auto max-w-7xl pt-20">
+          <InhouseJobs />
+        </div>
+        {/* Search with Pagination */}
+        {/* Disclaimer */}
       </div>
     </div>
   )

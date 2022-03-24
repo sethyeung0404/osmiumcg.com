@@ -6,10 +6,7 @@ export default function RoundButton() {
 
   return (
     <div>
-      <button
-        className="rounded-full bg-purple-blue
-      py-3 px-5 font-bold text-white hover:bg-blue-800"
-      >
+      <button className="cursor-pointer rounded-full bg-purple-blue py-3 px-5 font-bold text-white hover:bg-blue-800">
         {t('ViewMore')}
       </button>
     </div>

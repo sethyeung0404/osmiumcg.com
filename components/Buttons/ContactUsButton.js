@@ -6,10 +6,7 @@ export default function ContactUsButton() {
 
   return (
     <div>
-      <h1
-        className="rounded-full bg-purple-blue
-      py-3 px-5 font-bold text-white hover:bg-blue-800"
-      >
+      <h1 className="cursor-pointer rounded-full bg-purple-blue py-3 px-5 font-bold text-white hover:bg-blue-800">
         {t('Contact')}
       </h1>
     </div>
