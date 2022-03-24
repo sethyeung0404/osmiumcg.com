@@ -6,14 +6,13 @@ export default function LayoutPage({ children, title, subtitle }) {
   return (
     <>
       {/* Banner */}
-      <div className="">
+      <div className="mx-auto max-w-max">
         <div className="md:hidden">
           <Image
             src="/img/layout/layout-600x300.webp"
             height={300}
             width={600}
             alt="Layout Banner Small"
-            layout="responsive"
           />
         </div>
         <div className="hidden md:inline-flex lg:hidden">
@@ -22,7 +21,6 @@ export default function LayoutPage({ children, title, subtitle }) {
             height={200}
             width={900}
             alt="Layout Banner Medium"
-            layout="responsive"
           />
         </div>
         <div className="hidden lg:inline-flex xl:hidden">
@@ -31,7 +29,6 @@ export default function LayoutPage({ children, title, subtitle }) {
             height={250}
             width={1400}
             alt="Layout Banner Large"
-            layout="responsive"
           />
         </div>
         <div className="hidden xl:inline-flex">
@@ -40,7 +37,6 @@ export default function LayoutPage({ children, title, subtitle }) {
             width={2000}
             src="/img/layout/layout-2000x250.webp"
             alt="Layout Banner Extralarge"
-            layout="responsive"
           />
         </div>
       </div>
