@@ -4,38 +4,42 @@ import Image from 'next/image'
 function HomeBanner() {
   return (
     <div className="mx-auto max-w-max">
-      {/* sm:639px src="img/pages/index/HomeBanner-600x500.webp" */}
-      <img
-        className="md:hidden"
-        src="https://dummyimage.com/767x400/000/fff"
-        alt="HomeBanner"
-        height="400px"
-        width="auto"
-      />
-      {/* md:767px src="img/pages/index/HomeBanner-800x500.webp"*/}
-      <img
-        className="hidden md:flex lg:hidden"
-        src="https://dummyimage.com/1023x400/000/fff"
-        alt="HomeBanner"
-        height="400px"
-        width="auto"
-      />
+      {/* sm:639px */}
+      <div className="md:hidden">
+        <Image
+          src="/img/pages/index/HomeBanner-600x500.webp"
+          alt="HomeBanner small"
+          height={500}
+          width={600}
+        />
+      </div>
+      {/* md:767px */}
+      <div className="hidden md:flex lg:hidden">
+        <Image
+          src="/img/pages/index/HomeBanner-800x500.webp"
+          alt="HomeBanner medium"
+          height={500}
+          width={800}
+        />
+      </div>
       {/* lg:1023px */}
-      <img
-        className="hidden lg:flex xl:hidden"
-        src="img/pages/index/HomeBanner-1400x500.webp"
-        alt="HomeBanner"
-        height="400px"
-        width="auto"
-      />
+      <div className="hidden lg:flex xl:hidden">
+        <Image
+          src="/img/pages/index/HomeBanner-1400x500.webp"
+          alt="HomeBanner large"
+          height={500}
+          width={1400}
+        />
+      </div>
       {/* xl:1279px */}
-      <img
-        className="hidden justify-self-auto xl:flex"
-        src="img/pages/index/HomeBanner-2000x500.webp"
-        alt="HomeBanner"
-        height="400px"
-        width="auto"
-      />
+      <div className="hidden justify-self-auto xl:flex">
+        <Image
+          src="/img/pages/index/HomeBanner-2000x500.webp"
+          alt="HomeBanner extralarge"
+          height={500}
+          width={2000}
+        />
+      </div>
     </div>
   )
 }

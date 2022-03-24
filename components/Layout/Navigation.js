@@ -26,10 +26,10 @@ export const navigation = {
       name: 'Specialization',
       items: [
         {
-          name: 'BFS',
-          href: '/specialization/banking-financial-services',
+          name: 'FDFS',
+          href: '/specialization/financial-services',
         },
-        { name: 'TMT', href: '/specialization/tmt' },
+        { name: 'TBCG', href: '/specialization/technology' },
       ],
     },
   ],

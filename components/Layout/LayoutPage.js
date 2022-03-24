@@ -1,35 +1,48 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LayoutPage({ children, title, subtitle }) {
   return (
     <>
       {/* Banner */}
       <div className="">
-        <img
-          className="md:hidden"
-          src="/img/layout/layout-600x300.webp"
-          alt="LayoutBanner"
-          layout="responsive"
-        />
-        <img
-          className="hidden md:inline-flex lg:hidden"
-          src="/img/layout/layout-900x200.webp"
-          alt="HomeBanner"
-          layout="responsive"
-        />
-        <img
-          className="hidden lg:inline-flex xl:hidden"
-          src="/img/layout/layout-1400x250.webp"
-          alt="HomeBanner"
-          layout="responsive"
-        />
-        <img
-          className="hidden xl:inline-flex"
-          src="/img/layout/layout-2000x250.webp"
-          alt="HomeBanner"
-          layout="responsive"
-        />
+        <div className="md:hidden">
+          <Image
+            src="/img/layout/layout-600x300.webp"
+            height={300}
+            width={600}
+            alt="Layout Banner Small"
+            layout="responsive"
+          />
+        </div>
+        <div className="hidden md:inline-flex lg:hidden">
+          <Image
+            src="/img/layout/layout-900x200.webp"
+            height={200}
+            width={900}
+            alt="Layout Banner Medium"
+            layout="responsive"
+          />
+        </div>
+        <div className="hidden lg:inline-flex xl:hidden">
+          <Image
+            src="/img/layout/layout-1400x250.webp"
+            height={250}
+            width={1400}
+            alt="Layout Banner Large"
+            layout="responsive"
+          />
+        </div>
+        <div className="hidden xl:inline-flex">
+          <Image
+            height={250}
+            width={2000}
+            src="/img/layout/layout-2000x250.webp"
+            alt="Layout Banner Extralarge"
+            layout="responsive"
+          />
+        </div>
       </div>
 
       <div className="mx-auto max-w-4xl p-5 text-sm lg:max-w-7xl">

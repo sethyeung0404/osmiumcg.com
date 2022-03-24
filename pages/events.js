@@ -9,20 +9,24 @@ export default function Events() {
   return (
     <div className="mx-auto max-w-7xl">
       <div className="grid grid-cols-2 gap-12">
-        <Image
-          src="/img/pages/events/casecomp2022.jpg"
-          height={2481}
-          width={1755}
-          layout="responsive"
-          alt="Case Comp 2022 Brief Intro"
-        />
-        <Image
-          src="/img/pages/events/casecomp2022details.jpg"
-          height={2481}
-          width={1755}
-          layout="responsive"
-          alt="Case Comp 2022 Details"
-        />
+        <div className="col-span-2 md:col-span-1">
+          <Image
+            src="/img/pages/events/casecomp2022.jpg"
+            height={2481}
+            width={1755}
+            layout="responsive"
+            alt="Case Comp 2022 Brief Intro"
+          />
+        </div>
+        <div className="col-span-2 md:col-span-1">
+          <Image
+            src="/img/pages/events/casecomp2022details.jpg"
+            height={2481}
+            width={1755}
+            layout="responsive"
+            alt="Case Comp 2022 Details"
+          />
+        </div>
       </div>
     </div>
   )
