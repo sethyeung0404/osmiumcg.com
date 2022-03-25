@@ -1,12 +1,31 @@
-# Next.js + Tailwind CSS Example
+# Next.js + Tailwind CSS Company Website
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Dependencies installed:
+    "@fortawesome/fontawesome-svg-core": "^6.1.0",
+    "@fortawesome/free-brands-svg-icons": "^6.1.0",
+    "@fortawesome/free-regular-svg-icons": "^6.1.0",
+    "@fortawesome/free-solid-svg-icons": "^6.1.0",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "@next/bundle-analyzer": "^12.1.0",
+    "next": "lastest",
+    "next-i18next": "^10.5.0",
+    "postcss-preset-env": "^7.4.3",
+    "react": "lastest",
+    "react-dom": "lastest",
+    "react-fontawesome": "^1.7.1"
+    "autoprefixer": "^10.4.4",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.0",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "tailwindcss": "^3.0.23"
 
 ## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Preview the example live on [Vercel](http://osmiumcg-com.vercel.app/):
 
 ## Deploy your own
 
@@ -21,5 +40,3 @@ Execute [`npm run dev`] to open the proejct
 ```bash
 npm run dev
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

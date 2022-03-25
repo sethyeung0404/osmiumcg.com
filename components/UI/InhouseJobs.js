@@ -4,6 +4,7 @@ import { Switch } from '@headlessui/react'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LearnMoreButton from '@/Buttons/LearnMoreButton'
+import { useTranslation } from 'next-i18next'
 
 export default function InhouseJobs() {
   const [open, setOpen] = useState(true)
@@ -12,12 +13,14 @@ export default function InhouseJobs() {
   const [isFDFS, setIsFDFS] = useState(false)
   const [isTBCG, setIsTBCG] = useState(false)
 
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="grid grid-cols-7">
         <div className="col-span-7 md:col-span-2">
           <p className="flex w-full justify-between py-4 pr-2 text-left text-2xl">
-            按以下條件篩選
+            {t('careers.Filter')}
           </p>
           <div className="mx-2 my-4">
             <div className="border-b-[1px] border-t-[1px]">
@@ -227,3 +230,9 @@ export default function InhouseJobs() {
     </>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'careers'])),
+  },
+})
