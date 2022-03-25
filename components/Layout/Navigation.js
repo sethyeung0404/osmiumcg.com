@@ -47,12 +47,12 @@ export const language = [
     locale: 'en-US',
   },
   {
-    name: '繁体中文',
+    name: '繁體中文',
     href: '*',
     locale: 'zh-HK',
   },
   {
-    name: '简體中文',
+    name: '简体中文',
     href: '*',
     locale: 'zh-CN',
   },
