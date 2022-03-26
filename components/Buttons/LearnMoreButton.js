@@ -6,11 +6,11 @@ export default function LearnMoreButton({ href }) {
   const { t } = useTranslation('common')
 
   return (
-    <div>
+    <div className="m-2 min-w-max">
       <button className="cursor-pointer rounded-lg bg-slate-400 py-2 px-4 font-bold text-white hover:bg-purple-blue">
-        <Link href={href}>
-          <a>Learn More</a>
-        </Link>
+        <a target="_blank" href={href} rel="noreferrer">
+          Learn More
+        </a>
       </button>
     </div>
   )

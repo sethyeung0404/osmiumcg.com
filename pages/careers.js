@@ -7,7 +7,7 @@ import InhouseJobs from '@/components/UI/InhouseJobs'
 import { SearchIcon } from '@heroicons/react/outline'
 import CareersBanner from '@/components/UI/CareersBanner'
 export default function Careers() {
-  const { t } = useTranslation()
+  const { t } = useTranslation('careers')
 
   return (
     <div>
@@ -16,14 +16,14 @@ export default function Careers() {
         <CareersBanner />
         {/* Heading */}
         <div className="pt-8 text-center">
-          <p className="text-3xl font-extrabold">{t('careers.heading')}</p>
+          <p className="text-3xl font-extrabold">{t('Heading')}</p>
 
           <div className="my-6 mx-6 flex max-w-4xl items-center rounded-lg border-2 border-gray-300 bg-gray-100 p-4 md:mx-8 md:p-5 lg:mx-auto">
             <SearchIcon className="h-7 text-gray-600 md:h-9 lg:h-10" />
             <input
               className="ml-3 flex flex-shrink items-center bg-transparent text-lg placeholder-gray-400 outline-none md:ml-6 md:text-xl lg:text-2xl"
               type="text"
-              placeholder={t('careers.search')}
+              placeholder={t('Search')}
             />
           </div>
         </div>
