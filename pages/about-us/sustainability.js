@@ -5,7 +5,7 @@ import Divider from '@/components/UI/Divider'
 import SubPageHeading1 from '@/Text/SubPageHeading1'
 import SubPageHeading2 from '@/Text/SubPageHeading2'
 import SubPageParagraph1 from '@/Text/SubPageParagraph1'
-import { useTranslation } from 'next-i18next'
+import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import PillarsCard from '@/components/UI/PillarsCard'
@@ -17,9 +17,19 @@ export default function substainability() {
   return (
     <div className="">
       <section className="mt-3">
-        <SubPageHeading1 Title={t('common:Sustainability')} />
+        <SubPageHeading1 Title={t('common:Sustainabilty')} />
+
         <div>
-          <Quote Text={t('Quote')} />
+          <Quote
+            Text={
+              <Trans
+                ns="about-us"
+                i18nKey="Quote" // optional -> fallbacks to defaults if not provided
+                defaults="<b>Sustainable Development</b> is defined as development that meets the needs of the present without compromising the ability of future generations to meet their own needs" // optional defaultValue
+                components={{ b: <b /> }}
+              />
+            }
+          />
         </div>
         <div>
           <SubPageHeading2 Title={t('OR')} />
