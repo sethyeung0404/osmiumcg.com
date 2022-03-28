@@ -8,7 +8,7 @@ function JobSlot() {
         <div
           key={item.title}
           style={{ fontFamily: 'Roboto' }}
-          className="col-span-3 overflow-hidden rounded-md bg-white px-6 py-8 text-left hover:shadow-xl md:col-span-1 lg:max-w-sm "
+          className="col-span-3 overflow-hidden rounded-md bg-white px-6 py-8 text-left border hover:shadow-xl md:col-span-1 lg:max-w-sm "
         >
           <p className="text-xl font-medium text-indigo-500 hover:underline">
             {item.title}

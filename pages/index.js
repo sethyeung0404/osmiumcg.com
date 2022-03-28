@@ -1,7 +1,7 @@
 import Layout from '@/Layout/Layout'
 import Image from 'next/image'
 import HomePageSectionTitle from '@/Text/HomePageSectionTitle'
-import BlueDivider from '@/UI/BlueDivider'
+import Divider from '@/components/UI/Divider'
 import HomeBanner from '@/UI/HomeBanner'
 import JobSlot from '@/UI/JobSlot'
 import SectorBlock from '@/UI/SectorBlock'
@@ -53,7 +53,7 @@ export default function Home() {
       <section id="sector_coverage" className="my-2 p-5">
         <div className="mx-auto max-w-7xl bg-white">
           <HomePageSectionTitle Title={t('common:Sector')} />
-          <BlueDivider center="true" />
+          <Divider center colour="blue" />
           <SectorBlock />
         </div>
       </section>
@@ -63,7 +63,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1">
             <HomePageSectionTitle Title={t('common:JobOpenings')} />
-            <BlueDivider center="true" />
+            <Divider center colour="blue" />
           </div>
           <div className="grid grid-cols-3 gap-5">
             <JobSlot />
@@ -79,7 +79,7 @@ export default function Home() {
       <section id="home_article" className="my-2 p-5">
         <div className="grid grid-cols-1">
           <HomePageSectionTitle Title={t('Articles')} />
-          <BlueDivider center="true" />
+          <Divider center colour="blue" />
         </div>
         <div>Articles *9</div>
       </section>
@@ -89,13 +89,28 @@ export default function Home() {
       <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">
         <div className="grid grid-cols-1">
           <HomePageSectionTitle Title={t('Awards')} />
-          <BlueDivider center="true" />
+          <Divider center colour="blue" />
         </div>
         <div className="flex items-center justify-center px-5">
-          <Image width={200} height={200} src="/img/pages/index/awards/gec2020.webp" alt="GEC Award"/>
-          <Image width={200} height={200} src="/img/pages/index/awards/ffge2020.webp" alt="FFGE Award"/>
+          <Image
+            width={200}
+            height={200}
+            src="/img/pages/index/awards/gec2020.webp"
+            alt="GEC Award"
+          />
+          <Image
+            width={200}
+            height={200}
+            src="/img/pages/index/awards/ffge2020.webp"
+            alt="FFGE Award"
+          />
           <div className="fill-current">
-            <Image width={380} height={150} src="/img/pages/index/awards/EOELogo-F.webp" alt="EOE Award"/>
+            <Image
+              width={380}
+              height={150}
+              src="/img/pages/index/awards/EOELogo-F.webp"
+              alt="EOE Award"
+            />
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@ import SubPageHeading1 from '@/Text/SubPageHeading1'
 import SubPageHeading2 from '@/Text/SubPageHeading2'
 import SubPageParagraph1 from '@/Text/SubPageParagraph1'
 import SubPageList1 from '@/Text/SubPageList1'
-import Divider from '@/UI/Divider'
+import LongDivider from '@/components/UI/LongDivider'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
@@ -24,7 +24,7 @@ export default function ourPhilosophy() {
           <SubPageParagraph1 Text={t('S1Content1')} />
           <SubPageParagraph1 Text={t('S1Content2')} />
 
-          <Divider />
+          <LongDivider />
           <SubPageHeading2 Title={t('Step2')} />
           <SubPageParagraph1 Text={t('S2Content1')} />
           <ul className="list-disc pt-0">
@@ -34,7 +34,7 @@ export default function ourPhilosophy() {
             <SubPageList1 Text={t('S2List4')} />
           </ul>
 
-          <Divider />
+          <LongDivider />
           <SubPageHeading2 Title={t('Step3')} />
           <SubPageParagraph1 Text={t('S3Content1')} />
           <ul className="list-disc pt-0">
@@ -42,7 +42,7 @@ export default function ourPhilosophy() {
             <SubPageList1 Text={t('S3List2')} />
           </ul>
 
-          <Divider />
+          <LongDivider />
           <SubPageHeading2 Title={t('Step4')} />
           <SubPageParagraph1 Text={t('S4Content1')} />
           <ul className="list-disc pt-0">
@@ -52,7 +52,7 @@ export default function ourPhilosophy() {
             <SubPageList1 Text={t('S4List4')} />
           </ul>
 
-          <Divider />
+          <LongDivider />
           <SubPageHeading2 Title={t('Step5')} />
           <SubPageParagraph1 Text={t('S5Content1')} />
           <ul className="list-disc pt-0">
