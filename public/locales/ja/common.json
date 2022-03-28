@@ -1,10 +1,8 @@
 {
   "Home": "ホームページ",
-  "HOME": "ホームページ",
-
   "About": "会社情報",
   "Overview": "会社概要",
-  "Methodology": "企業理念",
+  "Philosophy": "企業理念",
   "Sustainability": "CSR",
 
   "Solutions": "サービス",
@@ -13,23 +11,39 @@
   "Performance": "パフォーマンス管理",
 
   "Specialization": "専門分野",
-  "Banking": "銀行・金融サービス",
-  "TMT": "テクノロジー・メディア・通信",
+  "FDFS": "FDFS",
+  "TBCG": "TBCG",
   "Corporate": "コーポレート",
 
+  "Sector": "The Practice Sectors We Cover",
+  "JobOpenings": "最新の求人 ",
+
+  "Events": "Events",
   "Careers": "OCGでのキャリア",
+  "Contact": "お問い合わせ",
 
-  "Contact_Us": "お問い合わせ",
 
-  "ContactNum": "TEL : (852) 3898 5500 <br>月曜から金曜の営業時間中",
-
+  "ViewMore": "View More",
+  "SignIn": "サインイン",
   "Language": "他言語版",
   "Facebook": "Facebook フェイスブック",
   "Instagram": "Instagram インスタ",
   "LinkedIn": "LinkedIn リンクトイン",
 
-  "Rights": "",
-  "Copyright": "",
+  "Rights": "無断複写・転載を禁じます",
+  "Copyright": "著作権",
   "OCG": "Osmium Consulting Group 全著作権所有",
-  "OCGL": "Osmium Consulting Group Limited ( ライセンス番号 66295 )"
+  "License": "Osmium Consulting Group Limited ( ライセンス番号 66295 )",
+
+  "Office": "本社",
+  "Email": "メールアドレス",
+  "Address": "アドレス",
+
+  "HK": "香港本社",
+  "HKAddress": "1802, 18/F, Fortis Tower, 77 Gloucester Road, Wan Chai, Hong Kong",
+  "HKAddress2": "Wan Chai",
+
+  "SG": "シンガポール支店",
+  "SGAddress": "Level 42, Six Battery Road, 049909 Singapore",
+  "SGAddress2": "Central Business District"
 }
