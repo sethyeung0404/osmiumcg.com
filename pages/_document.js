@@ -12,7 +12,7 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Roboto&family=Roboto+Mono&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Roboto&display=swap"
           rel="stylesheet"
         />
       </Head>

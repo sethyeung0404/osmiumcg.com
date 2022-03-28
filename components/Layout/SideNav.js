@@ -351,7 +351,10 @@ export default function SideNav() {
                             <Popover.Button className="relative z-10 -ml-4 px-2 text-base">
                               <div className="overflow-hidden">
                                 <div className=" absolute left-0 mt-12 -translate-x-32 gap-6 bg-white p-3">
-                                  <ul role="list" className="w-80 space-y-3 ">
+                                  <ul
+                                    role="list"
+                                    className="w-[25rem] space-y-3 "
+                                  >
                                     {category.items.map((item) => (
                                       <li key={item.name} className="">
                                         <Link

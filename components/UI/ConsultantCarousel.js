@@ -1,27 +1,32 @@
-import React from 'react'
-import EmblaCarousel from 'embla-carousel'
-
-const options = { loop: false }
-const embla = EmblaCarousel(emblaNode, options)
+import React, { useCallback } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
 
 function ConsultantCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel()
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
+
   return (
     <div>
-      <Carousel autoplay>
-        <div>
-          <h3 style={contentStyle}>1</h3>
+      <div className="embla" ref={emblaRef}>
+        <div className="embla__container">
+          <div className="embla__slide">Slide 1</div>
+          <div className="embla__slide">Slide 2</div>
+          <div className="embla__slide">Slide 3</div>
         </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
-      </Carousel>
-      <button onClick={() => embla.scrollNext()}>>>>></button>
+      </div>
+      <button className="embla__prev" onClick={scrollPrev}>
+        Prev
+      </button>
+      <button className="embla__next" onClick={scrollNext}>
+        Next
+      </button>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 function CareersBanner() {
   return (
-    <section className="relative" style={{ fontFamily: 'Roboto Mono' }}>
+    <section className="relative" style={{ fontFamily: 'Roboto' }}>
       <Image
         className="-z-20"
         layout="fill"
@@ -13,9 +13,9 @@ function CareersBanner() {
         quality={100}
       />
       <div className="z-50 py-24 px-10 font-semibold text-white md:py-28 xl:py-32">
-        <p className="text-7xl">All aboard!</p>
+        <p className="text-6xl">ALL ABOARD!</p>
         <br />
-        <p className="text-5xl">Join us at OCG.</p>
+        <p className="text-4xl">JOIN US AT OCG.</p>
       </div>
     </section>
   )

@@ -3,7 +3,7 @@ import Layout from '@/Layout/Layout'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import InhouseJobs from '@/components/UI/InhouseJobs'
+import InhouseJobs from '@/components/Jobs/InhouseJobs'
 import { SearchIcon } from '@heroicons/react/outline'
 import CareersBanner from '@/components/UI/CareersBanner'
 export default function Careers() {
