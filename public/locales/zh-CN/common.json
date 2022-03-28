@@ -1,0 +1,52 @@
+{
+  "Home": "首页",
+
+  "About": "关于我们",
+
+  "Overview": "关于我们",
+  "Philosophy": "我们的工作流程",
+  "Sustainability": "企业责任",
+
+  "Solutions": "服务介绍",
+  "Recruitment": "人才招聘服务",
+  "HR": "人力资源解决方案",
+  "Performance": "绩效管理",
+
+  "Specialization": "行业",
+  "FDFS": "银行及金融服务业",
+  "TBCG": "科技、传媒及电信业",
+
+  "Sector": "涵盖的业务领域",
+  "JobOpenings": "最新职位空缺",
+
+  "Events": "活动及宣传",
+  "Careers": "加入我们！",
+  "Contact": "联络我们",
+
+  "ViewMore": "查看更多",
+
+  "SignIn": "登入",
+
+  "Language": "其他语言",
+  "Facebook": "脸书",
+  "Instagram": "Instagram",
+  "LinkedIn": "领英",
+
+  "Rights": "版权所有",
+  "Copyright": "版权",
+  "OCG": "OCG 奥氏策略顾问 版权所有",
+  "OCGL": "奥氏策略顾问有限公司",
+  "License": "奥氏策略顾问有限公司 ( 招聘牌照号码 66295 )",
+  
+	"Office": "办公室电话",
+	"Email": "电邮",
+	"Address": "地址",
+
+  "HK": "香港办事处",
+  "HKAddress": "香港 湾仔告士打道77号富通大厦18楼1802室",
+	"HKAddress2": "湾仔",
+
+	"SG": "新加坡办事处",
+  "SGAddress": "新加坡 百得利路6号42楼, 邮递区号049909",
+  "SGAddress2": "中央商业区 CBD"
+}

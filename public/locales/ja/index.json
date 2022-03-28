@@ -1,8 +1,5 @@
 {
-  "Header1": "Osmium Consulting Group ",
-  "Header1.1": "は業界屈指の人材紹介会社です。",
-  "Header1.2": "Osmium Consulting Group は成立以来、ひたむきなと質を高めて急速に成長を遂げました。当社はお客様たちと業界トップレベルの人材を繋がって、適職を求めているの人材にグローバルなキャリアをご紹介しています。業界と比べって独特なスキルと機能を備えて、当社は他のサービスプロバイダーから抜群できます。",
-
+ 
   "Header2": "私たちのコンサルタントと話したいですか？",
   "Header2.2": "お気軽にお問合せください。",
   "Button2.3": "当社を連絡したい方は",
@@ -19,5 +16,17 @@
 
   "Articles": "ブログ",
 
-  "Awards": "受賞一覧"
+  "Awards": "受賞一覧",
+
+  "pageTitle": "Osmium Consulting Group - Recruitment Professionals",
+
+  "mainTextTitle": "は業界屈指の人材紹介会社ですm",
+  "mainTextContent": "Osmium Consulting Group は成立以来、ひたむきなと質を高めて急速に成長を遂げました。当社はお客様たちと業界トップレベルの人材を繋がって、適職を求めているの人材にグローバルなキャリアをご紹介しています。業界と比べって独特なスキルと機能を備えて、当社は他のサービスプロバイダーから抜群できます。",
+
+  "s2a": "Would you like to speak to one of our Recruitment Consultant?",
+  "s2b": "お気軽にお問合せください。 ",
+  "s2button1": "Connect Us",
+  "s2c": "LinkedInで連絡したい方",
+  "s2button2": "CONTACT US"  
+
 }

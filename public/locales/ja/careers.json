@@ -1,12 +1,12 @@
 {
-  "pageTitle": "OCG - 求人情報",
 
-  "Careers": "求人を検索",
-  "Caption1.1": "弊社採用情報",
-  "Caption1.2": "リストを下にスクロールして<u>もっと表示する</u>",
+  "Heading": "求人を探す",
+  "Search": "Search by role or keyword",
   "Filter": "フィルタ",
-
-  "Country": "海外",
+  "Location": "領域",
+  "Keyword": "キーワード",
+  "SearchKeyword": "Enter keyword",
+ "Country": "海外",
   "HK": "香港",
   "SG": "シンガポール",
 
