@@ -23,7 +23,7 @@ export default function InhouseJobs() {
             {t('Filter')}
           </p>
           <div className="mx-2 my-4">
-            <div className="border-b-[1px] border-t-[1px]">
+            <div className="border-b border-t">
               <Disclosure>
                 {({ open }) => (
                   <>
@@ -101,7 +101,7 @@ export default function InhouseJobs() {
                 )}
               </Disclosure>
             </div>
-            <div className="border-b-[1px]">
+            <div className="border-b">
               <Disclosure>
                 {({ open }) => (
                   <>
@@ -134,7 +134,7 @@ export default function InhouseJobs() {
                 )}
               </Disclosure>
             </div>
-            <div className="border-b-[1px]">
+            <div className="border-b">
               <Disclosure>
                 {({ open }) => (
                   <>
@@ -218,7 +218,7 @@ export default function InhouseJobs() {
             </div>
           </div>
         </div>
-        <div className="col-span-7 md:col-span-5 md:border-l-[1px] md:pl-4">
+        <div className="col-span-7 md:col-span-5 md:border-l md:pl-4">
           <div className="grid grid-cols-1 space-y-6">
             <div className="m-2 flex items-end justify-between border-b-2 py-2">
               <div>

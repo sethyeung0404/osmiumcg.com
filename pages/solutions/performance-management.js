@@ -1,8 +1,6 @@
 import React from 'react'
 import Layout from '@/Layout/Layout'
 import LayoutPage from '@/Layout/LayoutPage'
-import BlueDivider from '@/UI/BlueDivider'
-import SectorBlock from '@/UI/SectorBlock'
 import SubPageHeading1 from '@/Text/SubPageHeading1'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'

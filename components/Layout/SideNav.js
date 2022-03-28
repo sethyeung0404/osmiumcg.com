@@ -115,7 +115,10 @@ export default function SideNav() {
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <Link href={page.href} locale={i18n.language}>
-                        <a className="-m-2 block px-2 py-3 font-medium text-gray-900">
+                        <a
+                          onClick={() => setOpen(false)}
+                          className="-m-2 block px-2 py-3 font-medium text-gray-900"
+                        >
                           {t(page.name)}
                         </a>
                       </Link>
@@ -135,57 +138,67 @@ export default function SideNav() {
                   </div>
 
                   {/* Search */}
-                  <div className="flex w-full space-x-2 text-left font-medium text-gray-900 hover:text-zinc-500">
-                    <div>
-                      <Link href="#" alt="">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <FontAwesomeIcon
-                            icon={faMagnifyingGlass}
-                            className="h-5 w-5"
-                            aria-hidden="true"
-                          />
-                        </a>
-                      </Link>
-                    </div>
-                    <div>Search</div>
+                  <div className="group text-left font-medium">
+                    <Link href="#" alt="">
+                      <a className="">
+                        <div className=" flex w-full space-x-2 ">
+                          <div>
+                            <FontAwesomeIcon
+                              icon={faMagnifyingGlass}
+                              className="h-5 w-5 text-gray-500 group-hover:text-zinc-400"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          <div className="text-gray-900 group-hover:text-zinc-400">
+                            Search
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
                   </div>
 
                   {/* Facebook Icon*/}
-                  <div className="flex w-full space-x-2 text-left font-medium text-gray-900 hover:text-zinc-500">
-                    <div>
-                      <a
-                        className="text-facebook-blue hover:text-gray-500"
-                        target="_blank"
-                        href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/"
-                        rel="noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faFacebookF}
-                          className="h-5 w-5"
-                          aria-hidden="true"
-                        />
-                      </a>
-                    </div>
-                    <div>Facebook</div>
+                  <div className="group text-left font-medium">
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/"
+                      rel="noreferrer"
+                    >
+                      <div className="flex w-full space-x-2">
+                        <div>
+                          <FontAwesomeIcon
+                            className="h-5 w-5 text-facebook-blue group-hover:text-zinc-500"
+                            icon={faFacebookF}
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <div className="text-gray-900 group-hover:text-zinc-500">
+                          Facebook
+                        </div>
+                      </div>
+                    </a>
                   </div>
 
                   {/* LinkedIn Icon*/}
-                  <div className="flex w-full space-x-2 text-left font-medium text-gray-900 hover:text-zinc-500">
-                    <div>
-                      <a
-                        href="https://www.linkedin.com/company/osmium-consulting-group"
-                        className="text-linkedin-blue hover:text-gray-500"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faLinkedin}
-                          className="h-5 w-5"
-                          aria-hidden="true"
-                        />
-                      </a>
-                    </div>
-                    <div>LinkedIn</div>
+                  <div className="group ">
+                    <a
+                      href="https://www.linkedin.com/company/osmium-consulting-group"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="flex w-full space-x-2 text-left font-medium">
+                        <div>
+                          <FontAwesomeIcon
+                            className="h-5 w-5 text-linkedin-blue group-hover:text-zinc-500"
+                            icon={faLinkedin}
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <div className="text-gray-900 group-hover:text-zinc-500">
+                          LinkedIn
+                        </div>
+                      </div>
+                    </a>
                   </div>
 
                   {/* Translations */}
@@ -195,25 +208,28 @@ export default function SideNav() {
                         <>
                           <Disclosure.Button
                             key="Translations"
-                            className="flex w-full justify-between space-y-4 text-left 
-                            text-gray-900 hover:text-zinc-500 hover:duration-500"
+                            className="w-full space-y-4 text-left"
                           >
-                            <div className="flex space-x-2 ">
+                            <div className="flex justify-between text-gray-900 hover:text-zinc-500">
+                              <div className="flex space-x-2">
+                                <div>
+                                  <FontAwesomeIcon
+                                    icon={faEarthAsia}
+                                    className="h-5 w-5"
+                                    aria-hidden="true"
+                                  />
+                                </div>
+                                <div>{t('Language')}</div>
+                              </div>
                               <div>
                                 <FontAwesomeIcon
-                                  icon={faEarthAsia}
-                                  className="h-5 w-5"
-                                  aria-hidden="true"
+                                  icon={faChevronUp}
+                                  className={`${
+                                    open ? '' : 'rotate-180'
+                                  } h-5 w-5 text-purple-500`}
                                 />
                               </div>
-                              <div>{t('Language')}</div>
                             </div>
-                            <FontAwesomeIcon
-                              icon={faChevronUp}
-                              className={`${
-                                open ? '' : 'rotate-180'
-                              } h-5 w-5 text-purple-500`}
-                            />
                           </Disclosure.Button>
                           <Transition
                             enter="transition ease-out duration-500"
@@ -223,11 +239,11 @@ export default function SideNav() {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
-                            <Disclosure.Panel className="pl-10 pt-1">
+                            <Disclosure.Panel className="pl-10 pt-3">
                               <ul
                                 role="list"
                                 aria-labelledby="language-heading-mobile"
-                                className="flex flex-col space-y-5"
+                                className="flex flex-col space-y-4"
                               >
                                 {language.map((item) => (
                                   <li key={item.name} className="flow-root">
@@ -237,7 +253,7 @@ export default function SideNav() {
                                     >
                                       <a
                                         onClick={() => setOpen(false)}
-                                        className="-m-2 block p-2 text-gray-500 hover:text-zinc-400 hover:duration-500"
+                                        className="text-gray-800 hover:text-zinc-400"
                                       >
                                         {item.name}
                                       </a>
@@ -331,25 +347,30 @@ export default function SideNav() {
                           leaveFrom="opacity-100 translate-y-0"
                           leaveTo="opacity-0 translate-y-1"
                         >
-                          <Popover.Panel className="relative z-10 -ml-4 px-2 text-base">
-                            <div className="overflow-hidden">
-                              <div className=" absolute left-0 mt-[65px] -translate-x-32 gap-6 bg-white p-3">
-                                <ul role="list" className="w-80 space-y-3 ">
-                                  {category.items.map((item) => (
-                                    <li key={item.name} className="">
-                                      <Link
-                                        href={item.href}
-                                        locale={i18n.language}
-                                      >
-                                        <a className="-m-3 flex items-start py-[14px] px-6 hover:bg-slate-50 hover:text-zinc-500">
-                                          {t(item.name)}
-                                        </a>
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
+                          <Popover.Panel>
+                            <Popover.Button className="relative z-10 -ml-4 px-2 text-base">
+                              <div className="overflow-hidden">
+                                <div className=" absolute left-0 mt-12 -translate-x-32 gap-6 bg-white p-3">
+                                  <ul role="list" className="w-80 space-y-3 ">
+                                    {category.items.map((item) => (
+                                      <li key={item.name} className="">
+                                        <Link
+                                          href={item.href}
+                                          locale={i18n.language}
+                                        >
+                                          <a
+                                            onClick={() => setOpen(false)}
+                                            className="-m-3 flex items-start py-[14px] px-6 hover:bg-slate-50 hover:text-zinc-500"
+                                          >
+                                            {t(item.name)}
+                                          </a>
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
+                            </Popover.Button>
                           </Popover.Panel>
                         </Transition>
                       </>

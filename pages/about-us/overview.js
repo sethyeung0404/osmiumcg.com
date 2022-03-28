@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '@/Layout/Layout'
 import LayoutPage from '@/Layout/LayoutPage'
-import BlueDivider from '@/UI/BlueDivider'
+import Divider from '@/components/UI/Divider'
 import SubPageHeading1 from '@/Text/SubPageHeading1'
 import SubPageHeading2 from '@/Text/SubPageHeading2'
 import SubPageParagraph1 from '@/Text/SubPageParagraph1'
@@ -29,7 +29,7 @@ export default function overview() {
         <div className="row pt-2">
           <h5 className="mt-8 text-2xl text-ocg-blue">{t('common:Sector')}</h5>
           <div className="ml-0">
-            <BlueDivider />
+            <Divider colour="blue" />
           </div>
         </div>
         <SectorBlock />
