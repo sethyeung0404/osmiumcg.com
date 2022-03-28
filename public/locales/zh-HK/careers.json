@@ -1,4 +1,12 @@
 {
+  "Heading": "搜尋最適合你的職位",
+  "Search": "以職位或關鍵字搜尋",
+  "Filter": "篩選條件",
+  "Location": "工作地點",
+  "Keyword": "關鍵字",
+  "SearchKeyword": "輸入關鍵字",
+  "Teams": "團隊",
+
   "Caption1.1": "OCG的工作機會",
   "Caption1.2": "<h6>找一份讓您發揮所長的工作<br>向下滾動 <u> 查看更多</u></h6>",
   "Country": "所有國家",
@@ -13,22 +21,4 @@
 
   "NoResult": "目前沒有職位符合條件，請重新選擇。",
   "GoBack": "重設搜尋條件"
-}
-
-{
-  "Heading": "搜尋最適合你的職位",
-  "Search": "以職位或關鍵字搜尋",
-  "Caption1.1": "Careers at OCG",
-  "Caption1.2": "Scroll down to <u>View More</u>",
-  "Filter": "按以下條件篩選",
-  "Country": "All Countries",
-  "HK": "Hong Kong",
-  "SG": "Singapore",
-  "WorkType": "WORK TYPE",
-  "AllType": "All Type",
-  "Ft": "Full Time",
-  "Pt": "Part Time",
-  "Intern": "Internship",
-  "NoResult": "No Job Postings match these filters right now.",
-  "GoBack": "Go back to all job postings"
 }

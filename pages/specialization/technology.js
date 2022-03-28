@@ -18,10 +18,6 @@ export default function tmt() {
         <div className="mx-12 grid grid-cols-3">
           <div className="col-span-1 mb-4">
             <ConsultantCarousel />
-            <ConsultantCarousel />
-            <ConsultantCarousel />
-            <ConsultantCarousel />
-            <ConsultantCarousel />
           </div>
 
           <div className="col-span-2 mb-4">

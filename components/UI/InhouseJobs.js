@@ -13,14 +13,14 @@ export default function InhouseJobs() {
   const [isFDFS, setIsFDFS] = useState(false)
   const [isTBCG, setIsTBCG] = useState(false)
 
-  const { t } = useTranslation()
+  const { t } = useTranslation('careers')
 
   return (
     <>
       <div className="grid grid-cols-7">
         <div className="col-span-7 md:col-span-2">
           <p className="flex w-full justify-between py-4 pr-2 text-left text-2xl">
-            {t('careers.Filter')}
+            {t('Filter')}
           </p>
           <div className="mx-2 my-4">
             <div className="border-b-[1px] border-t-[1px]">
@@ -28,7 +28,7 @@ export default function InhouseJobs() {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex w-full justify-between py-4 text-left">
-                      工作地點
+                      {t('Location')}
                       <FontAwesomeIcon
                         icon={faChevronUp}
                         className={`${
@@ -63,8 +63,10 @@ export default function InhouseJobs() {
                         inline-block h-3 w-3 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                               />
                             </Switch>
-                            <Switch.Label className="pl-2">
-                              Hong Kong
+                            <Switch.Label
+                              className={`${isHK ? 'text-gray-600' : ''} pl-2`}
+                            >
+                              {t('careers:HK')}
                             </Switch.Label>
                           </Switch.Group>
                         </div>
@@ -86,8 +88,10 @@ export default function InhouseJobs() {
                         inline-block h-3 w-3 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                               />
                             </Switch>
-                            <Switch.Label className="pl-2">
-                              Singapore
+                            <Switch.Label
+                              className={`${isSG ? 'text-gray-600' : ''} pl-2`}
+                            >
+                              {t('careers:SG')}
                             </Switch.Label>
                           </Switch.Group>
                         </div>
@@ -102,7 +106,7 @@ export default function InhouseJobs() {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex w-full justify-between py-4 text-left">
-                      關鍵字
+                      {t('Keyword')}
                       <FontAwesomeIcon
                         icon={faChevronUp}
                         className={`${
@@ -122,7 +126,7 @@ export default function InhouseJobs() {
                         <input
                           className="w-full items-center border p-2 placeholder-gray-400"
                           type="text"
-                          placeholder="Search Keywords"
+                          placeholder={t('SearchKeyword')}
                         />
                       </Disclosure.Panel>
                     </Transition>
@@ -135,7 +139,7 @@ export default function InhouseJobs() {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex w-full justify-between py-4 text-left">
-                      團隊
+                      {t('Teams')}
                       <FontAwesomeIcon
                         icon={faChevronUp}
                         className={`${
@@ -170,7 +174,13 @@ export default function InhouseJobs() {
                         inline-block h-3 w-3 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                               />
                             </Switch>
-                            <Switch.Label className="pl-2">FDFS</Switch.Label>
+                            <Switch.Label
+                              className={`${
+                                isFDFS ? 'text-gray-600' : ''
+                              } pl-2`}
+                            >
+                              FDFS
+                            </Switch.Label>
                           </Switch.Group>
                         </div>
                         <div>
@@ -191,7 +201,13 @@ export default function InhouseJobs() {
                         inline-block h-3 w-3 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                               />
                             </Switch>
-                            <Switch.Label className="pl-2">TBCG</Switch.Label>
+                            <Switch.Label
+                              className={`${
+                                isTBCG ? 'text-gray-600' : ''
+                              } pl-2`}
+                            >
+                              TBCG
+                            </Switch.Label>
                           </Switch.Group>
                         </div>
                       </Disclosure.Panel>
@@ -204,25 +220,31 @@ export default function InhouseJobs() {
         </div>
         <div className="col-span-7 md:col-span-5 md:border-l-[1px] md:pl-4">
           <div className="grid grid-cols-1 space-y-6">
-            <div className="m-2 border-b-2 py-2">
+            <div className="m-2 flex items-end justify-between border-b-2 py-2">
               <div>
                 <p className="text-2xl">Recruitment Consultant</p>
-                <p className="text-lg">Hong Kong</p>
+                <p className="pb-2 text-lg">Hong Kong</p>
+                <p className="text-sm">
+                  We’re seeking an experienced recruiter to join our Recruiting
+                  team. In this role, you will have the opportunity to join an
+                  amazing, robust, and agile team responsible for hiring premier
+                  talent.
+                </p>
               </div>
-              <div className="flex items-center justify-between">
-                <p className="text-base">Hello</p>
-                <LearnMoreButton href="https://osmiumcg.notion.site/OCG-Job-Board-99b46a83c23947a5a9a3fbfe8fff5dfc" />
-              </div>
+              <LearnMoreButton href="https://osmiumcg.notion.site/OCG-Job-Board-99b46a83c23947a5a9a3fbfe8fff5dfc" />
             </div>
-            <div className="m-2 border-b-2 py-2">
+            <div className="m-2 flex items-end justify-between border-b-2 py-2">
               <div>
                 <p className="text-2xl">Recruitment Consultant</p>
-                <p className="text-lg">Hong Kong</p>
+                <p className="pb-2 text-lg">Hong Kong</p>
+                <p className="text-sm">
+                  We’re seeking an experienced recruiter to join our Recruiting
+                  team. In this role, you will have the opportunity to join an
+                  amazing, robust, and agile team responsible for hiring premier
+                  talent.
+                </p>
               </div>
-              <div className="flex items-center justify-between">
-                <p className="text-base">Hello</p>
-                <LearnMoreButton href="https://osmiumcg.notion.site/OCG-Job-Board-99b46a83c23947a5a9a3fbfe8fff5dfc" />
-              </div>
+              <LearnMoreButton href="https://osmiumcg.notion.site/OCG-Job-Board-99b46a83c23947a5a9a3fbfe8fff5dfc" />
             </div>
           </div>
         </div>
