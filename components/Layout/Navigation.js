@@ -59,6 +59,6 @@ export const language = [
   {
     name: '日本語',
     href: '*',
-    locale: 'ja',
+    locale: 'ja-JP',
   },
 ]

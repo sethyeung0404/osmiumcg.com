@@ -16,9 +16,9 @@ export default function ourPhilosophy() {
   return (
     <div className="">
       <section className="mt-3">
-        <SubPageHeading1 Title=" Our Philosophy" />
+        <SubPageHeading1 Title={t('common:Philosophy')} />
         <EURAnimation />
-        <SubPageHeading1 Title=" Our Methodlogy" />
+        <SubPageHeading1 Title={t('Methodlogy')} />
         <div>
           <SubPageHeading2 Title={t('Step1')} />
           <SubPageParagraph1 Text={t('S1Content1')} />
