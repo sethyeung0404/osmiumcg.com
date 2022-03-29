@@ -16,7 +16,7 @@ export default function tmt() {
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:TBCG')} />
 
-        <div className="grid grid-cols-3 md:mx-6 lg:mx-12">
+        <div className="grid grid-cols-3 pt-4 md:mx-6 lg:mx-12">
           <div className="col-span-3 mb-12 sm:col-span-1 md:mb-4">
             <ConsultantCarousel Division="TBCG" />
           </div>

@@ -27,6 +27,11 @@ export default function Events() {
             alt="Case Comp 2022 Details"
           />
         </div>
+        <div className="col-span-2 text-center">
+          <button className="bg-blue-400 px-28 py-4 rounded-xl text-base text-white">
+            <a href="https://forms.gle/H2aiimvzkYq7krcB8">Click Me to Apply</a>
+          </button>
+        </div>
       </div>
     </div>
   )

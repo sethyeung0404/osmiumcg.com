@@ -42,7 +42,7 @@ export default function footer() {
           </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:space-x-6 lg:grid-cols-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-6 lg:space-x-6">
           {navigation.categories.map((category) => (
             <div key={category.name} className="mb-6">
               <h5 className="my-2 font-bold text-slate-700">
@@ -71,18 +71,25 @@ export default function footer() {
         </div>
       </div>
 
-      <div className="mx-auto grid max-w-4xl grid-cols-1 px-5 pb-6 leading-5 text-slate-500 lg:max-w-7xl">
+      <div className="mx-auto grid max-w-4xl grid-cols-1 px-5 pb-4 leading-5 text-slate-500 lg:max-w-7xl">
         {/*Copyright*/}
-        <div className="border-b-2 border-slate-300">
+        <div className="border-b-2 border-slate-300 pb-1">
           Looking for Recruiters? Find a Consultant by Calling (852) 3898 5500
           or send an email to{' '}
           <a href="mailto:info@osmiumcg.com">info@osmiumcg.com</a>
         </div>
-        <div></div>
-        <div className="flex justify-between">
+        <div className="flex justify-between pt-1">
           <div>
             Osmium Consulting Group Limited ( EA Licence No. 66295 ) | D-U-N-S
             Number : 68-638-4815
+          </div>
+          <div className="">
+            <Link href="disclaimer">
+              <a className="cursor-pointer border-r-2 px-3">Disclaimer</a>
+            </Link>
+            <Link href="terms">
+              <a className="px-3">Terms of Use</a>
+            </Link>
           </div>
           <div>Hong Kong</div>
         </div>

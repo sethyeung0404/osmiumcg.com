@@ -16,7 +16,7 @@ export default function bfs() {
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:FDFS')} />
 
-        <div className="grid grid-cols-3 md:mx-6 lg:mx-12">
+        <div className="pt-4 grid grid-cols-3 md:mx-6 lg:mx-12">
           <div className="col-span-3 mb-12 sm:col-span-1 md:mb-4">
             <ConsultantCarousel Division="FDFS" />
           </div>
@@ -41,8 +41,8 @@ bfs.getLayout = function getLayout(page) {
     <Layout
       headContent={
         <Head>
-          <title>OCG - Recruitment</title>
-          <meta name="description" content="🥱🥱🥱" />
+          <title>OCG - FDFS</title>
+          <meta name="description" content="" />
         </Head>
       }
     >
