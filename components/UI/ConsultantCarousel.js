@@ -5,7 +5,9 @@ import Consultant from './Consultant'
 import { ChevronRightIcon } from '@heroicons/react/outline'
 
 function ConsultantCarousel({ Division }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: '4800' }),
+  ])
 
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext()
@@ -23,7 +25,7 @@ function ConsultantCarousel({ Division }) {
             />
             <Consultant
               name="William TANG"
-              title1=""
+              title1="Partner | Head"
               src="/img/pages/specialization/FDFS/William.webp"
             />
             <Consultant
@@ -41,6 +43,7 @@ function ConsultantCarousel({ Division }) {
               title1="Sales Support Manager"
               src="/img/pages/specialization/FDFS/Roberta.webp"
             />
+            {/*
             <Consultant
               name="Teri HAU"
               title1="Consultant"
@@ -55,7 +58,7 @@ function ConsultantCarousel({ Division }) {
               name="Athena PANG"
               title1="Associate Consultant"
               src="/img/pages/specialization/FDFS/Alan.webp"
-            />
+            /> */}
           </div>
         </div>
         <div className="self-center md:pr-6">
@@ -75,7 +78,7 @@ function ConsultantCarousel({ Division }) {
           <div className="embla__container">
             <Consultant
               name="Carol LAU"
-              title1="Deputy Head"
+              title1="Head"
               src="/img/pages/specialization/TBCG/Carol.webp"
             />
             <Consultant
@@ -93,6 +96,8 @@ function ConsultantCarousel({ Division }) {
               title1="Consultant"
               src="/img/pages/specialization/TBCG/Morgan.webp"
             />
+
+            {/* //
             <Consultant
               name="Candice HA"
               title1="Consultant"
@@ -102,7 +107,7 @@ function ConsultantCarousel({ Division }) {
               name="Denise LAW"
               title1="Consultant"
               src="/img/pages/specialization/TBCG/Denise.webp"
-            />
+    />*/}
           </div>
         </div>
         <div className="self-center md:pr-6">

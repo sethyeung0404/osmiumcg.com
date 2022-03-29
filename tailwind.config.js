@@ -12,6 +12,9 @@ module.exports = {
         'facebook-blue': '#3b5998',
         'linkedin-blue': '#0e76a8',
       },
+      animation: {
+        bounce: 'bounce 2s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

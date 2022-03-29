@@ -1,11 +1,11 @@
 import React from 'react'
 import LearnMoreButton from '@/Buttons/LearnMoreButton'
 
-function Jobs() {
+function Jobs({ jobs }) {
   return (
     <div className="flex items-end justify-between border-b-2 pb-2">
       <div className="m-4">
-        <p className="text-2xl">Recruitment Consultant</p>
+        <p className="text-2xl">{jobs}</p>
         <p className="pb-2 text-lg">Hong Kong</p>
         <p className="text-sm">
           We’re seeking an experienced recruiter to join our Recruiting team. In

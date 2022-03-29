@@ -10,6 +10,7 @@ function JobFilter() {
   const [open, setOpen] = useState(true)
   const [isHK, setIsHK] = useState(false)
   const [isSG, setIsSG] = useState(false)
+  const [isJP, setIsJP] = useState(false)
   const [isFDFS, setIsFDFS] = useState(false)
   const [isTBCG, setIsTBCG] = useState(false)
 
@@ -86,6 +87,29 @@ function JobFilter() {
                           className={`${isSG ? 'text-gray-600' : ''} pl-2`}
                         >
                           {t('careers:SG')}
+                        </Switch.Label>
+                      </Switch.Group>
+                    </div>
+                    <div>
+                      <Switch.Group>
+                        <Switch
+                          checked={isJP}
+                          onChange={setIsJP}
+                          className={`${isSG ? 'bg-gray-600' : 'bg-gray-300'}
+                 inline-flex h-4 w-8 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out`}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className={`${
+                              isJP ? 'translate-x-4' : 'translate-x-0'
+                            }
+                inline-block h-3 w-3 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                          />
+                        </Switch>
+                        <Switch.Label
+                          className={`${isJP ? 'text-gray-600' : ''} pl-2`}
+                        >
+                          {t('careers:JP')}
                         </Switch.Label>
                       </Switch.Group>
                     </div>

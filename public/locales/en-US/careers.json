@@ -6,13 +6,17 @@
   "Keyword": "Keyword",
   "SearchKeyword": "Enter keyword",
   "Teams": "Teams",
+  
   "HK": "Hong Kong",
   "SG": "Singapore",
+  "JP": "Japan",
+
   "WorkType": "WORK TYPE",
   "AllType": "All Type",
   "Ft": "Full Time",
   "Pt": "Part Time",
   "Intern": "Internship",
+
   "NoResult": "No Job Postings match these filters right now.",
   "GoBack": "Go back to all job postings"
 }

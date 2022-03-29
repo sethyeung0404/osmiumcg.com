@@ -1,14 +1,16 @@
 {
-
   "Heading": "求人を探す",
   "Search": "Search by role or keyword",
   "Filter": "フィルタ",
   "Location": "領域",
   "Keyword": "キーワード",
   "SearchKeyword": "Enter keyword",
- "Country": "海外",
+  "Teams": "团队",
+
+  "Country": "海外",
   "HK": "香港",
   "SG": "シンガポール",
+  "JP": "日本",
 
   "WorkType": "勤務形態",
   "AllType": "全てを表示",

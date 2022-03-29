@@ -130,11 +130,13 @@ export default function SideNav() {
                 <div className="space-y-4 border-t border-gray-200 py-6 px-4 text-base font-medium">
                   {/* Sign In */}
                   <div className="flow-root">
-                    <Link href="#">
-                      <a className="-m-2 block p-2 font-medium text-gray-900">
-                        {t('SignIn')}
-                      </a>
-                    </Link>
+                    <a
+                      href="http://dev.osmiumcg.xyz"
+                      target="_blank"
+                      className="-m-2 block p-2 font-medium text-gray-900" rel="noreferrer"
+                    >
+                      {t('SignIn')}
+                    </a>
                   </div>
 
                   {/* Facebook Icon*/}
@@ -261,7 +263,7 @@ export default function SideNav() {
           className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6"
         >
           <div className="flex h-16 items-center">
-            <div className="flex lg:hidden w-full justify-between items-center">
+            <div className="flex w-full items-center justify-between lg:hidden">
               {/*Bar Icons & Search Icons in mobile view*/}
               <div>
                 <button
@@ -389,9 +391,13 @@ export default function SideNav() {
             <div className="ml-auto hidden h-full items-center space-x-6 text-base font-medium text-gray-900 hover:text-zinc-500 hover:duration-500 lg:flex lg:justify-end">
               {/* Sign In */}
               <div className="ml-4 inline-flex h-full border-b-2 border-transparent hover:border-ocg-blue">
-                <Link href="#">
-                  <a className="self-center">{t('SignIn')}</a>
-                </Link>
+                <a
+                  href="http://dev.osmiumcg.xyz"
+                  target="_blank"
+                  className="self-center" rel="noreferrer"
+                >
+                  {t('SignIn')}
+                </a>
               </div>
 
               {/* Search */}

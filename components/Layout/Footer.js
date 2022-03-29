@@ -20,7 +20,7 @@ export default function footer() {
               target="_blank"
             >
               <FontAwesomeIcon
-                className="translate-y-[3px]"
+                className="translate-y-[0.3rem]"
                 icon={faFacebookF}
                 aria-hidden="true"
               />
@@ -34,7 +34,7 @@ export default function footer() {
               target="_blank"
             >
               <FontAwesomeIcon
-                className="translate-y-1"
+                className=" translate-y-[0.35rem] "
                 icon={faLinkedinIn}
                 aria-hidden="true"
               />
@@ -42,7 +42,7 @@ export default function footer() {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-6">
+        <div className="grid sm:grid-cols-2 lg:space-x-6 lg:grid-cols-6">
           {navigation.categories.map((category) => (
             <div key={category.name} className="mb-6">
               <h5 className="my-2 font-bold text-slate-700">

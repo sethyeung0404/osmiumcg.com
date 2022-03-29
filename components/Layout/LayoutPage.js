@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 
 export default function LayoutPage({ children, title, subtitle }) {
+  const { t } = useTranslation('common')
+
   return (
     <>
       {/* Banner */}
@@ -46,7 +49,7 @@ export default function LayoutPage({ children, title, subtitle }) {
         <div className="flex">
           <Link href="/">
             <a>
-              <div className="text-blue-700">Home</div>
+              <div className="text-blue-700">{t('Home')}</div>
             </a>
           </Link>
           <div className="">
@@ -58,3 +61,9 @@ export default function LayoutPage({ children, title, subtitle }) {
     </>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})
