@@ -16,6 +16,7 @@
     "@next/bundle-analyzer": "^12.1.0",
     "antd": "^4.19.3",
     "cross-env": "^7.0.3",
+    "embla-carousel-autoplay": "^6.2.0",
     "embla-carousel-react": "^6.2.0",
     "next": "lastest",
     "next-i18next": "^10.5.0",

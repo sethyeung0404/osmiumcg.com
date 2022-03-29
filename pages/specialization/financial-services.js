@@ -7,6 +7,7 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import SubPageParagraph2 from '@/components/Text/SubPageParagraph2'
+import MeetOurTeamButton from '@/components/Buttons/MeetOurTeamButton'
 export default function bfs() {
   const { t } = useTranslation('specialization')
 
@@ -15,14 +16,17 @@ export default function bfs() {
       <section className="mt-3">
         <SubPageHeading1 Title={t('common:FDFS')} />
 
-        <div className="mx-12 grid grid-cols-3">
-          <div className="col-span-1 mb-4">
-            <ConsultantCarousel />
+        <div className="grid grid-cols-3 md:mx-6 lg:mx-12">
+          <div className="col-span-3 mb-12 sm:col-span-1 md:mb-4">
+            <ConsultantCarousel Division="FDFS" />
           </div>
 
-          <div className="col-span-2 mb-4">
+          <div className="col-span-3 mb-4 sm:col-span-2">
             <SubPageParagraph2 Text={t('FDFSContent1')} />
             <SubPageParagraph2 Text={t('FDFSContent2')} />
+            <div className="text-right">
+              <MeetOurTeamButton />
+            </div>
           </div>
         </div>
       </section>

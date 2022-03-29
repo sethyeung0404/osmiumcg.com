@@ -34,7 +34,7 @@ export default function Home() {
       {/* Section: Intro */}
       {/* Do it like a pop up later -> tbc */}
       <section id="intro_black" className="my-2 bg-black px-8 text-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between p-5 text-left">
+        <div className="mx-auto flex max-w-7xl items-center justify-between py-5 text-left lg:px-5">
           <div>
             <p className="pb-4 text-xl">{t('s2a')}</p>
             <p className="text-base">
@@ -91,20 +91,24 @@ export default function Home() {
           <HomePageSectionTitle Title={t('Awards')} />
           <Divider center colour="blue" />
         </div>
-        <div className="flex items-center justify-center px-5">
-          <Image
-            width={200}
-            height={200}
-            src="/img/pages/index/awards/gec2020.webp"
-            alt="GEC Award"
-          />
-          <Image
-            width={200}
-            height={200}
-            src="/img/pages/index/awards/ffge2020.webp"
-            alt="FFGE Award"
-          />
-          <div className="fill-current">
+        <div className="grid grid-cols-6 lg:max-w-3xl mx-auto items-center justify-center px-5">
+          <div className="col-span-3 md:col-span-2">
+            <Image
+              width={200}
+              height={200}
+              src="/img/pages/index/awards/gec2020.webp"
+              alt="GEC Award"
+            />
+          </div>
+          <div className="col-span-3 md:col-span-2">
+            <Image
+              width={200}
+              height={200}
+              src="/img/pages/index/awards/ffge2020.webp"
+              alt="FFGE Award"
+            />
+          </div>
+          <div className="col-span-6 fill-current md:col-span-2">
             <Image
               width={380}
               height={150}

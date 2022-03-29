@@ -14,7 +14,7 @@ function JobSlot() {
             {item.title}
           </p>
           <p className="">Osmium Consulting Group Limited</p>
-          <p className="my-4 font-bold">Yau Tsim Mong Area</p>
+          <p className="my-4 font-bold">{item.area}</p>
           <div className="my-4">
             <ul className="list-inside list-disc">
               {item.tags.map((tags) => (
@@ -22,7 +22,7 @@ function JobSlot() {
               ))}
             </ul>
           </div>
-          <p className="text-slate-500">5 days ago</p>
+          <p className="text-slate-500">3 days ago</p>
         </div>
       ))}
     </>

@@ -16,3 +16,30 @@ body {
   position: relative;
   flex: 0 0 100%;
 }
+
+.imgonbottom {
+  width: 70%;
+  top: 15px;
+  left: 50px;
+  position: relative;
+  border: 11px solid #034579;
+}
+
+.imgonbottom:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.imgontop {
+  content: '';
+  position: absolute;
+  width: 70%;
+  top: -8px;
+  left: 25px;
+}
+
+.imgontop {
+  content: "";
+  padding-bottom: 100%;
+}

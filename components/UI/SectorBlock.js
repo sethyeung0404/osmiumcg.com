@@ -6,7 +6,7 @@ export default function SectorBlock() {
   const { t } = useTranslation('common')
 
   return (
-    <div className="mx-auto grid grid-cols-1 gap-8 text-left md:grid-cols-2">
+    <div className="mx-auto grid grid-cols-1 gap-2 text-left md:grid-cols-2">
       <Link href="/specialization/financial-services">
         <a className="border border-gray-100 text-3xl font-bold uppercase leading-10 text-white hover:shadow-2xl">
           <div className="h-48 w-full overflow-hidden bg-purple-blue p-3 shadow-xl">
