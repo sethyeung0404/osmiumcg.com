@@ -5,6 +5,7 @@ import ContactUsButton from '@/Buttons/ContactUsButton'
 export default function MapDescription({
   Country,
   District,
+  Phone,
   EmailAddress,
   FullAddress,
 }) {
@@ -12,24 +13,27 @@ export default function MapDescription({
 
   return (
     <div className="">
-      <p className="text-2xl">{Country}</p>
+      <p className="pl-2 text-3xl">{Country}</p>
+      <p className="mb-2 pl-2 text-base">{District}</p>
       <hr className="my-4" />
       <div className="pl-3">
-        <p className="mb-2 text-xl">{District}</p>
+        <div className="text-base leading-7">
+          {Phone && (
+            <div className="mb-3">
+              <p className="font-extrabold text-blue-600">{t('Office')}</p>
+              <p> +852 3898 5500 </p>
+            </div>
+          )}
 
-        <div className="text-base  leading-7">
           <div className="mb-3">
-            <p className=" text-slate-500">{t('Office')}</p>
-            <p> +852 3898 5500 </p>
+            <p className="font-extrabold text-blue-600">{t('Email')}</p>
+            <p className="cursor-pointer">
+              <a href={'mailto:' + EmailAddress}>{EmailAddress} </a>
+            </p>
           </div>
 
           <div className="mb-3">
-            <p className=" text-slate-500">{t('Email')}</p>
-            <p className="  "> {EmailAddress} </p>
-          </div>
-
-          <div className="mb-3">
-            <p className=" text-slate-500">{t('Address')}</p>
+            <p className="font-extrabold text-blue-600">{t('Address')}</p>
             <p> {FullAddress} </p>
           </div>
 

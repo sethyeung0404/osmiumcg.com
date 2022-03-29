@@ -1,6 +1,8 @@
 {
-  "Home": "ホームページ",
+  "Home": "ホーム",
+
   "About": "会社情報",
+
   "Overview": "会社概要",
   "Philosophy": "企業理念",
   "Sustainability": "CSR",
@@ -11,17 +13,17 @@
   "Performance": "パフォーマンス管理",
 
   "Specialization": "専門分野",
-  "FDFS": "FDFS",
-  "TBCG": "TBCG",
+  "FDFS": "FinTech, DeFi & Financial Services ( FDFS )",
+  "TBCG": "Technology, Blockchain, Crypto & GameFi ( TBCG )",
   "Corporate": "コーポレート",
 
-  "Sector": "The Practice Sectors We Cover",
+  "Sector": "専門分野",
+
   "JobOpenings": "最新の求人 ",
 
-  "Events": "Events",
+  "Events": "ニュース",
   "Careers": "OCGでのキャリア",
   "Contact": "お問い合わせ",
-
 
   "ViewMore": "View More",
   "SignIn": "サインイン",
@@ -45,5 +47,9 @@
 
   "SG": "シンガポール支店",
   "SGAddress": "Level 42, Six Battery Road, 049909 Singapore",
-  "SGAddress2": "Central Business District"
+  "SGAddress2": "Central Business District",
+
+  "JP": "日本支店",
+  "JPAddress": "京橋",
+  "JPAddress2": "中央区"
 }

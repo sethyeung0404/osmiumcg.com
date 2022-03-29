@@ -48,5 +48,9 @@
 
 	"SG": "新加坡办事处",
   "SGAddress": "新加坡 百得利路6号42楼, 邮递区号049909",
-  "SGAddress2": "中央商业区 CBD"
+  "SGAddress2": "中央商业区 CBD",
+
+  "JP": "日本办事处",
+  "JPAddress": "京桥",
+  "JPAddress2": "東京中央区"
 }

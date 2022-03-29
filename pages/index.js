@@ -91,7 +91,7 @@ export default function Home() {
           <HomePageSectionTitle Title={t('Awards')} />
           <Divider center colour="blue" />
         </div>
-        <div className="grid grid-cols-6 lg:max-w-3xl mx-auto items-center justify-center px-5">
+        <div className="mx-auto grid grid-cols-6 items-center justify-center px-5 lg:max-w-3xl">
           <div className="col-span-3 md:col-span-2">
             <Image
               width={200}

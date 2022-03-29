@@ -43,3 +43,7 @@ body {
   content: "";
   padding-bottom: 100%;
 }
+
+#map {
+  height: 100%;
+}

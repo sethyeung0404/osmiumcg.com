@@ -7,9 +7,9 @@ import Image from 'next/image'
 
 export default function Events() {
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="mx-auto md:max-w-4xl xl:max-w-7xl">
       <div className="grid grid-cols-2 gap-12">
-        <div className="col-span-2 md:col-span-1">
+        <div className="mx-16 md:m-0 col-span-2 md:col-span-1">
           <Image
             src="/img/pages/events/casecomp2022.jpg"
             height={2481}
@@ -18,7 +18,7 @@ export default function Events() {
             alt="Case Comp 2022 Brief Intro"
           />
         </div>
-        <div className="col-span-2 md:col-span-1">
+        <div className="mx-16 md:m-0 col-span-2 md:col-span-1">
           <Image
             src="/img/pages/events/casecomp2022details.jpg"
             height={2481}

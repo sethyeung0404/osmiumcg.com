@@ -48,5 +48,9 @@
 
   "SG": "Singapore Office",
   "SGAddress": "Level 42, Six Battery Road, 049909 Singapore",
-  "SGAddress2": "Central Business District"
+  "SGAddress2": "Central Business District",
+
+  "JP": "Japan Office",
+  "JPAddress": "Kyobashi",
+  "JPAddress2": "Tokyo, Chuo City"
 }

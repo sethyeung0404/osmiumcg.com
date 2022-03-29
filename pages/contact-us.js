@@ -16,30 +16,45 @@ export default function ContactUs() {
       <section className="mt-3">
         <SubPageHeading1 Title={t('Contact')} />
 
-        <div className="grid grid-cols-12 my-6">
-          <div className="col-span-7 text-center">
-            <MapWrapper />
+        <div className="border-rounded my-6 grid grid-cols-12 bg-slate-50">
+          <div className="col-span-12 h-80 w-full text-center md:col-span-7 md:h-full">
+            <MapWrapper Location="HK" />
           </div>
-          <div className="col-span-5">
+          <div className="col-span-12 p-8 md:col-span-5">
             <MapDescription
               Country={t('HK')}
               District={t('HKAddress2')}
+              Phone
               EmailAddress="info@osmiumcg.com"
               FullAddress={t('HKAddress')}
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-12 my-6">
-          <div className="col-span-7 text-center">
-            <MapWrapper />
+        <div className="border-rounded my-6 grid grid-cols-12 bg-slate-50">
+          <div className="col-span-12 h-80 w-full text-center md:col-span-7 md:h-full">
+            <MapWrapper Location="SG" />
           </div>
-          <div className="col-span-5">
+          <div className="col-span-12 p-8 md:col-span-5">
             <MapDescription
               Country={t('SG')}
               District={t('SGAddress2')}
               EmailAddress="info+sg@osmiumcg.com"
               FullAddress={t('SGAddress')}
+            />
+          </div>
+        </div>
+
+        <div className="border-rounded my-6 grid grid-cols-12 bg-slate-50">
+          <div className="col-span-12 h-80 w-full text-center md:col-span-7 md:h-full">
+            <MapWrapper Location="JP" />
+          </div>
+          <div className="col-span-12 p-8 md:col-span-5">
+            <MapDescription
+              Country={t('JP')}
+              District={t('JPAddress2')}
+              EmailAddress="info+jp@osmiumcg.com"
+              FullAddress={t('JPAddress')}
             />
           </div>
         </div>

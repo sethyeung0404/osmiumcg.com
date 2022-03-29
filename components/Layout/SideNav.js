@@ -132,27 +132,7 @@ export default function SideNav() {
                   <div className="flow-root">
                     <Link href="#">
                       <a className="-m-2 block p-2 font-medium text-gray-900">
-                        Sign in
-                      </a>
-                    </Link>
-                  </div>
-
-                  {/* Search */}
-                  <div className="group text-left font-medium">
-                    <Link href="#" alt="">
-                      <a className="">
-                        <div className=" flex w-full space-x-2 ">
-                          <div>
-                            <FontAwesomeIcon
-                              icon={faMagnifyingGlass}
-                              className="h-5 w-5 text-gray-500 group-hover:text-zinc-400"
-                              aria-hidden="true"
-                            />
-                          </div>
-                          <div className="text-gray-900 group-hover:text-zinc-400">
-                            Search
-                          </div>
-                        </div>
+                        {t('SignIn')}
                       </a>
                     </Link>
                   </div>
@@ -281,29 +261,43 @@ export default function SideNav() {
           className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6"
         >
           <div className="flex h-16 items-center">
-            {/*Bar Icons */}
-            <button
-              type="button"
-              className={`${
-                open
-                  ? 'hidden'
-                  : 'rounded-md bg-white p-2 text-gray-400 transition duration-1000 ease-in-out lg:hidden'
-              }`}
-              onClick={() => setOpen(true)}
-            >
-              <MenuAlt4Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-            <button
-              type="button"
-              className={`${
-                open
-                  ? 'rounded-md bg-white p-2 text-gray-400 lg:hidden'
-                  : 'hidden'
-              }`}
-              onClick={() => setOpen(false)}
-            >
-              <XIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
+            <div className="flex lg:hidden w-full justify-between items-center">
+              {/*Bar Icons & Search Icons in mobile view*/}
+              <div>
+                <button
+                  type="button"
+                  className={`${
+                    open
+                      ? 'hidden'
+                      : 'rounded-md bg-white p-2 text-gray-400 transition duration-1000 ease-in-out lg:hidden'
+                  }`}
+                  onClick={() => setOpen(true)}
+                >
+                  <MenuAlt4Icon className="h-6 w-6" aria-hidden="true" />
+                </button>
+                <button
+                  type="button"
+                  className={`${
+                    open
+                      ? 'rounded-md bg-white p-2 text-gray-400 lg:hidden'
+                      : 'hidden'
+                  }`}
+                  onClick={() => setOpen(false)}
+                >
+                  <XIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
+              </div>
+              <div className="mr-2">
+                <Link href="#" alt="">
+                  <a className="text-gray-400 hover:text-gray-500 hover:duration-300">
+                    <FontAwesomeIcon
+                      icon={faMagnifyingGlass}
+                      aria-hidden="true"
+                    />
+                  </a>
+                </Link>
+              </div>
+            </div>
 
             {/* Logo */}
             <div className="absolute left-1/2 flex h-12 w-32 -translate-x-1/2 lg:static lg:left-0 lg:translate-x-0">
@@ -395,12 +389,9 @@ export default function SideNav() {
             <div className="ml-auto hidden h-full items-center space-x-6 text-base font-medium text-gray-900 hover:text-zinc-500 hover:duration-500 lg:flex lg:justify-end">
               {/* Sign In */}
               <div className="ml-4 inline-flex h-full border-b-2 border-transparent hover:border-ocg-blue">
-                <a
-                  href="https://learning.osmiumcg.com/"
-                  className="self-center"
-                >
-                  {t('SignIn')}
-                </a>
+                <Link href="#">
+                  <a className="self-center">{t('SignIn')}</a>
+                </Link>
               </div>
 
               {/* Search */}
