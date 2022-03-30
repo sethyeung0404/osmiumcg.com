@@ -37,7 +37,7 @@ Disclaimer.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Disclaimer</title>
-          <meta name="description" content="" />
+          <meta name="description" content="Osmium Consulting Group Disclaimer" />
         </Head>
       }
     >

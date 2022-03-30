@@ -10,6 +10,7 @@ import RoundButton from '@/Buttons/RoundButton'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Home() {
   const { t } = useTranslation('index')
@@ -123,7 +124,26 @@ export default function Home() {
 }
 
 Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>
+  return (
+    <Layout
+      headContent={
+        <Head>
+          <title>Osmium Consulting Group | Recruitment Professionals</title>
+          <meta property="og:url" content="http://www.osmiumcg.com/" />
+          <meta
+            property="og:title"
+            content="Osmium Consulting Group | Recruitment Professionals"
+          />
+          <meta
+            property="og:description"
+            content="“Osmium Consulting Group” was founded with one single aim in mind - to provide professional recruitment and HR advisory services to our clients and candidates."
+          />
+        </Head>
+      }
+    >
+      {page}
+    </Layout>
+  )
 }
 
 export const getStaticProps = async ({ locale }) => ({

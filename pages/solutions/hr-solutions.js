@@ -72,7 +72,10 @@ hrSolutions.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - HR Solutions</title>
-          <meta name="description" content="🥱🥱🥱" />
+          <meta
+            name="description"
+            content=""
+          />
         </Head>
       }
     >

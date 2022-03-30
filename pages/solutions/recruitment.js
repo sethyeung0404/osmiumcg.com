@@ -62,7 +62,6 @@ recruitment.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Recruitment</title>
-          <meta name="description" content="🥱🥱🥱" />
         </Head>
       }
     >

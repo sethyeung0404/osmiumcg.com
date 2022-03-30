@@ -38,7 +38,21 @@ export default function Careers() {
 }
 
 Careers.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>
+  return (
+    <Layout
+      headContent={
+        <Head>
+          <title>OCG - Careers</title>
+          <meta
+            name="description"
+            content="All abord! Join us at OCG! We are looking for talented people to join our team!"
+          />
+        </Head>
+      }
+    >
+      {page}
+    </Layout>
+  )
 }
 
 export const getStaticProps = async ({ locale }) => ({

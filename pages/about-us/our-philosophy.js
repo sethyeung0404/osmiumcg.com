@@ -73,7 +73,6 @@ ourPhilosophy.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Our Philosophy</title>
-          <meta name="description" content="🥱🥱🥱" />
         </Head>
       }
     >

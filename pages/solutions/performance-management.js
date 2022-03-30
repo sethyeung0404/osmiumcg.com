@@ -84,7 +84,6 @@ performanceManagement.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Performance Management</title>
-          <meta name="description" content="🥱🥱🥱" />
         </Head>
       }
     >

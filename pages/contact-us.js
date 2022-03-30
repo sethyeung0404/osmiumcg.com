@@ -67,17 +67,18 @@ ContactUs.getLayout = function getLayout(page) {
   const { t } = useTranslation('common')
 
   return (
-    <Layout>
-      <LayoutPage
-        headContent={
-          <Head>
-            <title>OCG - Contact Us</title>
-            <meta name="description" content="🥱🥱🥱" />
-          </Head>
-        }
-        title={t('Contact')}
-        subtitle={t('Contact')}
-      >
+    <Layout
+      headContent={
+        <Head>
+          <title>OCG - Contact Us</title>
+          <meta
+            name="description"
+            content="Contact Us at Osmium Consulting Group"
+          />
+        </Head>
+      }
+    >
+      <LayoutPage title={t('Contact')} subtitle={t('Contact')}>
         {page}
       </LayoutPage>
     </Layout>

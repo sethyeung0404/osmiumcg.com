@@ -41,8 +41,11 @@ bfs.getLayout = function getLayout(page) {
     <Layout
       headContent={
         <Head>
-          <title>OCG - FDFS</title>
-          <meta name="description" content="" />
+          <title>OCG - FDFS Division</title>
+          <meta
+            name="description"
+            content="Osmium Consulting Group FDFS Division"
+          />
         </Head>
       }
     >

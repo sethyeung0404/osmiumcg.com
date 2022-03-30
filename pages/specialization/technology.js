@@ -41,8 +41,11 @@ tmt.getLayout = function getLayout(page) {
     <Layout
       headContent={
         <Head>
-          <title>OCG - Recruitment</title>
-          <meta name="description" content="🥱🥱🥱" />
+          <title>OCG - TBCG Division</title>
+          <meta
+            name="description"
+            content="Osmium Consulting Group TBCG Division"
+          />
         </Head>
       }
     >

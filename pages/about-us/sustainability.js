@@ -82,7 +82,6 @@ substainability.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Substainability</title>
-          <meta name="description" content="🥱🥱🥱" />
         </Head>
       }
     >

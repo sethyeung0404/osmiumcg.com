@@ -43,7 +43,7 @@ Events.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Events</title>
-          <meta name="description" content="🥱🥱🥱" />
+          <meta name="description" content="Lastest Events of Osmium Consulting Group" />
         </Head>
       }
     >

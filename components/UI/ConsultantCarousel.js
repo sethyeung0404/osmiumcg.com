@@ -52,13 +52,13 @@ function ConsultantCarousel({ Division }) {
             <Consultant
               name="Alan KAN"
               title1="Associate Consultant"
-              src="/img/pages/specialization/FDFS/Athena.webp"
-            />
+              src="/img/pages/specialization/FDFS/Alan.webp"
+            />*/}
             <Consultant
               name="Athena PANG"
-              title1="Associate Consultant"
-              src="/img/pages/specialization/FDFS/Alan.webp"
-            /> */}
+              title1="Consultant"
+              src="/img/pages/specialization/FDFS/Athena.webp"
+            />
           </div>
         </div>
         <div className="self-center md:pr-6">

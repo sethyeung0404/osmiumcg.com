@@ -46,7 +46,6 @@ overview.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Overview</title>
-          <meta name="description" content="🥱🥱🥱" />
         </Head>
       }
     >
