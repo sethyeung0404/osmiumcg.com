@@ -92,29 +92,45 @@ export default function Home() {
           <HomePageSectionTitle Title={t('Awards')} />
           <Divider center colour="blue" />
         </div>
-        <div className="mx-auto grid grid-cols-6 items-center justify-center px-5 lg:max-w-3xl">
-          <div className="col-span-3 md:col-span-2">
+        <div className="mx-auto grid grid-cols-12 items-center justify-center">
+          <div className="col-span-6 md:col-span-3">
             <Image
-              width={200}
-              height={200}
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
               src="/img/pages/index/awards/gec2020.webp"
               alt="GEC Award"
             />
           </div>
-          <div className="col-span-3 md:col-span-2">
+          <div className="col-span-6 md:col-span-3">
             <Image
-              width={200}
-              height={200}
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
               src="/img/pages/index/awards/ffge2020.webp"
               alt="FFGE Award"
             />
           </div>
-          <div className="col-span-6 fill-current md:col-span-2">
+          <div className="col-span-6 md:col-span-3">
             <Image
-              width={380}
-              height={150}
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
               src="/img/pages/index/awards/EOELogo-F.webp"
               alt="EOE Award"
+            />
+          </div>
+          <div className="col-span-6 md:col-span-3 md:px-8">
+            <Image
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
+              src="/img/pages/index/awards/JobsdbHrAward.webp"
+              alt="JobsDB HR Award"
             />
           </div>
         </div>
