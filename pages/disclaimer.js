@@ -37,7 +37,10 @@ Disclaimer.getLayout = function getLayout(page) {
       headContent={
         <Head>
           <title>OCG - Disclaimer</title>
-          <meta name="description" content="Osmium Consulting Group Disclaimer" />
+          <meta
+            name="description"
+            content="Osmium Consulting Group Disclaimer"
+          />
         </Head>
       }
     >
@@ -48,6 +51,6 @@ Disclaimer.getLayout = function getLayout(page) {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common','disclaimer'])),
+    ...(await serverSideTranslations(locale, ['common', 'disclaimer'])),
   },
 })

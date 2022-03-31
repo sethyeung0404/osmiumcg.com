@@ -1,9 +1,10 @@
 body {
-  font-family: 'Nunito Sans', 'Noto Sans SC', 'Noto Sans TC', "Segoe UI", sans-serif;
+  font-family: 'Nunito Sans', 'Noto Sans SC', 'Noto Sans TC', 'Segoe UI',
+    sans-serif;
   -webkit-font-smoothing: auto;
   max-width: 100%;
   overflow-x: hidden;
-  color:#1d1d1f;
+  color: #1d1d1f;
 }
 
 .embla {
@@ -26,7 +27,7 @@ body {
 }
 
 .imgonbottom:after {
-  content: "";
+  content: '';
   padding-bottom: 100%;
   display: block;
 }
@@ -40,7 +41,7 @@ body {
 }
 
 .imgontop {
-  content: "";
+  content: '';
   padding-bottom: 100%;
 }
 

@@ -84,10 +84,10 @@ export default function footer() {
             Number : 68-638-4815
           </div>
           <div className="">
-            <Link href="disclaimer">
+            <Link href="/disclaimer">
               <a className="cursor-pointer border-r-2 px-3">Disclaimer</a>
             </Link>
-            <Link href="terms">
+            <Link href="/terms">
               <a className="px-3">Terms of Use</a>
             </Link>
           </div>

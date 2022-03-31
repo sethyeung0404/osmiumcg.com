@@ -133,7 +133,8 @@ export default function SideNav() {
                     <a
                       href="http://dev.osmiumcg.xyz"
                       target="_blank"
-                      className="-m-2 block p-2 font-medium text-gray-900" rel="noreferrer"
+                      className="-m-2 block p-2 font-medium text-gray-900"
+                      rel="noreferrer"
                     >
                       {t('SignIn')}
                     </a>
@@ -302,14 +303,10 @@ export default function SideNav() {
             </div>
 
             {/* Logo */}
-            <div className="absolute left-1/2 flex h-12 w-32 -translate-x-1/2 lg:static lg:left-0 lg:translate-x-0">
+            <div className="absolute left-1/2 flex h-12 w-32 -translate-x-1/2 lg:relative lg:left-0 lg:translate-x-0">
               <Link href="/" locale={i18n.language}>
                 <a className="inline-flex">
-                  <Image
-                    src="/img/nav/logo.png"
-                    alt="OCG Logo"
-                    layout="fill"
-                  />
+                  <Image src="/img/nav/logo.png" alt="OCG Logo" layout="fill" />
                 </a>
               </Link>
             </div>
@@ -394,7 +391,8 @@ export default function SideNav() {
                 <a
                   href="http://dev.osmiumcg.xyz"
                   target="_blank"
-                  className="self-center" rel="noreferrer"
+                  className="self-center"
+                  rel="noreferrer"
                 >
                   {t('SignIn')}
                 </a>

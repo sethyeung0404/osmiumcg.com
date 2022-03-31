@@ -49,6 +49,6 @@ Terms.getLayout = function getLayout(page) {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common','disclaimer'])),
+    ...(await serverSideTranslations(locale, ['common', 'disclaimer'])),
   },
 })
