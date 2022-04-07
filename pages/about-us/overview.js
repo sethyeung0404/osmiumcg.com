@@ -24,6 +24,19 @@ export default function overview() {
           <SubPageHeading2 Title={t('OurGoal')} />
           <SubPageParagraph1 Text={t('OurGoal1')} />
           <SubPageParagraph1 Text={t('OurGoal2')} />
+          <div className="text-lg">
+            Check out our
+            <button className="m-2 cursor-pointer rounded-2xl bg-slate-400 py-1 px-3 font-bold text-white hover:bg-purple-blue">
+              <a
+                target="_blank"
+                href="https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02"
+                rel="noreferrer"
+              >
+                Notion Wiki
+              </a>
+            </button>
+            to know more about us!
+          </div>
         </div>
 
         <div className="row pt-2">
