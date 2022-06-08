@@ -57,7 +57,7 @@ function ConsultantCarousel({ Division }) {
             <Consultant
               name="Cary SIU"
               title1="Consultant"
-              src="/img/pages/specialization/TBCG/Cary.webp"
+              src="/img/pages/specialization/FDFS/Cary.webp"
             />
           </div>
         </div>
