@@ -20,7 +20,8 @@ function ConsultantCarousel({ Division }) {
           <div className="embla__container">
             <Consultant
               name="Charlton LAM"
-              title1="Deputy Head"
+              title1="Associate Director"
+              title2="Head of BD & Operations"
               src="/img/pages/specialization/FDFS/Charlton.webp"
             />
             <Consultant
@@ -43,21 +44,20 @@ function ConsultantCarousel({ Division }) {
               title1="Sales Support Manager"
               src="/img/pages/specialization/FDFS/Roberta.webp"
             />
-            {/*
             <Consultant
               name="Teri HAU"
               title1="Consultant"
               src="/img/pages/specialization/FDFS/Teri.webp"
             />
             <Consultant
-              name="Alan KAN"
-              title1="Associate Consultant"
-              src="/img/pages/specialization/FDFS/Alan.webp"
-            />*/}
-            <Consultant
               name="Athena PANG"
               title1="Consultant"
               src="/img/pages/specialization/FDFS/Athena.webp"
+            />
+            <Consultant
+              name="Cary SIU"
+              title1="Consultant"
+              src="/img/pages/specialization/TBCG/Cary.webp"
             />
           </div>
         </div>
@@ -78,7 +78,8 @@ function ConsultantCarousel({ Division }) {
           <div className="embla__container">
             <Consultant
               name="Carol LAU"
-              title1="Head"
+              title1="Director"
+              title2="Head of Recruitment"
               src="/img/pages/specialization/TBCG/Carol.webp"
             />
             <Consultant
@@ -87,9 +88,34 @@ function ConsultantCarousel({ Division }) {
               src="/img/pages/specialization/TBCG/Celine.webp"
             />
             <Consultant
+              name="Larry CHAN"
+              title1="Senior Consultant"
+              src="/img/pages/specialization/TBCG/Larry.webp"
+            />
+            <Consultant
+              name="Aaron TSE"
+              title1="Senior Consultant"
+              src="/img/pages/specialization/TBCG/Aaron.webp"
+            />
+            <Consultant
               name="Alan LAW"
-              title1="Consultant"
+              title1="Assistant Manager"
               src="/img/pages/specialization/TBCG/Alan.webp"
+            />
+            <Consultant
+              name="Denise LAW"
+              title1="Consultant"
+              src="/img/pages/specialization/TBCG/Denise.webp"
+            />
+            <Consultant
+              name="Candice HA"
+              title1="Consultant"
+              src="/img/pages/specialization/TBCG/Candice.webp"
+            />
+            <Consultant
+              name="Janna KWONG"
+              title1="Consultant"
+              src="/img/pages/specialization/TBCG/Janna.webp"
             />
             <Consultant
               name="Morgan FONG"
