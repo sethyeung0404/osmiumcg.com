@@ -34,7 +34,6 @@ export const navigation = {
     },
   ],
   pages: [
-    { name: 'Events', href: '/events' },
     { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact-us' },
   ],
