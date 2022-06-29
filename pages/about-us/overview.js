@@ -25,14 +25,14 @@ export default function overview() {
           <SubPageParagraph1 Text={t('OurGoal1')} />
           <SubPageParagraph1 Text={t('OurGoal2')} />
           <div className="text-lg">
-            Check out our
+            Or check out our
             <button className="m-2 cursor-pointer rounded-2xl bg-slate-400 py-1 px-3 font-bold text-white hover:bg-purple-blue">
               <a
                 target="_blank"
                 href="https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02"
                 rel="noreferrer"
               >
-                Notion Wiki
+                Notion
               </a>
             </button>
             to know more about us!

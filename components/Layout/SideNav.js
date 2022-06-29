@@ -131,7 +131,7 @@ export default function SideNav() {
                   {/* Sign In */}
                   <div className="flow-root">
                     <a
-                      href="http://dev.osmiumcg.xyz"
+                      href="http://forum.osmiumcg.com/"
                       target="_blank"
                       className="-m-2 block p-2 font-medium text-gray-900"
                       rel="noreferrer"
@@ -389,7 +389,7 @@ export default function SideNav() {
               {/* Sign In */}
               <div className="ml-4 inline-flex h-full border-b-2 border-transparent hover:border-ocg-blue">
                 <a
-                  href="http://dev.osmiumcg.xyz"
+                  href="http://forum.osmiumcg.com/"
                   target="_blank"
                   className="self-center"
                   rel="noreferrer"

@@ -70,7 +70,7 @@ export default function Home() {
             <JobSlot />
           </div>
           <div className="mt-5">
-            <RoundButton />
+            <RoundButton href="https://hk.jobsdb.com/hk/search-jobs/osmium-consulting-group/"/>
           </div>
         </div>
       </section>
@@ -109,16 +109,6 @@ export default function Home() {
               height="100%"
               layout="responsive"
               objectFit="contain"
-              src="/img/pages/index/awards/ffge2020.webp"
-              alt="FFGE Award"
-            />
-          </div>
-          <div className="col-span-6 md:col-span-3">
-            <Image
-              width="100%"
-              height="100%"
-              layout="responsive"
-              objectFit="contain"
               src="/img/pages/index/awards/EOELogo-F.webp"
               alt="EOE Award"
             />
@@ -131,6 +121,16 @@ export default function Home() {
               objectFit="contain"
               src="/img/pages/index/awards/JobsdbHrAward.webp"
               alt="JobsDB HR Award"
+            />
+          </div>
+          <div className="col-span-6 md:col-span-3">
+            <Image
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
+              src="/img/pages/index/awards/ffge2020.webp"
+              alt="FFGE Award"
             />
           </div>
         </div>

@@ -34,7 +34,7 @@ export const navigation = {
     },
   ],
   pages: [
-    { name: 'Careers', href: '/careers' },
+    { name: 'Careers', href: 'https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02' },
     { name: 'Contact', href: '/contact-us' },
   ],
 }
