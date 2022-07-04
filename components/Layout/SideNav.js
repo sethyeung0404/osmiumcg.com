@@ -197,7 +197,7 @@ export default function SideNav() {
                             alt="Notion Logo"
                             height={100}
                             width={100}
-                            src="/../public/img/nav/notion-logo.png"
+                            src="/img/nav/notion-logo.png"
                             layout="responsive"
                           />
                         </div>
@@ -470,7 +470,7 @@ export default function SideNav() {
                     alt="Notion Logo"
                     height={100}
                     width={100}
-                    src="/../public/img/nav/notion-logo.png"
+                    src="/img/nav/notion-logo.png"
                     layout="responsive"
                   />
                 </a>

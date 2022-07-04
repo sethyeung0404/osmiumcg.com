@@ -53,7 +53,7 @@ export default function footer() {
               alt="Notion Logo"
               height={2}
               width={2}
-              src="/../public/img/nav/notion-logo.png"
+              src="/img/nav/notion-logo.png"
               layout="responsive"
             />
           </a>
