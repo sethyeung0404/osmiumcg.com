@@ -184,6 +184,30 @@ export default function SideNav() {
                     </a>
                   </div>
 
+                  {/* Notion Icon*/}
+                  <div className="group ">
+                    <a
+                      rel="noreferrer"
+                      href="https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02"
+                      target="_blank"
+                    >
+                      <div className="flex w-full space-x-2 text-left font-medium">
+                        <div className="my-auto w-[1.15rem]">
+                          <Image
+                            alt="Notion Logo"
+                            height={100}
+                            width={100}
+                            src="/../public/img/nav/notion-logo.png"
+                            layout="responsive"
+                          />
+                        </div>
+                        <div className="text-gray-900 group-hover:text-zinc-500">
+                          Our Notion
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
                   {/* Translations */}
                   <div className="flow-root">
                     <Disclosure>
@@ -431,6 +455,24 @@ export default function SideNav() {
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedin} aria-hidden="true" />
+                </a>
+              </div>
+
+              {/* Notion Icons*/}
+              <div className="ml-2 w-4 ">
+                <a
+                  rel="noreferrer"
+                  href="https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02"
+                  className="text-black hover:text-gray-500"
+                  target="_blank"
+                >
+                  <Image
+                    alt="Notion Logo"
+                    height={100}
+                    width={100}
+                    src="/../public/img/nav/notion-logo.png"
+                    layout="responsive"
+                  />
                 </a>
               </div>
 

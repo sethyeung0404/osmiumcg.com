@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { navigation, language } from './Navigation'
@@ -13,33 +14,49 @@ export default function footer() {
       <div className="mx-auto max-w-4xl px-5 leading-5 lg:max-w-7xl">
         <div className="flex items-center justify-center gap-2 p-3 text-center">
           {/* Facebook Icons*/}
-          <Link href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/">
-            <a
-              className="h-9 w-9 rounded-full border-2 border-white text-base text-facebook-blue transition  duration-150 ease-in-out
+          <a
+            href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/"
+            rel="noreferrer"
+            className="h-9 w-9 rounded-full border-2 border-white text-base text-facebook-blue transition  duration-150 ease-in-out
                hover:bg-black hover:bg-opacity-5 hover:text-gray-500 focus:outline-none focus:ring-0"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                className="translate-y-[0.3rem]"
-                icon={faFacebookF}
-                aria-hidden="true"
-              />
-            </a>
-          </Link>
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              className="translate-y-[0.3rem]"
+              icon={faFacebookF}
+              aria-hidden="true"
+            />
+          </a>
           {/* LinkedIn Icons*/}
-          <Link href="https://www.linkedin.com/company/osmium-consulting-group">
-            <a
-              className="h-9 w-9 rounded-full border-2 border-white text-base text-linkedin-blue transition  duration-150 ease-in-out
+          <a
+            href="https://www.linkedin.com/company/osmium-consulting-group"
+            rel="noreferrer"
+            className="h-9 w-9 rounded-full border-2 border-white text-base text-linkedin-blue transition  duration-150 ease-in-out
                hover:bg-black hover:bg-opacity-5 hover:text-gray-500 focus:outline-none focus:ring-0"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                className=" translate-y-[0.35rem] "
-                icon={faLinkedinIn}
-                aria-hidden="true"
-              />
-            </a>
-          </Link>
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              className=" translate-y-[0.35rem] "
+              icon={faLinkedinIn}
+              aria-hidden="true"
+            />
+          </a>
+          {/* Notion Icons*/}
+          <a
+            rel="noreferrer"
+            href="https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02"
+            className="h-9 w-9 rounded-full border-2 border-white text-base text-linkedin-blue transition  duration-150 ease-in-out
+               hover:bg-black hover:bg-opacity-5 hover:text-gray-500 focus:outline-none focus:ring-0"
+            target="_blank"
+          >
+            <Image
+              alt="Notion Logo"
+              height={2}
+              width={2}
+              src="/../public/img/nav/notion-logo.png"
+              layout="responsive"
+            />
+          </a>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-6 lg:space-x-6">
