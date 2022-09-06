@@ -70,7 +70,7 @@ export default function Home() {
             <JobSlot />
           </div>
           <div className="mt-5">
-            <RoundButton href="https://hk.jobsdb.com/hk/search-jobs/osmium-consulting-group/"/>
+            <RoundButton href="https://hk.jobsdb.com/hk/search-jobs/osmium-consulting-group/" />
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import * as gtag from '../utils/gtag'
+import Facebook from '../utils/Facebook'
 
 export default function Document() {
   return (
