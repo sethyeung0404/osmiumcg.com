@@ -7,7 +7,6 @@ import { appWithTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import * as gtag from '../utils/gtag'
-import Facebook from '../utils/Facebook'
 
 config.autoAddCss = false
 
@@ -31,7 +30,6 @@ const MyApp = ({ Component, pageProps }) => {
           content="Osmium Consulting Group” was founded with one single aim in mind - to provide professional recruitment and HR advisory services to our clients and candidates."
         />
       </Head>
-      <Facebook />
     </Component>
   )
 }

@@ -1,6 +1,6 @@
 import Script from 'next/script'
 
-function Facebook() {
+export default function Facebook() {
   return (
     <div>
       <div id="fb-root"></div>
@@ -31,5 +31,3 @@ function Facebook() {
     </div>
   )
 }
-
-export default Facebook

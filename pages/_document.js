@@ -1,6 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import * as gtag from '../utils/gtag'
-import Facebook from '../utils/Facebook'
 
 export default function Document() {
   return (
@@ -40,6 +39,33 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
+
+      <div id="fb-root"></div>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.fbAsyncInit = function() {
+              FB.init({
+                xfbml            : true,
+                version          : 'v14.0'
+              });
+            };
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            `,
+        }}
+      />
+
+      <div
+        className="fb-customerchat"
+        attribution="page_inbox"
+        page_id="106189320975122"
+      ></div>
     </Html>
   )
 }
