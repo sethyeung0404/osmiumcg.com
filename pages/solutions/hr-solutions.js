@@ -1,14 +1,10 @@
 import React from 'react'
-import Layout from '@/Layout/Layout'
-import LayoutPage from '@/Layout/LayoutPage'
-import SubPageHeading1 from '@/Text/SubPageHeading1'
-import SubPageHeading3 from '@/Text/SubPageHeading3'
+import Layout from '@/components/layout/Layout'
+import LayoutPage from '@/components/layout/LayoutPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import SubPageImage1 from '@/components/UI/SubPageImage1'
-import SubPageParagraph2 from '@/components/Text/SubPageParagraph2'
-import SubPageList1 from '@/components/Text/SubPageList1'
+import SubPageImage1 from '@/components/ui/SubPageImage1'
 
 export default function hrSolutions() {
   const { t } = useTranslation('solutions')
@@ -16,27 +12,27 @@ export default function hrSolutions() {
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
-        <SubPageHeading1 Title={t('common:HR')} />
+        <h1>{t('common:HR')} </h1>
 
         <div className="align-center my-6 flex flex-col items-center sm:flex-row">
           <SubPageImage1 href="/img/pages/solutions/hr1.webp" name="hr1" />
-          <div className=" basis-full  md:basis-1/2">
-            <SubPageHeading3 Title={t('HRTitle1')} />
-            <SubPageParagraph2 Text={t('HR1Content1')} />
+          <div className="basis-full md:basis-1/2">
+            <h2>{t('HRTitle1')}</h2>
+            <p className="PageText">{t('HR1Content1')} </p>
           </div>
         </div>
 
         <div className="align-center my-6 flex flex-col items-center sm:flex-row-reverse">
           <SubPageImage1 href="/img/pages/solutions/hr2.webp" name="hr2" />
           <div className="basis-full sm:basis-1/2">
-            <SubPageHeading3 Title={t('HRTitle2')} />
-            <SubPageParagraph2 Text={t('HR2Content1')} />
-            <SubPageParagraph2 Text={t('HR2Content2')} />
-            <ul className="list-disc pt-0">
-              <SubPageList1 Text={t('HR2List1')} />
-              <SubPageList1 Text={t('HR2List2')} />
-              <SubPageList1 Text={t('HR2List3')} />
-              <SubPageList1 Text={t('HR2List4')} />
+            <h2>{t('HRTitle2')}</h2>
+            <p className="PageText">{t('HR2Content1')} </p>
+            <p className="PageText">{t('HR2Content2')} </p>
+            <ul className="PageList list-disc pt-0">
+              <li>{t('HR2List1')} </li>
+              <li>{t('HR2List2')} </li>
+              <li>{t('HR2List3')} </li>
+              <li>{t('HR2List4')} </li>
             </ul>
           </div>
         </div>
@@ -44,19 +40,19 @@ export default function hrSolutions() {
         <div className="align-center my-6 flex flex-col items-center sm:flex-row">
           <SubPageImage1 href="/img/pages/solutions/hr3.webp" name="hr3" />
           <div className="basis-full md:basis-1/2">
-            <SubPageHeading3 Title={t('HRTitle3')} />
-            <SubPageParagraph2 Text={t('HR3Content1')} />
-            <SubPageParagraph2 Text={t('HR3Content2')} />
-            <SubPageParagraph2 Text={t('HR3Content3')} />
-            <SubPageParagraph2 Text={t('HR3Content4')} />
+            <h2>{t('HRTitle3')}</h2>
+            <p className="PageText">{t('HR3Content1')} </p>
+            <p className="PageText">{t('HR3Content2')} </p>
+            <p className="PageText">{t('HR3Content3')} </p>
+            <p className="PageText">{t('HR3Content4')} </p>
           </div>
         </div>
 
         <div className="align-center my-6 flex flex-col items-center sm:flex-row-reverse">
           <SubPageImage1 href="/img/pages/solutions/hr4.webp" name="hr4" />
           <div className="basis-full sm:basis-1/2">
-            <SubPageHeading3 Title={t('HRTitle4')} />
-            <SubPageParagraph2 Text={t('HR4Content1')} />
+            <h2>{t('HRTitle4')}</h2>
+            <p className="PageText">{t('HR4Content1')} </p>
           </div>
         </div>
       </section>

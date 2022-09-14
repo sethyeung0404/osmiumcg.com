@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply my-4 border-b-2 py-3 text-3xl font-bold;
+  }
+  h2 {
+    @apply my-5 text-3xl font-semibold;
+  }
+  h3 {
+    @apply my-5 text-2xl font-semibold text-slate-500;
+  }
+  h6 {
+    @apply pb-3 text-base;
+  }
+}
+
+@layer components {
+  h1.SectionTitle {
+    @apply m-2 my-4 border-b-2 py-3 text-4xl font-bold;
+  }
+  p.PageText {
+    @apply pb-3 text-justify text-base font-light leading-6;
+  }
+  ul.PageList > li {
+    @apply ml-8 text-base font-light;
+  }
+}

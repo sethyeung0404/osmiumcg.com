@@ -1,10 +1,8 @@
 import React from 'react'
-import Layout from '@/Layout/Layout'
+import Layout from '@/components/layout/Layout'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import SubPageHeading2 from '@/components/Text/SubPageHeading2'
-import SubPageParagraph2 from '@/components/Text/SubPageParagraph2'
 
 export default function Disclaimer() {
   const { t } = useTranslation('disclaimer')
@@ -17,14 +15,14 @@ export default function Disclaimer() {
         </div>
       </div>
       <div className="border-t">
-        <SubPageHeading2 Title={t('DT1')} />
+        <h1>{t('DT1')} </h1>
         <div className="space-y-4">
-          <SubPageParagraph2 Text={t('d1c1')} />
-          <SubPageParagraph2 Text={t('d1c2')} />
-          <SubPageParagraph2 Text={t('d1c3')} />
+          <p className="PageText">{t('d1c1')} </p>
+          <p className="PageText">{t('d1c2')} </p>
+          <p className="PageText">{t('d1c3')} </p>
         </div>
-        <SubPageHeading2 Title={t('DT2')} />
-        <SubPageParagraph2 Text={t('d2c1')} />
+        <h1>{t('DT2')} </h1>
+        <p className="PageText">{t('d2c1')} </p>
       </div>
       <div className="border-t"></div>
     </div>

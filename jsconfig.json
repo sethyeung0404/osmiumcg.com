@@ -3,10 +3,9 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/Buttons/*": ["components/Buttons/*"],
-      "@/Layout/*": ["components/Layout/*"],
-      "@/UI/*": ["components/UI/*"],
-      "@/Text/*": ["components/Text/*"]
+      "@/Buttons/*": ["components/buttons/*"],
+      "@/Layout/*": ["components/layout/*"],
+      "@/UI/*": ["components/ui/*"],
     }
   }
 }

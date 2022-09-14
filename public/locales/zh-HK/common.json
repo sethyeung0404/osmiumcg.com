@@ -3,7 +3,7 @@
 
   "About": "關於我們",
 
-  "Overview": "關於我們",
+  "OurTeam": "關於我們",
   "Philosophy": "我們的工作流程",
   "Sustainability": "企業責任",
 
@@ -13,8 +13,11 @@
   "Performance": "績效管理",
 
   "Specialization": "行業",
-  "FDFS": "金融科技、去中心化金融及金融服務",
-  "TBCG": "科技、區塊鏈、加密貨幣及遊戲化金融",
+  "Banking": "Banking & Financial Services",
+  "IT": "Information Technology",
+  "Web3": "Web3",
+
+  "News": "新聞",
 
   "Sector": "涵蓋的業務領域",
   "JobOpenings": "最新職位空缺",

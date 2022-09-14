@@ -1,12 +1,11 @@
 import React from 'react'
-import Layout from '@/Layout/Layout'
-import LayoutPage from '@/Layout/LayoutPage'
+import Layout from '@/components/layout/Layout'
+import LayoutPage from '@/components/layout/LayoutPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import SubPageHeading1 from '@/Text/SubPageHeading1'
-import MapWrapper from '@/UI/MapWrapper'
-import MapDescription from '@/UI/MapDescription'
+import MapWrapper from '@/components/map/MapWrapper'
+import MapDescription from '@/components/map/MapDescription'
 
 export default function ContactUs() {
   const { t } = useTranslation('common')
@@ -14,7 +13,7 @@ export default function ContactUs() {
   return (
     <div className="">
       <section className="mt-3">
-        <SubPageHeading1 Title={t('Contact')} />
+        <h1>{t('Contact')} </h1>
 
         <div className="border-rounded my-6 grid grid-cols-12 bg-slate-50">
           <div className="col-span-12 h-80 w-full text-center md:col-span-7 md:h-full">

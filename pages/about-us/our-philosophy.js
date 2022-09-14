@@ -1,63 +1,70 @@
 import React from 'react'
-import Layout from '@/Layout/Layout'
-import LayoutPage from '@/Layout/LayoutPage'
-import SubPageHeading1 from '@/Text/SubPageHeading1'
-import SubPageHeading2 from '@/Text/SubPageHeading2'
-import SubPageParagraph1 from '@/Text/SubPageParagraph1'
-import SubPageList1 from '@/Text/SubPageList1'
-import LongDivider from '@/components/UI/LongDivider'
-import { useTranslation } from 'next-i18next'
+import Layout from '@/components/layout/Layout'
+import LayoutPage from '@/components/layout/LayoutPage'
+import LongDivider from '@/components/ui/LongDivider'
+import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import EURAnimation from '@/components/UI/EURAnimation'
 export default function ourPhilosophy() {
   const { t } = useTranslation('about-us')
 
   return (
     <div className="">
       <section className="mt-3">
-        <SubPageHeading1 Title={t('common:Philosophy')} />
-        <EURAnimation />
-        <SubPageHeading1 Title={t('Methodlogy')} />
+        <h1>{t('common:Philosophy')} </h1>
+        <div className="pb-3">
+          <p className="py-2 text-lg ">
+            <Trans
+              ns="about-us"
+              i18nKey="EUR1" // optional -> fallbacks to defaults if not provided
+              defaults="The Three Main Pillars of our Recruitment philosophy are <b>Experience, Understanding & Relationship</b>" // optional defaultValue
+              components={{ b: <b /> }}
+            />
+          </p>
+          <p className="py-2">{t('EUR2')}</p>
+          <p className="py-2">{t('EUR3')}</p>
+          <p className="py-2">{t('EUR4')}</p>
+        </div>
+        <h1>{t('Methodology')} </h1>
         <div>
-          <SubPageHeading2 Title={t('Step1')} />
-          <SubPageParagraph1 Text={t('S1Content1')} />
-          <SubPageParagraph1 Text={t('S1Content2')} />
+          <h3>{t('Step1')} </h3>
+          <h6>{t('S1Content1')}</h6>
+          <h6>{t('S1Content2')}</h6>
 
           <LongDivider />
-          <SubPageHeading2 Title={t('Step2')} />
-          <SubPageParagraph1 Text={t('S2Content1')} />
-          <ul className="list-disc pt-0">
-            <SubPageList1 Text={t('S2List1')} />
-            <SubPageList1 Text={t('S2List2')} />
-            <SubPageList1 Text={t('S2List3')} />
-            <SubPageList1 Text={t('S2List4')} />
+          <h3> {t('Step2')} </h3>
+          <h6>{t('S2Content1')} </h6>
+          <ul className="PageList list-disc pt-0">
+            <li>{t('S2List1')} </li>
+            <li>{t('S2List2')} </li>
+            <li>{t('S2List3')} </li>
+            <li>{t('S2List4')} </li>
           </ul>
 
           <LongDivider />
-          <SubPageHeading2 Title={t('Step3')} />
-          <SubPageParagraph1 Text={t('S3Content1')} />
-          <ul className="list-disc pt-0">
-            <SubPageList1 Text={t('S3List1')} />
-            <SubPageList1 Text={t('S3List2')} />
+          <h3> {t('Step3')} </h3>
+          <h6>{t('S3Content1')} </h6>
+          <ul className="PageList list-disc pt-0">
+            <li>{t('S3List1')} </li>
+            <li>{t('S3List2')} </li>
           </ul>
 
           <LongDivider />
-          <SubPageHeading2 Title={t('Step4')} />
-          <SubPageParagraph1 Text={t('S4Content1')} />
-          <ul className="list-disc pt-0">
-            <SubPageList1 Text={t('S4List1')} />
-            <SubPageList1 Text={t('S4List2')} />
-            <SubPageList1 Text={t('S4List3')} />
-            <SubPageList1 Text={t('S4List4')} />
+          <h3> {t('Step4')} </h3>
+          <h6>{t('S4Content1')} </h6>
+          <ul className="PageList list-disc pt-0">
+            <li>{t('S4List1')} </li>
+            <li>{t('S4List2')} </li>
+            <li>{t('S4List3')} </li>
+            <li>{t('S4List4')} </li>
           </ul>
 
           <LongDivider />
-          <SubPageHeading2 Title={t('Step5')} />
-          <SubPageParagraph1 Text={t('S5Content1')} />
-          <ul className="list-disc pt-0">
-            <SubPageList1 Text={t('S5List1')} />
-            <SubPageList1 Text={t('S5List2')} />
+          <h3> {t('Step5')} </h3>
+          <h6>{t('S5Content1')} </h6>
+          <ul className="PageList list-disc pt-0">
+            <li>{t('S5List1')} </li>
+            <li>{t('S5List2')} </li>
           </ul>
         </div>
       </section>

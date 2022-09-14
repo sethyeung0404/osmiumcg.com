@@ -112,18 +112,37 @@ export default function SideNav() {
 
                 {/* Links without submenu */}
                 <div className="space-y-4 border-t border-gray-200 py-6 px-4">
-                  {navigation.pages.map((page) => (
-                    <div key={page.name} className="flow-root">
-                      <Link href={page.href} locale={i18n.language}>
-                        <a
-                          onClick={() => setOpen(false)}
-                          className="-m-2 block px-2 py-3 font-medium text-gray-900"
-                        >
-                          {t(page.name)}
-                        </a>
-                      </Link>
-                    </div>
-                  ))}
+                  {navigation.pages.map((page) => {
+                    if (page.name == 'News' || page.name == 'Careers') {
+                      return (
+                        <div key={page.name} className="flow-root">
+                          <a
+                            href={page.href}
+                            locale={i18n.language}
+                            rel="noreferrer"
+                            target="_blank"
+                            onClick={() => setOpen(false)}
+                            className="-m-2 block px-2 py-3 font-medium text-gray-900"
+                          >
+                            {t(page.name)}
+                          </a>
+                        </div>
+                      )
+                    } else {
+                      return (
+                        <div key={page.name} className="flow-root">
+                          <Link href={page.href} locale={i18n.language}>
+                            <a
+                              onClick={() => setOpen(false)}
+                              className="-m-2 block px-2 py-3 font-medium text-gray-900"
+                            >
+                              {t(page.name)}
+                            </a>
+                          </Link>
+                        </div>
+                      )
+                    }
+                  })}
                 </div>
 
                 {/* Icons */}
@@ -368,10 +387,7 @@ export default function SideNav() {
                             <Popover.Button className="relative z-10 -ml-4 px-2 text-base">
                               <div className="overflow-hidden">
                                 <div className=" absolute left-0 mt-12 -translate-x-32 gap-6 bg-white p-3">
-                                  <ul
-                                    role="list"
-                                    className="w-[25rem] space-y-3 "
-                                  >
+                                  <ul role="list" className="w-80 space-y-3">
                                     {category.items.map((item) => (
                                       <li key={item.name} className="">
                                         <Link
@@ -398,13 +414,34 @@ export default function SideNav() {
                   </Popover>
                 ))}
 
-                {navigation.pages.map((page) => (
-                  <Link key={page.name} href={page.href} locale={i18n.language}>
-                    <a className="flex items-center border-b-2 border-transparent text-gray-700 transition-colors duration-200 ease-out hover:border-ocg-blue hover:text-zinc-500">
-                      {t(page.name)}
-                    </a>
-                  </Link>
-                ))}
+                {navigation.pages.map((page) => {
+                  if (page.name == 'News' || page.name == 'Careers') {
+                    return (
+                      <a
+                        key={page.name}
+                        href={page.href}
+                        locale={i18n.language}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center border-b-2 border-transparent text-gray-700 transition-colors duration-200 ease-out hover:border-ocg-blue hover:text-zinc-500"
+                      >
+                        {t(page.name)}
+                      </a>
+                    )
+                  } else {
+                    return (
+                      <Link
+                        key={page.name}
+                        href={page.href}
+                        locale={i18n.language}
+                      >
+                        <a className="flex items-center border-b-2 border-transparent text-gray-700 transition-colors duration-200 ease-out hover:border-ocg-blue hover:text-zinc-500">
+                          {t(page.name)}
+                        </a>
+                      </Link>
+                    )
+                  }
+                })}
               </div>
             </Popover.Group>
 

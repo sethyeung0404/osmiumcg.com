@@ -3,7 +3,7 @@
 
   "About": "About",
 
-  "Overview": "Overview",
+  "OurTeam": "Our Team",
   "Philosophy": "Our Philosophy",
   "Sustainability": "Sustainability",
 
@@ -13,8 +13,11 @@
   "Performance": "Performance Management",
 
   "Specialization": "Specialization",
-  "FDFS": "FinTech, DeFi & Financial Services ( FDFS )",
-  "TBCG": "Technology, Blockchain, Crypto & GameFi ( TBCG )",
+  "Banking": "Banking & Financial Services",
+  "IT": "Information Technology",
+  "Web3": "Web3",
+
+  "News": "News",
 
   "Sector": "The Practice Sectors We Cover",
   "JobOpenings": "Latest Job Openings",

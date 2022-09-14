@@ -3,7 +3,7 @@
 
   "About": "会社情報",
 
-  "Overview": "会社概要",
+  "OurTeam": "会社概要",
   "Philosophy": "企業理念",
   "Sustainability": "CSR",
 
@@ -13,9 +13,9 @@
   "Performance": "パフォーマンス管理",
 
   "Specialization": "専門分野",
-  "FDFS": "FinTech, DeFi & Financial Services ( FDFS )",
-  "TBCG": "Technology, Blockchain, Crypto & GameFi ( TBCG )",
-  "Corporate": "コーポレート",
+  "Banking": "Banking & Financial Services",
+  "IT": "Information Technology",
+  "Web3": "Web3",
 
   "Sector": "専門分野",
 

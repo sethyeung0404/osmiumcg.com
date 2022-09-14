@@ -4,7 +4,7 @@ export const navigation = {
       id: 'about',
       name: 'About',
       items: [
-        { name: 'Overview', href: '/about-us/overview' },
+        { name: 'OurTeam', href: '/about-us/our-team' },
         { name: 'Philosophy', href: '/about-us/our-philosophy' },
         { name: 'Sustainability', href: '/about-us/sustainability' },
       ],
@@ -26,10 +26,11 @@ export const navigation = {
       name: 'Specialization',
       items: [
         {
-          name: 'FDFS',
+          name: 'Banking',
           href: '/specialization/financial-services',
         },
-        { name: 'TBCG', href: '/specialization/technology' },
+        { name: 'IT', href: '/specialization/technology' },
+        { name: 'Web3', href: '/specialization/web3' },
       ],
     },
   ],

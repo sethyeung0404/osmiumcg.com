@@ -44,7 +44,7 @@ export default function LayoutPage({ children, title, subtitle }) {
         </div>
       </div>
 
-      <div className="mx-auto max-w-4xl p-5 text-sm lg:max-w-7xl">
+      <div className="mx-auto max-w-4xl p-5 lg:max-w-7xl">
         {/* Sitemap */}
         <div className="flex">
           <Link href="/">

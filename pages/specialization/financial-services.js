@@ -1,20 +1,18 @@
 import React from 'react'
-import Layout from '@/Layout/Layout'
-import LayoutPage from '@/Layout/LayoutPage'
-import ConsultantCarousel from '@/UI/ConsultantCarousel'
-import SubPageHeading1 from '@/Text/SubPageHeading1'
+import Layout from '@/components/layout/Layout'
+import LayoutPage from '@/components/layout/LayoutPage'
+import ConsultantCarousel from '@/components/card/consultant/ConsultantCarousel'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import SubPageParagraph2 from '@/components/Text/SubPageParagraph2'
-import MeetOurTeamButton from '@/components/Buttons/MeetOurTeamButton'
+import MeetOurTeamButton from '@/components/buttons/MeetOurTeamButton'
 export default function bfs() {
   const { t } = useTranslation('specialization')
 
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
-        <SubPageHeading1 Title={t('common:FDFS')} />
+        <h1>{t('common:FDFS')}</h1>
 
         <div className="grid grid-cols-3 pt-4 md:mx-6 lg:mx-12">
           <div className="col-span-3 mb-12 sm:col-span-1 md:mb-4">
@@ -22,8 +20,8 @@ export default function bfs() {
           </div>
 
           <div className="col-span-3 mb-4 sm:col-span-2">
-            <SubPageParagraph2 Text={t('FDFSContent1')} />
-            <SubPageParagraph2 Text={t('FDFSContent2')} />
+            <p className="PageText">{t('FDFSContent1')} </p>
+            <p className="PageText">{t('FDFSContent2')} </p>
             <div className="text-right">
               <MeetOurTeamButton />
             </div>

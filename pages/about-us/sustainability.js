@@ -1,15 +1,12 @@
 import React from 'react'
-import Layout from '@/Layout/Layout'
-import LayoutPage from '@/Layout/LayoutPage'
-import Divider from '@/components/UI/Divider'
-import SubPageHeading1 from '@/Text/SubPageHeading1'
-import SubPageHeading2 from '@/Text/SubPageHeading2'
-import SubPageParagraph1 from '@/Text/SubPageParagraph1'
+import Layout from '@/components/layout/Layout'
+import LayoutPage from '@/components/layout/LayoutPage'
+import Divider from '@/components/ui/Divider'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import PillarsCard from '@/components/UI/PillarsCard'
-import Quote from '@/components/Text/Quote'
+import PillarsCard from 'src/sustainability/PillarsCard'
+import Quote from '@/components/Quote'
 
 export default function substainability() {
   const { t } = useTranslation('about-us')
@@ -17,7 +14,7 @@ export default function substainability() {
   return (
     <div className="">
       <section className="mt-3">
-        <SubPageHeading1 Title={t('common:Sustainabilty')} />
+        <h1>{t('common:Sustainabilty')} </h1>
 
         <div>
           <Quote
@@ -32,15 +29,15 @@ export default function substainability() {
           />
         </div>
         <div>
-          <SubPageHeading2 Title={t('OR')} />
-          <SubPageParagraph1 Text={t('ORContent1')} />
+          <h3>{t('OR')}</h3>
+          <h6>{t('ORContent1')} </h6>
 
-          <SubPageHeading2 Title={t('OA')} />
-          <SubPageParagraph1 Text={t('OAContent1')} />
+          <h3>{t('OA')}</h3>
+          <h6>{t('OAContent1')} </h6>
 
-          <SubPageHeading2 Title={t('Our4Pillars')} />
+          <h3>{t('Our4Pillars')}</h3>
           <Divider colour="blue" />
-          <div className="m-2 grid grid-cols-1 p-2 sm:grid-cols-2">
+          <div className="grid grid-cols-1 p-2 md:grid-cols-2 gap-2">
             <PillarsCard
               title={t('OurCommunity')}
               colour="yellow"

@@ -1,5 +1,5 @@
 import React from 'react'
-import LearnMoreButton from '@/Buttons/LearnMoreButton'
+import LearnMoreButton from 'temp/LearnMoreButton'
 
 function Jobs({ jobs }) {
   return (

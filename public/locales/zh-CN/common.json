@@ -3,7 +3,7 @@
 
   "About": "关于我们",
 
-  "Overview": "关于我们",
+  "OurTeam": "关于我们",
   "Philosophy": "我们的工作流程",
   "Sustainability": "企业责任",
 
@@ -13,8 +13,11 @@
   "Performance": "绩效管理",
 
   "Specialization": "行业",
-  "FDFS": "金融科技、去中心化金融及金融服务",
-  "TBCG": "科技、区块链、加密货币及游戏化金融",
+  "Banking": "Banking & Financial Services",
+  "IT": "Information Technology",
+  "Web3": "Web3",
+
+  "News": "新闻",
 
   "Sector": "涵盖的业务领域",
   "JobOpenings": "最新职位空缺",

@@ -1,16 +1,16 @@
-import Layout from '@/Layout/Layout'
+import Layout from '@/components/layout/Layout'
 import Image from 'next/image'
-import HomePageSectionTitle from '@/Text/HomePageSectionTitle'
-import Divider from '@/components/UI/Divider'
-import HomeBanner from '@/UI/HomeBanner'
-import JobSlot from '@/components/Jobs/JobSlot'
-import SectorBlock from '@/UI/SectorBlock'
-import HomePageContactUsButton from '@/Buttons/HomePageContactUsButton'
-import RoundButton from '@/Buttons/RoundButton'
+import Divider from '@/components/ui/Divider'
+import HomeBanner from 'src/index/HomeBanner'
+import JobSlot from 'src/index/JobSlot'
+import SectorBlock from '@/components/ui/SectorBlock'
+import HomePageContactUsButton from 'src/index/HomePageContactUsButton'
+import RoundButton from '@/components/buttons/RoundButton'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 import Head from 'next/head'
+import SignupFormSession from '@/components/ui/SignupFormSession'
 
 export default function Home() {
   const { t } = useTranslation('index')
@@ -20,7 +20,7 @@ export default function Home() {
       <HomeBanner />
 
       {/* Main Page Text */}
-      <section
+      {/* <section
         id="main_page_text"
         className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
       >
@@ -30,11 +30,19 @@ export default function Home() {
           </p>
           <p className="text-justify text-lg">{t('mainTextContent')}</p>
         </div>
+      </section> */}
+      <section
+        id="main_page_text"
+        className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
+      >
+        <div className="grid gap-5">
+          <SignupFormSession />
+        </div>
       </section>
 
       {/* Section: Intro */}
       {/* Do it like a pop up later -> tbc */}
-      <section id="intro_black" className="my-2 bg-black px-8 text-white">
+      {/* <section id="intro_black" className="my-2 bg-black px-8 text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between py-5 text-left lg:px-5">
           <div>
             <p className="pb-4 text-xl">{t('s2a')}</p>
@@ -48,22 +56,22 @@ export default function Home() {
           </div>
           <HomePageContactUsButton text={t('s2button2')} />
         </div>
-      </section>
+      </section> */}
 
       {/* Section: Sector Coverage */}
-      <section id="sector_coverage" className="my-2 p-5">
+      {/* <section id="sector_coverage" className="my-2 p-5">
         <div className="mx-auto max-w-7xl bg-white">
-          <HomePageSectionTitle Title={t('common:Sector')} />
+          <h1 className="SectionTitle"> {t('common:Sector')} </h1>
           <Divider center colour="blue" />
           <SectorBlock />
         </div>
-      </section>
+      </section> */}
 
       {/* Section: Jobs Openings */}
       <section id="home_job" className="my-2 items-center bg-gray-100 p-5">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1">
-            <HomePageSectionTitle Title={t('common:JobOpenings')} />
+            <h1 className="SectionTitle">{t('common:JobOpenings')} </h1>
             <Divider center colour="blue" />
           </div>
           <div className="grid grid-cols-3 gap-5">
@@ -79,7 +87,7 @@ export default function Home() {
       {/* Articles 
       <section id="home_article" className="my-2 p-5">
         <div className="grid grid-cols-1">
-          <HomePageSectionTitle Title={t('Articles')} />
+          <h1 className="SectionTitle"> {t('Articles')} </h1>
           <Divider center colour="blue" />
         </div>
         <div>Articles *9</div>
@@ -89,7 +97,7 @@ export default function Home() {
       {/* Awards */}
       <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">
         <div className="grid grid-cols-1">
-          <HomePageSectionTitle Title={t('Awards')} />
+          <h1 className="SectionTitle"> {t('Awards')} </h1>
           <Divider center colour="blue" />
         </div>
         <div className="mx-auto grid grid-cols-12 items-center justify-center">
