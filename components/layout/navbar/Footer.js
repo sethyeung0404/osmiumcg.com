@@ -97,9 +97,9 @@ export default function footer() {
           or send an email to{' '}
           <a href="mailto:info@osmiumcg.com">info@osmiumcg.com</a>
         </div>
-        <div className="grid grid-cols-4 pt-1 justify-between">
-          <div className="col-span-4 sm:col-span-3">
-            Osmium Consulting Group Limited ( EA Licence No. 66295 ) | D-U-N-S
+        <div className="flex justify-between pt-1">
+          <div>
+            Osmium Consulting Group Limited ( EA Licence No. 69591 ) | Anywhere Everywhere Six Degrees Link Limited ( EA Licence No. 68784 ) | D-U-N-S
             Number : 68-638-4815
           </div>
           <div className="col-span-4 sm:col-span-1 inline-flex justify-between">
