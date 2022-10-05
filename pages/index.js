@@ -3,24 +3,27 @@ import Image from 'next/image'
 import Divider from '@/components/ui/Divider'
 import HomeBanner from 'src/index/HomeBanner'
 import JobSlot from 'src/index/JobSlot'
-import SectorBlock from '@/components/ui/SectorBlock'
+import SectorBlock from '@/components/card/division/SectorBlock'
 import HomePageContactUsButton from 'src/index/HomePageContactUsButton'
 import RoundButton from '@/components/buttons/RoundButton'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Link from 'next/link'
 import Head from 'next/head'
-import SignupFormSession from '@/components/ui/SignupFormSession'
+import SignupFormSession from '@/components/form/signupForm/SignupFormSession'
+import Card from 'src/index/Card'
 
 export default function Home() {
   const { t } = useTranslation('index')
 
   return (
     <main className="text-center">
-      <HomeBanner />
+      {/* <HomeBanner /> */}
+      <section className="mx-auto my-2 md:my-10 items-center p-5 md:max-w-3xl lg:max-w-7xl">
+        <Card t={t} />
+      </section>
 
-      {/* Main Page Text */}
-      {/* <section
+      {/* Banner Image & Slogan */}
+      <section
         id="main_page_text"
         className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
       >
@@ -30,7 +33,9 @@ export default function Home() {
           </p>
           <p className="text-justify text-lg">{t('mainTextContent')}</p>
         </div>
-      </section> */}
+      </section>
+
+      {/* Signup Form */}
       <section
         id="main_page_text"
         className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
@@ -39,7 +44,6 @@ export default function Home() {
           <SignupFormSession />
         </div>
       </section>
-
       {/* Section: Intro */}
       {/* Do it like a pop up later -> tbc */}
       {/* <section id="intro_black" className="my-2 bg-black px-8 text-white">
@@ -57,7 +61,6 @@ export default function Home() {
           <HomePageContactUsButton text={t('s2button2')} />
         </div>
       </section> */}
-
       {/* Section: Sector Coverage */}
       {/* <section id="sector_coverage" className="my-2 p-5">
         <div className="mx-auto max-w-7xl bg-white">
@@ -66,7 +69,6 @@ export default function Home() {
           <SectorBlock />
         </div>
       </section> */}
-
       {/* Section: Jobs Openings */}
       <section id="home_job" className="my-2 items-center bg-gray-100 p-5">
         <div className="mx-auto max-w-7xl">
@@ -82,7 +84,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* tbc.. no time */}
       {/* Articles 
       <section id="home_article" className="my-2 p-5">
@@ -93,7 +94,6 @@ export default function Home() {
         <div>Articles *9</div>
       </section>
       */}
-
       {/* Awards */}
       <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">
         <div className="grid grid-cols-1">
@@ -152,15 +152,18 @@ Home.getLayout = function getLayout(page) {
     <Layout
       headContent={
         <Head>
-          <title>Osmium Consulting Group | Recruitment Professionals</title>
+          <title>
+            OCG Recruitment : Web3, IT, Banking & Financial Services Recruitment
+            Specialist
+          </title>
           <meta property="og:url" content="http://www.osmiumcg.com/" />
           <meta
             property="og:title"
-            content="Osmium Consulting Group | Recruitment Professionals"
+            content="OCG Recruitment : Web3, IT, Banking & Financial Services Recruitment Specialist"
           />
           <meta
             property="og:description"
-            content="“Osmium Consulting Group” was founded with one single aim in mind - to provide professional recruitment and HR advisory services to our clients and candidates."
+            content="OCG Recruitment is a leading Web3, IT, Banking & Financial Services Recruitment firm in Hong Kong"
           />
         </Head>
       }

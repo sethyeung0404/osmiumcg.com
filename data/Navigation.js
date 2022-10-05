@@ -25,19 +25,24 @@ export const navigation = {
       id: 'specialization',
       name: 'Specialization',
       items: [
+        { name: 'Web3', href: '/specialization/web3' },
+        { name: 'IT', href: '/specialization/technology' },
         {
           name: 'Banking',
           href: '/specialization/financial-services',
         },
-        { name: 'IT', href: '/specialization/technology' },
-        { name: 'Web3', href: '/specialization/web3' },
       ],
     },
   ],
   pages: [
-    { name: 'News', href: 'https://osmiumcg.notion.site/News-and-Articles-5d3c73acbcce4d5b8446e01a4f030199' },
-    { name: 'Careers', href: 'https://osmiumcg.notion.site/OCG-Job-Board-99b46a83c23947a5a9a3fbfe8fff5dfc' },
-    { name: 'Contact', href: '/contact-us' },
+    {
+      name: 'News',
+      href: 'https://osmiumcg.notion.site/News-and-Articles-5d3c73acbcce4d5b8446e01a4f030199',
+    },
+    {
+      name: 'Careers',
+      href: 'https://osmiumcg.notion.site/OCG-Job-Board-99b46a83c23947a5a9a3fbfe8fff5dfc',
+    },
   ],
 }
 

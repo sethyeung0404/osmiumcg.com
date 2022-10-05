@@ -12,6 +12,8 @@ export default function ourPhilosophy() {
     <div className="">
       <section className="mt-3">
         <h1>{t('common:Philosophy')} </h1>
+
+        {/* Our Philosophy */}
         <div className="pb-3">
           <p className="py-2 text-lg ">
             <Trans
@@ -25,8 +27,11 @@ export default function ourPhilosophy() {
           <p className="py-2">{t('EUR3')}</p>
           <p className="py-2">{t('EUR4')}</p>
         </div>
+
+        {/* Our Methodology */}
         <h1>{t('Methodology')} </h1>
         <div>
+          
           <h3>{t('Step1')} </h3>
           <h6>{t('S1Content1')}</h6>
           <h6>{t('S1Content2')}</h6>

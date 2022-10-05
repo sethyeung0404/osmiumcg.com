@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Consultant from './Consultant'
-import { ChevronRightIcon } from '@heroicons/react/outline'
+import { ChevronRightIcon } from '@heroicons/react/24/outline'
 
 function ConsultantCarousel({ Division }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [

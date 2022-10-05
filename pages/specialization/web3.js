@@ -12,7 +12,7 @@ export default function tmt() {
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
-        <h1>{t('common:TBCG')}</h1>
+        <h1>{t('common:Web3')}</h1>
 
         <div className="grid grid-cols-3 pt-4 md:mx-6 lg:mx-12">
           <div className="col-span-3 mb-12 sm:col-span-1 md:mb-4">
@@ -39,15 +39,11 @@ tmt.getLayout = function getLayout(page) {
     <Layout
       headContent={
         <Head>
-          <title>OCG - TBCG Division</title>
-          <meta
-            name="description"
-            content="Osmium Consulting Group TBCG Division"
-          />
+          <title>OCG</title>
         </Head>
       }
     >
-      <LayoutPage title={t('Specialization')} subtitle={t('TBCG')}>
+      <LayoutPage title={t('Specialization')} subtitle={t('Web3')}>
         {page}
       </LayoutPage>
     </Layout>

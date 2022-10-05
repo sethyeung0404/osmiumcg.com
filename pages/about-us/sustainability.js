@@ -6,7 +6,7 @@ import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import PillarsCard from 'src/sustainability/PillarsCard'
-import Quote from '@/components/Quote'
+import Quote from '@/components/ui/Quote'
 
 export default function substainability() {
   const { t } = useTranslation('about-us')

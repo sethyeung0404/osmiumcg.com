@@ -1,11 +1,11 @@
 import React from 'react'
-import ClassNames from '../../utils/ClassNames'
+import clsx from 'clsx'
 
 export default function Divider({ center, colour }) {
   return (
     <>
       <div
-        className={ClassNames(
+        className={clsx(
           center ? 'mx-auto' : '',
           colour === 'blue' ? 'bg-purple-blue' : '',
           colour === 'pink' ? 'bg-pink-500' : '',
