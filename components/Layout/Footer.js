@@ -97,7 +97,7 @@ export default function footer() {
         </div>
         <div className="flex justify-between pt-1">
           <div>
-            Osmium Consulting Group Limited ( EA Licence No. 66295 ) | D-U-N-S
+            Osmium Consulting Group Limited ( EA Licence No. 69591 ) | Anywhere Everywhere Six Degrees Link Limited ( EA Licence No. 68784 ) | D-U-N-S
             Number : 68-638-4815
           </div>
           <div className="">
