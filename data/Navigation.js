@@ -4,7 +4,10 @@ export const navigation = {
       id: 'about',
       name: 'About',
       items: [
-        { name: 'OurTeam', href: '/about-us/our-team' },
+        {
+          name: 'OurTeam',
+          href: '/about-us/our-team',
+        },
         { name: 'Philosophy', href: '/about-us/our-philosophy' },
         { name: 'Sustainability', href: '/about-us/sustainability' },
       ],
@@ -25,22 +28,28 @@ export const navigation = {
       id: 'specialization',
       name: 'Specialization',
       items: [
-        { name: 'Web3', href: '/specialization/web3' },
-        { name: 'IT', href: '/specialization/technology' },
         {
           name: 'Banking',
-          href: '/specialization/financial-services',
+          href: '/specialization/banking-and-financial-services',
         },
+        { name: 'IT', href: '/specialization/technology' },
+        {
+          name: 'Construction',
+          href: '/specialization/industrial-and-construction',
+        },
+        { name: 'Consumer', href: '/specialization/consumer-markets' },
       ],
     },
   ],
   pages: [
     {
       name: 'News',
+      newTab: 'true',
       href: 'https://osmiumcg.notion.site/News-and-Articles-5d3c73acbcce4d5b8446e01a4f030199',
     },
     {
       name: 'Careers',
+      newTab: 'true',
       href: 'https://osmiumcg.notion.site/OCG-Job-Board-99b46a83c23947a5a9a3fbfe8fff5dfc',
     },
   ],
@@ -61,10 +70,5 @@ export const language = [
     name: '简体中文',
     href: '*',
     locale: 'zh-CN',
-  },
-  {
-    name: '日本語',
-    href: '*',
-    locale: 'ja-JP',
   },
 ]

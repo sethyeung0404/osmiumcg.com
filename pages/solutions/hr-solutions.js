@@ -4,7 +4,7 @@ import LayoutPage from '@/components/layout/LayoutPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import SubPageImage1 from '@/components/ui/SubPageImage1'
+import SubPageImage1 from '@/components/images/SubPageImage1'
 
 export default function hrSolutions() {
   const { t } = useTranslation('solutions')

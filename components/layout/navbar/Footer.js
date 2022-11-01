@@ -10,7 +10,7 @@ export default function footer() {
   const { t } = useTranslation('common')
 
   return (
-    <footer className="mt-5 bg-gray-100 text-xs text-slate-500">
+    <footer className="mt-5 bg-gray-100 text-sm text-slate-500">
       <div className="mx-auto max-w-4xl px-5 leading-5 lg:max-w-7xl">
         <div className="flex items-center justify-center gap-2 p-3 text-center">
           {/* Facebook Icons*/}
@@ -45,17 +45,19 @@ export default function footer() {
           <a
             rel="noreferrer"
             href="https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02"
-            className="h-9 w-9 rounded-full border-2 border-white text-base text-linkedin-blue transition  duration-150 ease-in-out
+            className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-white text-base text-linkedin-blue transition  duration-150 ease-in-out
                hover:bg-black hover:bg-opacity-5 hover:text-gray-500 focus:outline-none focus:ring-0"
             target="_blank"
           >
-            <Image
-              alt="Notion Logo"
-              height={2}
-              width={2}
-              src="/img/nav/notion-logo.png"
-              layout="responsive"
-            />
+            <div className="h-5 w-5">
+              <Image
+                alt="Notion Logo"
+                height={1}
+                width={1}
+                src="/img/nav/notion-logo.png"
+                layout="responsive"
+              />
+            </div>
           </a>
         </div>
 
@@ -91,18 +93,21 @@ export default function footer() {
       </div>
 
       {/*Copyright*/}
-      <div className="mx-auto grid max-w-4xl grid-cols-1 px-5 pb-4 leading-5 text-slate-500 lg:max-w-7xl">
-        <div className="border-b-2 border-slate-300 pb-1">
-          Looking for Recruiters? Find a Consultant by Calling (852) 3898 5500
-          or send an email to{' '}
-          <a href="mailto:info@osmiumcg.com">info@osmiumcg.com</a>
-        </div>
-        <div className="flex justify-between pt-1">
+      <div className="mx-auto grid max-w-4xl grid-cols-1 px-5 pb-4 text-xs leading-5 text-slate-500 lg:max-w-7xl">
+        <div className="border-b-2 border-slate-300 pb-1 md:flex md:justify-between">
           <div>
-            Osmium Consulting Group Limited ( EA Licence No. 69591 ) | Anywhere Everywhere Six Degrees Link Limited ( EA Licence No. 68784 ) | D-U-N-S
+            Looking for Recruiters? Find a Consultant by Calling (852) 3898 5500
+            or send an email to{' '}
+            <a href="mailto:info@osmiumcg.com">info@osmiumcg.com</a>
+          </div>
+          <div>Copyright © 2022</div>
+        </div>
+        <div className="grid grid-cols-4  justify-between pt-1">
+          <div className="col-span-4 lg:col-span-3">
+            Osmium Consulting Group Limited ( EA Licence No. 69591 ) | D-U-N-S
             Number : 68-638-4815
           </div>
-          <div className="col-span-4 sm:col-span-1 inline-flex justify-between">
+          <div className="col-span-4 inline-flex justify-between lg:col-span-1">
             <div>
               <Link href="/disclaimer">
                 <a className="cursor-pointer border-r-2 pr-3">Disclaimer</a>

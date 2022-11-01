@@ -21,13 +21,15 @@ export default function MapWrapper({ Location }) {
   const zoom = 17
 
   return (
-    <GoogleMapReact
-      bootstrapURLKeys={{ key: 'AIzaSyD79idHoy-q4euSg7fF3p84YL5a_4c7m70' }}
-      defaultCenter={center[Location]}
-      defaultZoom={zoom}
-      options={{ mapId: '2b645f95dbe5807e' }}
-    >
-      <Marker lat={center[Location].lat} lng={center[Location].lng} />
-    </GoogleMapReact>
+    <div className="h-80 w-full">
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: 'AIzaSyD79idHoy-q4euSg7fF3p84YL5a_4c7m70' }}
+        defaultCenter={center[Location]}
+        defaultZoom={zoom}
+        options={{ mapId: '2b645f95dbe5807e' }}
+      >
+        <Marker lat={center[Location].lat} lng={center[Location].lng} />
+      </GoogleMapReact>
+    </div>
   )
 }

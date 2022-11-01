@@ -1,10 +1,19 @@
 body {
-  font-family: 'Nunito Sans', 'Noto Sans SC', 'Noto Sans TC', 'Segoe UI',
-    sans-serif;
+  font-family: 'Inter var', -apple-system, 'Segoe UI', 'Helvetica',
+    'Arial', 'sans-serif';
   -webkit-font-smoothing: auto;
   max-width: 100%;
   overflow-x: hidden;
   color: #1d1d1f;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 .embla {

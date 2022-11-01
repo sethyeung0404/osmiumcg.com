@@ -1,4 +1,10 @@
 {
+    name: '日本語',
+    href: '*',
+    locale: 'ja-JP',
+},
+
+{
   "Home": "ホーム",
 
   "About": "会社情報",

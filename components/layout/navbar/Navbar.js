@@ -26,12 +26,14 @@ function Navbar({ router, open, setOpen, t, i18n }) {
       <nav aria-label="Top" className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
         <div
           className={clsx(
-            scrollPosition ? 'h-16' : 'h-20',
+            scrollPosition
+              ? 'h-16 transition-height duration-75 ease-linear'
+              : 'h-[68px] transition-height duration-75 ease-linear',
             'flex items-center'
           )}
         >
+          {/*Bar Icons & Search Icons in mobile view*/}
           <div className="flex w-full items-center justify-between lg:hidden">
-            {/*Bar Icons & Search Icons in mobile view*/}
             <div>
               <button
                 type="button"
@@ -79,7 +81,7 @@ function Navbar({ router, open, setOpen, t, i18n }) {
 
           {/* Navbar menus ( left ) */}
           <Popover.Group className="hidden text-base font-medium lg:ml-8 lg:block lg:self-stretch">
-            <div className="flex h-full space-x-8">
+            <div className="flex h-full space-x-8 ">
               {navigation.categories.map((category) => (
                 <Popover key={category.name} className="flex">
                   {({ open }) => (
@@ -88,9 +90,9 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                         <Popover.Button
                           className={clsx(
                             open
-                              ? 'border-ocg-blue text-blue-600'
-                              : 'border-transparent text-gray-700 hover:text-zinc-500',
-                            ' -mb-px flex items-center border-b-2 pt-px transition-colors duration-200 ease-out hover:border-ocg-blue'
+                              ? 'border-ocg-blue text-ocg-lightblue'
+                              : 'border-transparent text-gray-700 hover:text-ocg-lightblue',
+                            '-mb-px flex items-center border-b-2 pt-px transition-colors duration-200 ease-out hover:border-ocg-blue focus:outline-none'
                           )}
                         >
                           {t(category.name)}
@@ -109,8 +111,8 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                         <Popover.Panel>
                           <Popover.Button className="relative z-10 -ml-4 px-2 text-base">
                             <div className="overflow-hidden">
-                              <div className=" absolute left-0 mt-12 -translate-x-32 gap-6 bg-white p-3">
-                                <ul role="list" className="w-80 space-y-3">
+                              <div className="absolute left-0 mt-12 -translate-x-32 gap-6 rounded-2xl border bg-neutral-100 p-3 shadow-lg">
+                                <ul role="list" className="w-60 space-y-3">
                                   {category.items.map((item) => (
                                     <li key={item.name} className="">
                                       <Link
@@ -119,7 +121,7 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                                       >
                                         <a
                                           onClick={() => setOpen(false)}
-                                          className="-m-3 flex items-start py-[14px] px-6 hover:bg-slate-50 hover:text-zinc-500"
+                                          className="flex items-start rounded-2xl py-2 px-4 hover:bg-stone-50 hover:text-ocg-lightblue"
                                         >
                                           {t(item.name)}
                                         </a>
@@ -143,7 +145,6 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                     <a
                       key={page.name}
                       href={page.href}
-                      locale={i18n.language}
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center border-b-2 border-transparent text-gray-700 transition-colors duration-200 ease-out hover:border-ocg-blue hover:text-zinc-500"
@@ -278,14 +279,12 @@ function Navbar({ router, open, setOpen, t, i18n }) {
             <div className="ml-4 inline-flex h-full border-b-2 border-transparent hover:border-ocg-blue">
               <Link href="/contact-us">
                 <a className="self-center">
-                  <button className="my-4 rounded-lg bg-red-400 py-2 px-6 font-semibold text-white">
+                  <button className="my-4 rounded-lg bg-red-400 py-2 px-6 font-semibold text-white hover:bg-red-500 hover:duration-200">
                     {t('Contact')}
                   </button>
                 </a>
               </Link>
             </div>
-
-            
           </div>
         </div>
       </nav>

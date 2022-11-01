@@ -23,9 +23,9 @@ export default function ourPhilosophy() {
               components={{ b: <b /> }}
             />
           </p>
-          <p className="py-2">{t('EUR2')}</p>
-          <p className="py-2">{t('EUR3')}</p>
-          <p className="py-2">{t('EUR4')}</p>
+          <p className="py-2 text-base">{t('EUR2')}</p>
+          <p className="py-2 text-base">{t('EUR3')}</p>
+          <p className="py-2 text-base">{t('EUR4')}</p>
         </div>
 
         {/* Our Methodology */}

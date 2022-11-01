@@ -1,0 +1,37 @@
+export const sectorFocus = {
+  bankings: [
+    { id: 'Finance' },
+    { id: 'Human Resource' },
+    { id: 'Administrative & Secretarial' },
+    { id: 'Buy Side' },
+    { id: 'Dealing' },
+    { id: 'Insurance' },
+    { id: 'Legal, Risk & Compliance' },
+    { id: 'Retail, Corporate & Commercial Banking' },
+  ],
+  its: [
+    { id: 'Front-end' },
+    { id: 'Back-end' },
+    { id: 'Full Stack' },
+    { id: 'Application' },
+    { id: 'Mobile' },
+    { id: 'Business Analyst' },
+    { id: 'Project Manage' },
+    { id: 'UX/UI Design' },
+    { id: 'Quality Assurance' },
+    { id: 'Web3, Blockchain, Crypto' },
+  ],
+  constructions: [
+    { id: 'Safety Officer' },
+    { id: 'Engineer' },
+    { id: 'Worker?' },
+  ],
+  consumers: [
+    { id: 'Sales' },
+    { id: 'Customer Services' },
+    { id: 'Marketing' },
+    { id: 'Media' },
+    { id: 'Entertainment' },
+    { id: 'eCommerce' },
+  ],
+}

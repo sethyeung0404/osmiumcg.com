@@ -5,14 +5,16 @@ import ConsultantCarousel from '@/components/card/consultant/ConsultantCarousel'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import MeetOurTeamButton from '@/components/buttons/MeetOurTeamButton'
-export default function tmt() {
+import Chip from '@/components/chips/Chip'
+import { sectorFocus } from 'data/SectorFocus'
+
+export default function construction() {
   const { t } = useTranslation('specialization')
 
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
-        <h1>{t('common:Web3')}</h1>
+        <h1>{t('common:Construction')}</h1>
 
         <div className="grid grid-cols-3 pt-4 md:mx-6 lg:mx-12">
           <div className="col-span-3 mb-12 sm:col-span-1 md:mb-4">
@@ -20,10 +22,12 @@ export default function tmt() {
           </div>
 
           <div className="col-span-3 mb-4 sm:col-span-2">
-            <p className="PageText">{t('TBCGContent1')} </p>
-            <p className="PageText">{t('TBCGContent2')} </p>
-            <div className="text-right">
-              <MeetOurTeamButton />
+            <p className="PageText">{t('construction.content.1')} </p>
+            <p className="PageText">{t('construction.content.2')} </p>
+            <div className="mt-1 flex flex-wrap">
+              {sectorFocus.constructions.map((construction) => (
+                <Chip key={construction.id} text={construction.id} />
+              ))}
             </div>
           </div>
         </div>
@@ -32,18 +36,24 @@ export default function tmt() {
   )
 }
 
-tmt.getLayout = function getLayout(page) {
+construction.getLayout = function getLayout(page) {
   const { t } = useTranslation('common')
 
   return (
     <Layout
       headContent={
         <Head>
-          <title>OCG</title>
+          <title>
+            OCG - Industrial & Construction Recruitment Specialist
+          </title>
+          <meta
+            name="description"
+            content="OCG - Industrial & Construction Recruitment Specialist"
+          />
         </Head>
       }
     >
-      <LayoutPage title={t('Specialization')} subtitle={t('Web3')}>
+      <LayoutPage title={t('Specialization')} subtitle={t('Construction')}>
         {page}
       </LayoutPage>
     </Layout>

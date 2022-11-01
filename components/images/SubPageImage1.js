@@ -10,6 +10,7 @@ function SubPageImage1({ name, href }) {
         height={2000}
         layout="intrinsic"
         alt={name}
+        className="rounded-full"
       />
     </div>
   )

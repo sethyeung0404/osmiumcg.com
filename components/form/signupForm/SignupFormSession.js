@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import CandidateSignupForm from './CandidateSignupForm'
-import ClientSignupForm from './ClientSignupForm'
 import clsx from 'clsx'
-
-export const scriptUrl = process.env.NEXT_PUBLIC_scriptUrl
 
 function SignupFormSession() {
   const [candidate, setCandidate] = useState(true)
@@ -97,11 +94,6 @@ function SignupFormSession() {
                 scriptUrl={scriptUrl}
               />
 
-              <ClientSignupForm
-                candidate={candidate}
-                setCandidate={setCandidate}
-                scriptUrl={scriptUrl}
-              />
             </div>
           </div>
         </div>

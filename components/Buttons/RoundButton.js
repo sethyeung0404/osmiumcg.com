@@ -6,7 +6,7 @@ export default function RoundButton({ href }) {
 
   return (
     <div>
-      <button className="cursor-pointer rounded-full bg-purple-blue py-3 px-5 font-bold text-white hover:bg-blue-800">
+      <button className="cursor-pointer rounded-xl bg-purple-blue py-3 px-5 font-bold text-white hover:bg-blue-800">
         <a href={href}>{t('ViewMore')}</a>
       </button>
     </div>

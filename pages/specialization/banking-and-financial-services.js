@@ -5,28 +5,28 @@ import ConsultantCarousel from '@/components/card/consultant/ConsultantCarousel'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import Chip from '@/components/chips/Chip'
 import { sectorFocus } from 'data/SectorFocus'
+import Chip from '@/components/chips/Chip'
 
-export default function tmt() {
+export default function bfs() {
   const { t } = useTranslation('specialization')
 
   return (
     <div className="mx-auto max-w-7xl">
       <section className="mt-3">
-        <h1>{t('common:IT')}</h1>
+        <h1>{t('common:Banking')}</h1>
 
         <div className="grid grid-cols-3 pt-4 md:mx-6 lg:mx-12">
           <div className="col-span-3 mb-12 sm:col-span-1 md:mb-4">
-            <ConsultantCarousel Division="TBCG" />
+            <ConsultantCarousel Division="FDFS" />
           </div>
 
           <div className="col-span-3 mb-4 sm:col-span-2">
-            <p className="PageText">{t('it.content.1')} </p>
-            <p className="PageText">{t('it.content.2')} </p>
+            <p className="PageText">{t('banking.content.1')} </p>
+            <p className="PageText">{t('banking.content.2')} </p>
             <div className="mt-1 flex flex-wrap">
-              {sectorFocus.its.map((it) => (
-                <Chip key={it.id} text={it.id} />
+              {sectorFocus.bankings.map((banking) => (
+                <Chip key={banking.id} text={banking.id} />
               ))}
             </div>
           </div>
@@ -36,22 +36,22 @@ export default function tmt() {
   )
 }
 
-tmt.getLayout = function getLayout(page) {
+bfs.getLayout = function getLayout(page) {
   const { t } = useTranslation('common')
 
   return (
     <Layout
       headContent={
         <Head>
-          <title>OCG - IT Recruitment Specialist</title>
+          <title>OCG - Banking & Financial Services Recruitment Specialist</title>
           <meta
             name="description"
-            content="OCG - IT Recruitment Specialist"
+            content="OCG - Banking & Financial Services Recruitment Specialist"
           />
         </Head>
       }
     >
-      <LayoutPage title={t('Specialization')} subtitle={t('IT')}>
+      <LayoutPage title={t('Specialization')} subtitle={t('Banking')}>
         {page}
       </LayoutPage>
     </Layout>

@@ -49,7 +49,11 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                     <Disclosure key={category.name}>
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex w-full justify-between space-y-4 px-4 py-2 text-gray-900 hover:text-zinc-500 hover:duration-500">
+                          <Disclosure.Button
+                            className={`${
+                              open ? 'text-ocg-lightblue' : 'text-gray-900'
+                            } flex w-full justify-between space-y-4 px-4 py-2 hover:text-ocg-lightblue hover:duration-200`}
+                          >
                             <span>{t(category.name)}</span>
                             <FontAwesomeIcon
                               icon={faChevronUp}
@@ -67,11 +71,11 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
-                            <Disclosure.Panel className="pl-10 pb-3">
+                            <Disclosure.Panel className="pb-3">
                               <ul
                                 role="list"
                                 aria-labelledby={`${category.id}-heading-mobile`}
-                                className="flex flex-col space-y-6"
+                                className="flex flex-col"
                               >
                                 {category.items.map((item) => (
                                   <li key={item.name} className="flow-root">
@@ -81,7 +85,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                                     >
                                       <a
                                         onClick={() => setOpen(false)}
-                                        className="-m-2 block p-2 text-gray-500 hover:text-zinc-400 hover:duration-500"
+                                        className="my-0.5 ml-4 block rounded-xl p-2 pl-4 text-gray-500 hover:bg-stone-50 hover:text-ocg-lightblue hover:duration-200"
                                       >
                                         {t(item.name)}
                                       </a>
@@ -108,7 +112,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                             rel="noreferrer"
                             target="_blank"
                             onClick={() => setOpen(false)}
-                            className="-m-2 block px-2 py-3 font-medium text-gray-900"
+                            className="-m-2 block px-2 py-3 font-medium text-gray-900 hover:text-ocg-lightblue hover:duration-200"
                           >
                             {t(page.name)}
                           </a>
@@ -120,7 +124,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                           <Link href={page.href} locale={i18n.language}>
                             <a
                               onClick={() => setOpen(false)}
-                              className="-m-2 block px-2 py-3 font-medium text-gray-900"
+                              className="-m-2 block px-2 py-3 font-medium text-gray-900 hover:text-ocg-lightblue hover:duration-200"
                             >
                               {t(page.name)}
                             </a>
@@ -132,7 +136,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                 </div>
 
                 {/* Icons */}
-                <div className="space-y-4 border-t border-gray-200 py-6 px-4 text-base font-medium">
+                <div className="space-y-4 border-t border-gray-200 py-6 px-4 text-base font-medium ">
                   {/* Facebook Icon*/}
                   <div className="group text-left font-medium">
                     <a
@@ -143,12 +147,12 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                       <div className="flex w-full space-x-2">
                         <div>
                           <FontAwesomeIcon
-                            className="h-5 w-5 text-facebook-blue group-hover:text-zinc-500"
+                            className="h-5 w-5 text-facebook-blue group-hover:text-ocg-lightblue group-hover:duration-200"
                             icon={faFacebookF}
                             aria-hidden="true"
                           />
                         </div>
-                        <div className="text-gray-900 group-hover:text-zinc-500">
+                        <div className="text-gray-900 group-hover:text-ocg-lightblue">
                           Facebook
                         </div>
                       </div>
@@ -165,12 +169,12 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                       <div className="flex w-full space-x-2 text-left font-medium">
                         <div>
                           <FontAwesomeIcon
-                            className="h-5 w-5 text-linkedin-blue group-hover:text-zinc-500"
+                            className="h-5 w-5 text-linkedin-blue group-hover:text-ocg-lightblue group-hover:duration-200"
                             icon={faLinkedin}
                             aria-hidden="true"
                           />
                         </div>
-                        <div className="text-gray-900 group-hover:text-zinc-500">
+                        <div className="text-gray-900 group-hover:text-ocg-lightblue">
                           LinkedIn
                         </div>
                       </div>
@@ -178,14 +182,14 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                   </div>
 
                   {/* Notion Icon*/}
-                  <div className="group ">
+                  <div className="text-gray-900 hover:text-ocg-lightblue">
                     <a
                       rel="noreferrer"
                       href="https://osmiumcg.notion.site/OCG-Public-Wiki-f0538b6b26d449039b937c6a0f52ef02"
                       target="_blank"
                     >
                       <div className="flex w-full space-x-2 text-left font-medium">
-                        <div className="my-auto w-[1.15rem]">
+                        <div className="my-auto h-5 w-5 p-0.5">
                           <Image
                             alt="Notion Logo"
                             height={100}
@@ -194,9 +198,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                             layout="responsive"
                           />
                         </div>
-                        <div className="text-gray-900 group-hover:text-zinc-500">
-                          Our Notion
-                        </div>
+                        <div className="">Our Notion</div>
                       </div>
                     </a>
                   </div>
@@ -210,7 +212,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                             key="Translations"
                             className="w-full space-y-4 text-left"
                           >
-                            <div className="flex justify-between text-gray-900 hover:text-zinc-500">
+                            <div className="flex justify-between text-gray-900 hover:text-ocg-lightblue">
                               <div className="flex space-x-2">
                                 <div>
                                   <FontAwesomeIcon
@@ -219,7 +221,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                                     aria-hidden="true"
                                   />
                                 </div>
-                                <div>{t('Language')}</div>
+                                <div className="">{t('Language')}</div>
                               </div>
                               <div>
                                 <FontAwesomeIcon

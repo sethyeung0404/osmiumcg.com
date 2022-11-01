@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '@/components/layout/Layout'
 import LayoutPage from '@/components/layout/LayoutPage'
-import SubPageImage1 from '@/components/ui/SubPageImage1'
+import SubPageImage1 from '@/components/images/SubPageImage1'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'

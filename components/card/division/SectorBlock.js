@@ -1,27 +1,39 @@
 import React from 'react'
 import Link from 'next/link'
-import { useTranslation } from 'next-i18next'
+import {
+  CircleStackIcon,
+  ChatBubbleBottomCenterIcon,
+  CommandLineIcon,
+  TruckIcon,
+} from '@heroicons/react/24/outline'
 
-export default function SectorBlock() {
-  const { t } = useTranslation('common')
+export default function SectorBlock({ t, name, href }) {
+  var icon
+  switch (name) {
+    case 'Banking':
+      icon = <CircleStackIcon className="h-6 w-6" aria-hidden="true" />
+      break
+    case 'IT':
+      icon = <CommandLineIcon className="h-6 w-6" aria-hidden="true" />
+      break
+    case 'Construction':
+      icon = <TruckIcon className="h-6 w-6" aria-hidden="true" />
+      break
+    case 'Consumer':
+      icon = (
+        <ChatBubbleBottomCenterIcon className="h-6 w-6" aria-hidden="true" />
+      )
+      break
+  }
 
   return (
-    <div className="mx-auto grid grid-cols-1 gap-4 text-left md:grid-cols-2">
-      <Link href="/specialization/financial-services">
-        <a className="border border-gray-100 text-3xl font-bold uppercase leading-10 text-white hover:shadow-2xl">
-          <div className="h-48 w-full overflow-hidden bg-purple-blue py-3 px-9 shadow-xl">
-            <h3> {t('FDFS')} </h3>
-          </div>
-        </a>
-      </Link>
-
-      <Link href="/specialization/technology">
-        <a className="border border-gray-100 text-3xl font-bold uppercase leading-10 text-slate-700 hover:shadow-2xl">
-          <div className=" h-48 w-full overflow-hidden py-3 px-9 shadow-xl">
-            <h3>{t('TBCG')}</h3>
-          </div>
-        </a>
-      </Link>
-    </div>
+    <Link href={href}>
+      <a className="hover:bg-slate-50 hover:text-ocg-lightblue">
+        <div className="flex rounded-2xl bg-white py-6 text-base">
+          <div className="mx-5">{icon}</div>
+          <div>{t(name)}</div>
+        </div>
+      </a>
+    </Link>
   )
 }
