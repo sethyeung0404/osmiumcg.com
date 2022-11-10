@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from '../../components/layouts/Layout'
-import LayoutPage from '../../components/layouts/LayoutPage'
+import Layout from 'components/layouts/Layout'
+import LayoutPage from 'components/layouts/LayoutPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import SubPageImage1 from '../../components/images/SubPageImage1'
+import SubPageImage1 from 'components/images/SubPageImage1'
 
 export default function hrSolutions() {
   const { t } = useTranslation('solutions')

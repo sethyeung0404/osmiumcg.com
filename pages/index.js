@@ -1,12 +1,12 @@
-import Layout from '../components/layouts/Layout'
-import JobSlot from '../src/index/JobSlot'
-import SectorSection from '../components/card/division/SectorSection'
-import RoundButton from '../components/buttons/RoundButton'
+import Layout from 'components/layouts/Layout'
+import JobSlot from 'src/index/JobSlot'
+import SectorSection from 'components/card/division/SectorSection'
+import RoundButton from 'components/buttons/RoundButton'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import BannerCard from '../src/index/BannerCard'
-import Award from '../src/index/Awards'
+import BannerCard from 'src/index/BannerCard'
+import Award from 'src/index/Awards'
 
 export default function Home() {
   const { t } = useTranslation('index')

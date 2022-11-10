@@ -1,5 +1,5 @@
 import React from 'react'
-import { Jobs } from '../../data/JobList'
+import { Jobs } from 'data/JobList'
 
 function JobSlot() {
   return (

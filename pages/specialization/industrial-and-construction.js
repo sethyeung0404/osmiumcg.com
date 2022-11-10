@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from '../../components/layouts/Layout'
-import LayoutPage from '../../components/layouts/LayoutPage'
-import ConsultantCarousel from '../../components/card/consultant/ConsultantCarousel'
+import Layout from 'components/layouts/Layout'
+import LayoutPage from 'components/layouts/LayoutPage'
+import ConsultantCarousel from 'components/card/consultant/ConsultantCarousel'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import Chip from '../../components/chips/Chip'
+import Chip from 'components/chips/Chip'
 import { sectorFocus } from 'data/SectorFocus'
 
 export default function construction() {

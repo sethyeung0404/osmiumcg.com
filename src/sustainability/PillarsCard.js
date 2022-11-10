@@ -1,5 +1,5 @@
 import React from 'react'
-import Divider from '../../components/ui/Divider'
+import Divider from 'components/ui/Divider'
 
 function PillarsCard({ title, colour, list1, list2, list3, list4 }) {
   return (

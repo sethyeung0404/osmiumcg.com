@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layouts/Layout'
+import Layout from 'components/layouts/Layout'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'

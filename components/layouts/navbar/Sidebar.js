@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Disclosure, Dialog, Transition } from '@headlessui/react'
 import { faEarthAsia, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { navigation, language } from '../../../data/Navigation'
+import { navigation, language } from 'data/Navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 

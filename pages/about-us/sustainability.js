@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '../../components/layouts/Layout'
-import LayoutPage from '../../components/layouts/LayoutPage'
-import Divider from '../../components/ui/Divider'
-import Quote from '../../components/ui/Quote'
+import Layout from 'components/layouts/Layout'
+import LayoutPage from 'components/layouts/LayoutPage'
+import Divider from 'components/ui/Divider'
+import Quote from 'components/ui/Quote'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import PillarsCard from '../../src/sustainability/PillarsCard'
+import PillarsCard from 'src/sustainability/PillarsCard'
 
 export default function substainability() {
   const { t } = useTranslation('about-us')

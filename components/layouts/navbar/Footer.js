@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { navigation, language } from '../../../data/Navigation'
+import { navigation, language } from 'data/Navigation'
 import { useTranslation } from 'next-i18next'
 
 export default function footer() {
