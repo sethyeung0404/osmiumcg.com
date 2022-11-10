@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '@/layouts/Layout'
-import LayoutPage from '@/layouts/LayoutPage'
-import Divider from '@/components/ui/Divider'
+import Layout from '../../components/layouts/Layout'
+import LayoutPage from '../../components/layouts/LayoutPage'
+import Divider from '../../components/ui/Divider'
+import Quote from '../../components/ui/Quote'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import PillarsCard from 'src/sustainability/PillarsCard'
-import Quote from '@/components/ui/Quote'
+import PillarsCard from '../../src/sustainability/PillarsCard'
 
 export default function substainability() {
   const { t } = useTranslation('about-us')
@@ -37,7 +37,7 @@ export default function substainability() {
 
           <h3>{t('Our4Pillars')}</h3>
           <Divider colour="blue" />
-          <div className="grid grid-cols-1 p-2 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 gap-2 p-2 md:grid-cols-2">
             <PillarsCard
               title={t('OurCommunity')}
               colour="yellow"

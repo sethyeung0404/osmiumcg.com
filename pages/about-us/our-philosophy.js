@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '@/layouts/Layout'
-import LayoutPage from '@/layouts/LayoutPage'
-import LongDivider from '@/ui/LongDivider'
+import Layout from '../../components/layouts/Layout'
+import LayoutPage from '../../components/layouts/LayoutPage'
+import LongDivider from '../../components/ui/LongDivider'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
@@ -31,7 +31,6 @@ export default function ourPhilosophy() {
         {/* Our Methodology */}
         <h1>{t('Methodology')} </h1>
         <div>
-          
           <h3>{t('Step1')} </h3>
           <h6>{t('S1Content1')}</h6>
           <h6>{t('S1Content2')}</h6>

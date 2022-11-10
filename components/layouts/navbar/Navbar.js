@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Popover, Transition } from '@headlessui/react'
 import { navigation, language } from '../../../data/Navigation'
-import { useScrollPosition } from 'hooks/useScrollPosition'
+import { useScrollPosition } from '../../../hooks/useScrollPosition'
 import clsx from 'clsx'
 
 function Navbar({ router, open, setOpen, t, i18n }) {

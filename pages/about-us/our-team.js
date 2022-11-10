@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from '@/layouts/Layout'
-import LayoutPage from '@/layouts/LayoutPage'
+import Layout from '../../components/layouts/Layout'
+import LayoutPage from '../../components/layouts/LayoutPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import NotionButton from 'src/our-team/NotionButton'
+import NotionButton from '../../src/our-team/NotionButton'
 
 export default function ourTeam() {
   const { t } = useTranslation('about-us')

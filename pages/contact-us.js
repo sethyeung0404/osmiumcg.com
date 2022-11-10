@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
-import Layout from '@/layouts/Layout'
-import LayoutPage from '@/layouts/LayoutPage'
+import Layout from '../components/layouts/Layout'
+import LayoutPage from '../components/layouts/LayoutPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
-import MapWrapper from '@/components/map/MapWrapper'
-import MapDescription from '@/components/map/MapDescription'
+import MapWrapper from '../components/map/MapWrapper'
+import MapDescription from '../components/map/MapDescription'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
-import ContactUsForm from '@/components/form/signupForm/ContactUsForm'
+import ContactUsForm from '../components/form/signupForm/ContactUsForm'
 
 export default function ContactUs() {
   const { t } = useTranslation('common')

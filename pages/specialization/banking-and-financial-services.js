@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '@/layouts/Layout'
-import LayoutPage from '@/layouts/LayoutPage'
-import ConsultantCarousel from '@/components/card/consultant/ConsultantCarousel'
+import Layout from '../../components/layouts/Layout'
+import LayoutPage from '../../components/layouts/LayoutPage'
+import ConsultantCarousel from '../../components/card/consultant/ConsultantCarousel'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import { sectorFocus } from 'data/SectorFocus'
-import Chip from '@/components/chips/Chip'
+import Chip from '../../components/chips/Chip'
 
 export default function bfs() {
   const { t } = useTranslation('specialization')
@@ -43,7 +43,9 @@ bfs.getLayout = function getLayout(page) {
     <Layout
       headContent={
         <Head>
-          <title>OCG - Banking & Financial Services Recruitment Specialist</title>
+          <title>
+            OCG - Banking & Financial Services Recruitment Specialist
+          </title>
           <meta
             name="description"
             content="OCG - Banking & Financial Services Recruitment Specialist"
