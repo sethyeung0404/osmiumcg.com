@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '@/components/layout/Layout'
-import LayoutPage from '@/components/layout/LayoutPage'
+import Layout from '@/layouts/Layout'
+import LayoutPage from '@/layouts/LayoutPage'
 import Divider from '@/components/ui/Divider'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'

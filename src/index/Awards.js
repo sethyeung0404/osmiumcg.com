@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Divider from '@/components/ui/Divider'
 
 function Award({ t }) {
   return (

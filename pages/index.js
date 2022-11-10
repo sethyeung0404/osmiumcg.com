@@ -1,5 +1,4 @@
-import Layout from '@/components/layout/Layout'
-import Divider from '@/components/ui/Divider'
+import Layout from '@/layouts/Layout'
 import JobSlot from 'src/index/JobSlot'
 import SectorSection from '@/components/card/division/SectorSection'
 import RoundButton from '@/components/buttons/RoundButton'
