@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Facebook from '../utils/Facebook'
+import Facebook from 'utils/Facebook'
 
 export default function Document() {
   return (

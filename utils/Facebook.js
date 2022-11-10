@@ -2,7 +2,7 @@ import Script from 'next/script'
 
 export default function Facebook() {
   return (
-    <div>
+    <>
       <div id="fb-root"></div>
 
       <div id="fb-customer-chat" className="fb-customerchat"></div>
@@ -28,6 +28,6 @@ export default function Facebook() {
             }(document, 'script', 'facebook-jssdk'));
         `}
       </Script>
-    </div>
+    </>
   )
 }

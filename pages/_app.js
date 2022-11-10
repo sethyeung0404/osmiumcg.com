@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import { appWithTranslation } from 'next-i18next'
 import Script from 'next/script'
 import * as gtag from 'utils/gtag'
+import Facebook from 'utils/Facebook'
 
 config.autoAddCss = false
 
@@ -48,6 +49,7 @@ const MyApp = ({ Component, pageProps }) => {
           />
         </Head>
       </Component>
+      <Facebook />
     </>
   )
 }
