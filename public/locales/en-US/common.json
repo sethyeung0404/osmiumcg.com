@@ -19,7 +19,7 @@
 
   "News": "News",
 
-  "Sector": "The Practice Sectors We Cover",
+  "Sector": "Practice Sectors We Cover",
   "JobOpenings": "Latest Job Openings",
 
   "Events": "Events",
@@ -41,6 +41,9 @@
   "OCGL": "Osmium Consulting Group Limited",
   "License": "Osmium Consulting Group Limited ( EA Licence No. 66295 )",
 
+  "Time": "Office Hours",
+  "OfficeHours.1": "Mon to Fri: 09:00 - 18:00",
+  "OfficeHours.2": "Sat, Sun & Public Holidays: Closed",
   "Office": "Office Hotline",
   "Email": "Email",
   "Address": "Address",

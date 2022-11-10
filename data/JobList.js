@@ -1,7 +1,11 @@
 export const Jobs = [
   {
+<<<<<<< Updated upstream
     title: 'UI / UX Designer',
     area: '',
+=======
+    title: 'Senior Web Developer / Programmer, JavaScript/TypeScript ( Up to 60K )',
+>>>>>>> Stashed changes
     tags: [
       { text: 'UX UI Designer | FinTech | Rare Opportunity' },
       { text: '5 Days Work | Bouns | Med' },
@@ -10,8 +14,12 @@ export const Jobs = [
     href: 'https://hk.jobsdb.com/hk/en/job/ui-ux-designer-100003009465358?jobId=jobsdb-hk-job-100003009465358&sectionRank=1&token=0~6b046599-fa6e-4802-9483-08c433dcd359&searchPath=%2Fhk%2Fsearch-jobs%2Fosmium-consulting-group%2F1',
   },
   {
+<<<<<<< Updated upstream
     title: 'IT Support / IT Officer',
     area: '',
+=======
+    title: 'Credit Analyst | Fast Growing Cooperate Bank | Great Career Path !',
+>>>>>>> Stashed changes
     tags: [
       { text: 'Fresh graduates and less experience are welcome' },
       { text: '5 Days Work | Fun and Energetic Company' },
@@ -20,8 +28,12 @@ export const Jobs = [
     href: 'https://hk.jobsdb.com/hk/en/job/it-support-it-officer-100003009469235?jobId=jobsdb-hk-job-100003009469235&sectionRank=3&token=0~6b046599-fa6e-4802-9483-08c433dcd359&searchPath=%2Fhk%2Fsearch-jobs%2Fosmium-consulting-group%2F1',
   },
   {
+<<<<<<< Updated upstream
     title: 'Full Stack Developer | Up to $40K',
     area: '',
+=======
+    title: 'Digital Advertising Executive | Marketing Executive ( 20-25K )',
+>>>>>>> Stashed changes
     tags: [
       { text: 'Competitive Package' },
       { text: 'Solid experience in Node / React / Vue' },

@@ -44,9 +44,56 @@ export default function ContactUs() {
           </div>
         </div>
 
+<<<<<<< Updated upstream
         <div className="border-rounded my-6 grid grid-cols-12 bg-slate-50">
           <div className="col-span-12 h-80 w-full text-center md:col-span-7 md:h-full">
             <MapWrapper Location="JP" />
+=======
+              {/* Panels */}
+              <Tab.Panels>
+                {/* Content 1 : HK */}
+                <Tab.Panel>
+                  <div className="my-6 rounded-3xl bg-slate-100 opacity-90">
+                    <MapDescription
+                      Time=" ( HKT )"
+                      Country={t('HK')}
+                      District={t('HKAddress2')}
+                      Phone
+                      EmailAddress="info@osmiumcg.com"
+                      FullAddress={t('HKAddress')}
+                    />
+                    <MapWrapper Location="HK" />
+                  </div>
+                </Tab.Panel>
+                {/* Content 2 : SG */}
+                <Tab.Panel>
+                  <div className="my-6 rounded-3xl bg-slate-100 opacity-90">
+                    <MapDescription
+                      Time=" ( SGT )"
+                      Country={t('SG')}
+                      District={t('SGAddress2')}
+                      EmailAddress="info+sg@osmiumcg.com"
+                      FullAddress={t('SGAddress')}
+                    />
+                    <MapWrapper Location="SG" />
+                  </div>
+                </Tab.Panel>
+                {/* Content 3 : JP */}
+                <Tab.Panel>
+                  <div className="my-6 rounded-3xl bg-slate-100 opacity-90">
+                    <MapDescription
+                      Time=" ( JST )"
+                      Country={t('JP')}
+                      District={t('JPAddress2')}
+                      EmailAddress="info+jp@osmiumcg.com"
+                      FullAddress={t('JPAddress')}
+                    />
+                    <MapWrapper Location="JP" />
+                  </div>
+                </Tab.Panel>
+              </Tab.Panels>
+            </Tab.Group>
+>>>>>>> Stashed changes
           </div>
           <div className="col-span-12 p-8 md:col-span-5">
             <MapDescription

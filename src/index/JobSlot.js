@@ -14,16 +14,26 @@ function JobSlot() {
             <p className="text-xl font-medium text-indigo-500 hover:underline">
               {item.title}
             </p>
+<<<<<<< Updated upstream
             <p className="">Osmium Consulting Group Limited</p>
             <p className="my-4 font-bold">{item.area}</p>
             <div className="my-4">
               <ul className="list-inside list-disc">
+=======
+            <p className="text-base">Osmium Consulting Group Limited</p>
+            <div className="my-4 text-sm">
+              <ul className="ml-4 list-disc">
+>>>>>>> Stashed changes
                 {item.tags.map((tags) => (
                   <li key={tags.text}>{tags.text}</li>
                 ))}
               </ul>
             </div>
+<<<<<<< Updated upstream
             <p className="text-slate-500">1 day ago</p>
+=======
+            <p className="text-base text-slate-500">1 day ago</p>
+>>>>>>> Stashed changes
           </a>
         </div>
       ))}

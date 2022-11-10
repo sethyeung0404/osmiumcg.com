@@ -278,7 +278,11 @@ function Navbar({ router, open, setOpen, t, i18n }) {
             <div className="ml-4 inline-flex h-full border-b-2 border-transparent hover:border-ocg-blue">
               <Link href="/contact-us">
                 <a className="self-center">
+<<<<<<< Updated upstream
                   <button className="my-4 rounded-lg bg-red-400 py-2 px-6 font-semibold text-white">
+=======
+                  <button className="my-4 rounded-full bg-red-400 py-2 px-4 font-semibold text-white hover:bg-red-500 hover:duration-200">
+>>>>>>> Stashed changes
                     {t('Contact')}
                   </button>
                 </a>
