@@ -19,7 +19,6 @@ export default function recruitment() {
           <div className=" basis-full  md:basis-1/2">
             <h2>{t('RTitle1')}</h2>
             <p className="PageText">{t('R1Content1')}</p>
-            <p className="PageText">Browse all our specialization :</p>
           </div>
         </div>
 

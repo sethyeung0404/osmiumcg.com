@@ -279,7 +279,7 @@ function Navbar({ router, open, setOpen, t, i18n }) {
             <div className="ml-4 inline-flex h-full border-b-2 border-transparent hover:border-ocg-blue">
               <Link href="/contact-us">
                 <a className="self-center">
-                  <button className="my-4 rounded-lg bg-red-400 py-2 px-6 font-semibold text-white hover:bg-red-500 hover:duration-200">
+                  <button className="my-4 rounded-full bg-red-400 py-2 px-4 font-semibold text-white hover:bg-red-500 hover:duration-200">
                     {t('Contact')}
                   </button>
                 </a>

@@ -1,7 +1,7 @@
 export const Jobs = [
   {
-    title: 'Senior Web Developer / Programmer, JavaScript/TypeScript ( Up to 60K )',
-    area: 'Kwun Tong Area',
+    title:
+      'Senior Web Developer / Programmer, JavaScript/TypeScript ( Up to 60K )',
     tags: [
       { text: 'MNC | E-Commerce | Web Development | WFH' },
       { text: 'Node.js | React.js | Next.js | Vue.js | Angular' },
@@ -11,7 +11,6 @@ export const Jobs = [
   },
   {
     title: 'Credit Analyst | Fast Growing Cooperate Bank | Great Career Path !',
-    area: 'Central',
     tags: [
       { text: 'Cooperate Bank Exp Only | ECF | CRM' },
       { text: 'Great Career Path | Decision Making | Flexibility' },
@@ -21,7 +20,6 @@ export const Jobs = [
   },
   {
     title: 'Digital Advertising Executive | Marketing Executive ( 20-25K )',
-    area: 'Kwun Tong Area',
     tags: [
       { text: 'Digital Marketing | Marketing' },
       { text: 'Google Marketing Platform (GMP) Sales Partner' },

@@ -1,287 +1,186 @@
-import React from 'react'
+import { useForm } from 'react-hook-form'
 
-function ContactUsForm() {
+export default function ContactUsForm() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+  const onSubmit = (data) => alert(JSON.stringify(data))
+
   return (
-      <div className="">
-        <form action="#" method="POST">
-          <div className="overflow-hidden shadow sm:rounded-md">
-            <div className="bg-white px-4 py-5 sm:p-6">
-              <div className="grid grid-cols-6 gap-6">
-                <div className="col-span-6 sm:col-span-3">
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    First name
-                  </label>
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  />
-                </div>
+    <div className="">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="overflow-hidden shadow sm:rounded-md">
+          <div className="bg-white px-4 py-5 sm:p-6">
+            <div className="grid grid-cols-6 gap-5">
+              {/* first name */}
+              <div className="col-span-6 sm:col-span-3">
+                <label className="block text-sm font-medium text-gray-700">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  {...register('firstName')}
+                  placeholder="First Name"
+                  className="mt-1 block w-full rounded-md border border-gray-300 py-1.5 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                />
+              </div>
 
-                <div className="col-span-6 sm:col-span-3">
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Last name
-                  </label>
-                  <input
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  />
-                </div>
+              {/* last name */}
+              <div className="col-span-6 sm:col-span-3">
+                <label className="block text-sm font-medium text-gray-700">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  {...register('lastName')}
+                  placeholder="Last Name"
+                  className="mt-1 block w-full rounded-md border border-gray-300 py-1.5 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                />
+              </div>
 
-                <div className="col-span-6 sm:col-span-4">
-                  <label
-                    htmlFor="email-address"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Email address
-                  </label>
-                  <input
-                    type="text"
-                    name="email-address"
-                    id="email-address"
-                    autoComplete="email"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  />
-                </div>
+              {/* job title */}
+              <div className="col-span-6 sm:col-span-3">
+                <label className="block text-sm font-medium text-gray-700">
+                  Job Title
+                </label>
+                <input
+                  type="text"
+                  {...register('jobTitle')}
+                  placeholder="Job Title"
+                  className="mt-1 block w-full rounded-md border border-gray-300 py-1.5 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                />
+              </div>
 
-                <div className="col-span-6 sm:col-span-3">
-                  <label
-                    htmlFor="country"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Country
-                  </label>
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                  >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
+              {/* mobile number */}
+              <div className="col-span-6 sm:col-span-3">
+                <label className="block text-sm font-medium text-gray-700">
+                  Mobile Number
+                </label>
+                <input
+                  type="text"
+                  {...register('mobileNumber')}
+                  placeholder="85238985500"
+                  className="mt-1 block w-full rounded-md border border-gray-300 py-1.5 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                />
+              </div>
 
-                <div className="col-span-6">
-                  <label
-                    htmlFor="street-address"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Street address
-                  </label>
-                  <input
-                    type="text"
-                    name="street-address"
-                    id="street-address"
-                    autoComplete="street-address"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  />
-                </div>
+              {/* email */}
+              <div className="col-span-6 sm:col-span-6">
+                <label className="block text-sm font-medium text-gray-700">
+                  Email address
+                </label>
+                <input
+                  type="email"
+                  {...register('email')}
+                  placeholder="abc@osmiumcg.com"
+                  className="mt-1 block w-full rounded-md border border-gray-300 py-1.5 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                />
+              </div>
 
-                <div className="col-span-6 sm:col-span-6 lg:col-span-2">
-                  <label
-                    htmlFor="city"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    City
-                  </label>
-                  <input
-                    type="text"
-                    name="city"
-                    id="city"
-                    autoComplete="address-level2"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  />
-                </div>
+              {/* country */}
+              <div className="col-span-6 sm:col-span-3">
+                <label className="block text-sm font-medium text-gray-700">
+                  Country
+                </label>
+                <select
+                  {...register('country')}
+                  className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-1.5 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                >
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="China">China</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Japan">Japan</option>
+                  <option value="United States">United States</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Taiwan">Taiwan</option>
+                </select>
+              </div>
 
-                <div className="col-span-6 sm:col-span-3 lg:col-span-2">
-                  <label
-                    htmlFor="region"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    State / Province
-                  </label>
-                  <input
-                    type="text"
-                    name="region"
-                    id="region"
-                    autoComplete="address-level1"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  />
-                </div>
-
-                <div className="col-span-6 sm:col-span-3 lg:col-span-2">
-                  <label
-                    htmlFor="postal-code"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    ZIP / Postal code
-                  </label>
-                  <input
-                    type="text"
-                    name="postal-code"
-                    id="postal-code"
-                    autoComplete="postal-code"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  />
-                </div>
+              <div className="col-span-6">
+                <fieldset>
+                  <legend className="contents text-base font-medium text-gray-900">
+                    Enquiry
+                  </legend>
+                  <p className="text-sm text-gray-500">
+                    I want to know about...
+                  </p>
+                  <div className="mt-4 space-y-4">
+                    <div className="flex items-center">
+                      <input
+                        id="new-job-opportunities"
+                        name="enquiry"
+                        type="radio"
+                        className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <label
+                        htmlFor="new-job-opportunities"
+                        className="ml-3 block text-sm font-medium text-gray-700"
+                      >
+                        New Job Opportunities
+                      </label>
+                    </div>
+                    <div className="flex items-center">
+                      <input
+                        id="recruitment-services"
+                        name="enquiry"
+                        type="radio"
+                        className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <label
+                        htmlFor="recruitment-services"
+                        className="ml-3 block text-sm font-medium text-gray-700"
+                      >
+                        Recruitment Services
+                      </label>
+                    </div>
+                    <div className="flex items-center">
+                      <input
+                        id="hr-and-payroll-solutions"
+                        name="enquiry"
+                        type="radio"
+                        className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <label
+                        htmlFor="hr-and-payroll-solutions"
+                        className="ml-3 block text-sm font-medium text-gray-700"
+                      >
+                        HR & Payroll Solutions
+                      </label>
+                    </div>
+                    <div className="flex items-center">
+                      <input
+                        id="others"
+                        name="enquiry"
+                        type="radio"
+                        className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <label
+                        htmlFor="others"
+                        className="ml-3 block text-sm font-medium text-gray-700"
+                      >
+                        Others
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
               </div>
             </div>
           </div>
-          <div className="overflow-hidden shadow sm:rounded-md">
-            <div className="space-y-6 bg-white px-4 py-5 sm:p-6">
-              <fieldset>
-                <legend className="sr-only">By Email</legend>
-                <div
-                  className="text-base font-medium text-gray-900"
-                  aria-hidden="true"
-                >
-                  By Email
-                </div>
-                <div className="mt-4 space-y-4">
-                  <div className="flex items-start">
-                    <div className="flex h-5 items-center">
-                      <input
-                        id="comments"
-                        name="comments"
-                        type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label
-                        htmlFor="comments"
-                        className="font-medium text-gray-700"
-                      >
-                        Comments
-                      </label>
-                      <p className="text-gray-500">
-                        Get notified when someones posts a comment on a posting.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex h-5 items-center">
-                      <input
-                        id="candidates"
-                        name="candidates"
-                        type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label
-                        htmlFor="candidates"
-                        className="font-medium text-gray-700"
-                      >
-                        Candidates
-                      </label>
-                      <p className="text-gray-500">
-                        Get notified when a candidate applies for a job.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex h-5 items-center">
-                      <input
-                        id="offers"
-                        name="offers"
-                        type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label
-                        htmlFor="offers"
-                        className="font-medium text-gray-700"
-                      >
-                        Offers
-                      </label>
-                      <p className="text-gray-500">
-                        Get notified when a candidate accepts or rejects an
-                        offer.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend className="contents text-base font-medium text-gray-900">
-                  Push Notifications
-                </legend>
-                <p className="text-sm text-gray-500">
-                  These are delivered via SMS to your mobile phone.
-                </p>
-                <div className="mt-4 space-y-4">
-                  <div className="flex items-center">
-                    <input
-                      id="push-everything"
-                      name="push-notifications"
-                      type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                    />
-                    <label
-                      htmlFor="push-everything"
-                      className="ml-3 block text-sm font-medium text-gray-700"
-                    >
-                      Everything
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="push-email"
-                      name="push-notifications"
-                      type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                    />
-                    <label
-                      htmlFor="push-email"
-                      className="ml-3 block text-sm font-medium text-gray-700"
-                    >
-                      Same as email
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="push-nothing"
-                      name="push-notifications"
-                      type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                    />
-                    <label
-                      htmlFor="push-nothing"
-                      className="ml-3 block text-sm font-medium text-gray-700"
-                    >
-                      No push notifications
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
-              <button
-                type="submit"
-                className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Save
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+        </div>
+
+        <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+          <button
+            type="submit"
+            className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >
+            WhatsApp Us
+          </button>
+        </div>
+      </form>
+    </div>
   )
 }
-
-export default ContactUsForm

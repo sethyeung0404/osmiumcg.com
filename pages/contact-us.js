@@ -78,29 +78,6 @@ export default function ContactUs() {
               <Tab.Panels>
                 {/* Content 1 : HK */}
                 <Tab.Panel>
-                  {/* Time */}
-                  <div>
-                    <p>
-                      辦公時間
-                      <br />
-                      星期一至五：09:30 - 18:30 (HKT)
-                      <br />
-                      星期六、日及公眾假期：休息
-                    </p>
-                  </div>
-                  {/* Hotline */}
-                  <div className="mt-4">
-                    <p>
-                      一般查詢
-                      <br />
-                      服務熱線: +852 2988 8883
-                      <br />
-                      電郵: cs@yoov.com
-                      <br />
-                      合作推廣: partnership@yoov.com
-                    </p>
-                  </div>
-                  {/* Address */}
                   {/* HK */}
                   <div className="my-6 bg-slate-50">
                     <MapDescription

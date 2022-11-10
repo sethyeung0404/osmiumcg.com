@@ -12,10 +12,11 @@
   "HR": "人力资源解决方案",
   "Performance": "绩效管理",
 
-  "Specialization": "行业",
-  "Banking": "Banking & Financial Services",
-  "IT": "Information Technology",
-  "Web3": "Web3",
+  "Specialization": "招聘行业",
+  "Banking": "银行及金融服务业",
+  "IT": "资讯科技业",
+  "Construction": "工业及建造业",
+  "Consumer": "消费者市场、媒体与娱乐行业",
 
   "News": "新闻",
 
@@ -41,7 +42,10 @@
   "OCGL": "奥氏策略顾问有限公司",
   "License": "奥氏策略顾问有限公司 ( 招聘牌照号码 66295 )",
 
-  "Office": "办公室电话",
+  "Time": "办公时间",
+  "OfficeHours.1": "星期一至五：09:00 - 18:00",
+  "OfficeHours.2": "星期六、日及公众假期：休息",
+  "Office": "服务热线",
   "Email": "电邮",
   "Address": "地址",
 
