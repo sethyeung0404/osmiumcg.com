@@ -5,6 +5,7 @@ import Head from 'next/head'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { appWithTranslation } from 'next-i18next'
 import Script from 'next/script'
+import * as gtag from 'utils/Gtag'
 import Facebook from 'utils/Facebook'
 
 config.autoAddCss = false
@@ -14,6 +15,24 @@ const MyApp = ({ Component, pageProps }) => {
 
   return getLayout(
     <>
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gtag.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <Component {...pageProps}>
         <Head>
           <meta charset="utf-8" />

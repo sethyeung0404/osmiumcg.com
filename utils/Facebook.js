@@ -2,11 +2,11 @@ import Script from 'next/script'
 
 export default function Facebook() {
   return (
-    <>
+    <div>
       <div id="fb-root"></div>
       <div id="fb-customer-chat" className="fb-customerchat"></div>
       <Script id="Facebook" strategy="lazyOnload">
-      {`
+        {`
           var chatbox = document.getElementById('fb-customer-chat');
           chatbox.setAttribute("page_id", "106189320975122");
           chatbox.setAttribute("attribution", "biz_inbox");
@@ -27,6 +27,6 @@ export default function Facebook() {
           }(document, 'script', 'facebook-jssdk'));
       `}
       </Script>
-    </>
+    </div>
   )
 }
