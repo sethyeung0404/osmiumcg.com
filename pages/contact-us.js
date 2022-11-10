@@ -10,8 +10,6 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import ContactUsForm from '@/components/form/signupForm/ContactUsForm'
 
-export const scriptUrl = process.env.NEXT_PUBLIC_scriptUrl
-
 export default function ContactUs() {
   const { t } = useTranslation('common')
 
@@ -93,35 +91,27 @@ export default function ContactUs() {
                 {/* Content 2 : SG */}
                 <Tab.Panel>
                   {/* SG */}
-                  <div className="border-rounded col-span-4 my-6 grid grid-cols-12 bg-slate-50">
-                    <div className="col-span-12 h-80 w-full text-center md:col-span-7 md:h-full">
-                      <MapWrapper Location="SG" />
-                    </div>
-                    <div className="col-span-12 p-8 md:col-span-5">
-                      <MapDescription
-                        Country={t('SG')}
-                        District={t('SGAddress2')}
-                        EmailAddress="info+sg@osmiumcg.com"
-                        FullAddress={t('SGAddress')}
-                      />
-                    </div>
+                  <div className="my-6 bg-slate-50">
+                    <MapDescription
+                      Country={t('SG')}
+                      District={t('SGAddress2')}
+                      EmailAddress="info+sg@osmiumcg.com"
+                      FullAddress={t('SGAddress')}
+                    />
+                    <MapWrapper Location="SG" />
                   </div>
                 </Tab.Panel>
                 {/* Content 3 : JP */}
                 <Tab.Panel>
                   {/* JP */}
-                  <div className="border-rounded col-span-4 my-6 grid grid-cols-12 bg-slate-50">
-                    <div className="col-span-12 h-80 w-full text-center md:col-span-7 md:h-full">
-                      <MapWrapper Location="JP" />
-                    </div>
-                    <div className="col-span-12 p-8 md:col-span-5">
-                      <MapDescription
-                        Country={t('JP')}
-                        District={t('JPAddress2')}
-                        EmailAddress="info+jp@osmiumcg.com"
-                        FullAddress={t('JPAddress')}
-                      />
-                    </div>
+                  <div className="my-6 bg-slate-50">
+                    <MapDescription
+                      Country={t('JP')}
+                      District={t('JPAddress2')}
+                      EmailAddress="info+jp@osmiumcg.com"
+                      FullAddress={t('JPAddress')}
+                    />
+                    <MapWrapper Location="JP" />{' '}
                   </div>
                 </Tab.Panel>
               </Tab.Panels>
