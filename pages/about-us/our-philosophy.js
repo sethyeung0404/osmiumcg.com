@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from 'components/layouts/Layout'
 import LayoutPage from 'components/layouts/LayoutPage'
-import LongDivider from 'components/ui/LongDivider'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
@@ -35,7 +34,7 @@ export default function ourPhilosophy() {
           <h6>{t('S1Content1')}</h6>
           <h6>{t('S1Content2')}</h6>
 
-          <LongDivider />
+          <hr className="my-6" />
           <h3> {t('Step2')} </h3>
           <h6>{t('S2Content1')} </h6>
           <ul className="PageList list-disc pt-0">
@@ -45,7 +44,7 @@ export default function ourPhilosophy() {
             <li>{t('S2List4')} </li>
           </ul>
 
-          <LongDivider />
+          <hr className="my-6" />
           <h3> {t('Step3')} </h3>
           <h6>{t('S3Content1')} </h6>
           <ul className="PageList list-disc pt-0">
@@ -53,7 +52,7 @@ export default function ourPhilosophy() {
             <li>{t('S3List2')} </li>
           </ul>
 
-          <LongDivider />
+          <hr className="my-6" />
           <h3> {t('Step4')} </h3>
           <h6>{t('S4Content1')} </h6>
           <ul className="PageList list-disc pt-0">
@@ -63,7 +62,7 @@ export default function ourPhilosophy() {
             <li>{t('S4List4')} </li>
           </ul>
 
-          <LongDivider />
+          <hr className="my-6" />
           <h3> {t('Step5')} </h3>
           <h6>{t('S5Content1')} </h6>
           <ul className="PageList list-disc pt-0">
