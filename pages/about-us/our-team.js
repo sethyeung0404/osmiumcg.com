@@ -1,8 +1,6 @@
 import React from 'react'
 import Layout from '@/components/layout/Layout'
 import LayoutPage from '@/components/layout/LayoutPage'
-import Divider from '@/components/ui/Divider'
-import SectorBlock from '@/components/card/division/SectorSection'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'

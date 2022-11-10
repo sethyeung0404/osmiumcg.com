@@ -1,7 +1,5 @@
-import Head from 'next/head'
 import SideNav from './navbar/SideNav'
 import Footer from './navbar/Footer'
-import Script from 'next/script'
 
 export default function Layout({ children, headContent }) {
   return (
