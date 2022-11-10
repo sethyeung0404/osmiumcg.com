@@ -14,7 +14,7 @@ const Marker = ({ lat, lng }) => (
 
 export default function MapWrapper({ Location }) {
   const center = {
-    HK: { lat: 22.27891, lng: 114.17269 },
+    HK: { lat: 22.337068, lng: 114.199918 },
     SG: { lat: 1.28527, lng: 103.85217 },
     JP: { lat: 35.672296, lng: 139.764341 },
   }
