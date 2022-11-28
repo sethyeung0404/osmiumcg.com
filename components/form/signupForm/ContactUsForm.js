@@ -8,7 +8,7 @@ export default function ContactUsForm() {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => alert(JSON.stringify(data))
+  const onSubmit = (data) => console.log(JSON.stringify(data))
 
   return (
     <div className="">

@@ -104,8 +104,7 @@ export default function footer() {
         </div>
         <div className="grid grid-cols-4  justify-between pt-1">
           <div className="col-span-4 lg:col-span-3">
-            Osmium Consulting Group Limited ( EA Licence No. 69591 ) | D-U-N-S
-            Number : 68-638-4815
+            {t('common:License')} | D-U-N-S Number : 68-638-4815
           </div>
           <div className="col-span-4 inline-flex justify-between lg:col-span-1">
             <div>

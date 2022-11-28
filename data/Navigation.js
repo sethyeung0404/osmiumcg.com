@@ -71,4 +71,9 @@ export const language = [
     href: '*',
     locale: 'zh-CN',
   },
+  {
+    name: '日本語',
+    href: '*',
+    locale: 'ja-JP',
+  },
 ]

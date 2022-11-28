@@ -1,30 +1,30 @@
 export const Jobs = [
   {
     title:
-      'Senior Web Developer / Programmer, JavaScript/TypeScript ( Up to 60K )',
+      '( Backend ) Programmer / Senior Analyst Programmer / System Analyst',
     tags: [
-      { text: 'MNC | E-Commerce | Web Development | WFH' },
-      { text: 'Node.js | React.js | Next.js | Vue.js | Angular' },
-      { text: '5 Days Work | 14-18 AL | Medical | No OT | Bonus' },
+      { text: 'E-Commerce | FinTech | Financial | IT Vendor' },
+      { text: 'In-depth experience in Spring Boot, REST API' },
+      { text: '5 Days Work | Bonus | Medical | Attractive Package' },
     ],
-    href: 'https://hk.jobsdb.com/hk/en/job/senior-web-developer-programmer-javascript-typescript-up-to-60k-100003009745387?jobId=jobsdb-hk-job-100003009745387&sectionRank=3&token=0~d765134c-96bb-4e8e-b92d-bf5157ec9078&searchPath=%2Fhk%2FSearch%2FFindJobs%3Femployer%3DOsmium%2520Consulting%2520Group',
+    href: 'https://hk.jobsdb.com/hk/en/job/backend-programmer-senior-analyst-programmer-system-analyst-100003009892635?jobId=jobsdb-hk-job-100003009892635&sectionRank=1&token=0~1cd1010e-4e5b-48eb-9f2b-0f0695409d36&searchPath=%2Fhk%2FSearch%2FFindJobs%3Femployer%3DOsmium%2520Consulting%2520Group',
   },
   {
-    title: 'Credit Analyst | Fast Growing Cooperate Bank | Great Career Path !',
+    title: 'QA Engineer / Software Testing Engineer / Tester ( Manual / Automation ) - Up to 45K',
     tags: [
-      { text: 'Cooperate Bank Exp Only | ECF | CRM' },
-      { text: 'Great Career Path | Decision Making | Flexibility' },
-      { text: 'Comforable Workspace | Good Culture' },
+      { text: 'E-Commerce | FinTech | MNC | Crypto | Projects' },
+      { text: 'Software QA | Testing | Functional Test | Auto QA' },
+      { text: '5 Days Work | Medical | Bonus | Work Life Balance' },
     ],
-    href: 'https://hk.jobsdb.com/hk/en/job/credit-analyst-%7C-fast-growing-cooperate-bank-%7C-great-career-path-!-100003009746159?jobId=jobsdb-hk-job-100003009746159&sectionRank=2&token=0~d765134c-96bb-4e8e-b92d-bf5157ec9078&searchPath=%2Fhk%2FSearch%2FFindJobs%3Femployer%3DOsmium%2520Consulting%2520Group',
+    href: 'https://hk.jobsdb.com/hk/en/job/qa-engineer-software-testing-engineer-tester-manual-automation-up-to-45k-100003009885670?jobId=jobsdb-hk-job-100003009885670&sectionRank=2&token=0~1cd1010e-4e5b-48eb-9f2b-0f0695409d36&searchPath=%2Fhk%2FSearch%2FFindJobs%3Femployer%3DOsmium%2520Consulting%2520Group',
   },
   {
-    title: 'Digital Advertising Executive | Marketing Executive ( 20-25K )',
+    title: 'Talent Acquisition Specialist',
     tags: [
-      { text: 'Digital Marketing | Marketing' },
-      { text: 'Google Marketing Platform (GMP) Sales Partner' },
-      { text: 'Video 360, Search Ads 360 and GA 360' },
+      { text: 'Talent Acquisition Specialist' },
+      { text: 'Global exposure' },
+      { text: 'Competitive Salary' },
     ],
-    href: 'https://hk.jobsdb.com/hk/en/job/digital-advertising-executive-%7C-marketing-executive-20-25k-100003009747948?jobId=jobsdb-hk-job-100003009747948&sectionRank=1&token=0~d765134c-96bb-4e8e-b92d-bf5157ec9078&searchPath=%2Fhk%2FSearch%2FFindJobs%3Femployer%3DOsmium%2520Consulting%2520Group',
+    href: 'https://hk.jobsdb.com/hk/en/job/talent-acquisition-specialist-100003009883925?jobId=jobsdb-hk-job-100003009883925&sectionRank=4&token=0~1cd1010e-4e5b-48eb-9f2b-0f0695409d36&searchPath=%2Fhk%2FSearch%2FFindJobs%3Femployer%3DOsmium%2520Consulting%2520Group',
   },
 ]

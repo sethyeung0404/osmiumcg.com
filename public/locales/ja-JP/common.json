@@ -1,17 +1,11 @@
 {
-    name: '日本語',
-    href: '*',
-    locale: 'ja-JP',
-},
-
-{
   "Home": "ホーム",
 
   "About": "会社情報",
 
   "OurTeam": "会社概要",
   "Philosophy": "企業理念",
-  "Sustainability": "CSR",
+  "Sustainability": "サステナビリティ",
 
   "Solutions": "サービス",
   "Recruitment": "人材の採用",
@@ -19,12 +13,14 @@
   "Performance": "パフォーマンス管理",
 
   "Specialization": "専門分野",
-  "Banking": "Banking & Financial Services",
-  "IT": "Information Technology",
-  "Web3": "Web3",
+  "Banking": "金融と財務",
+  "IT": "IT",
+  "Construction": "計算機工学や情報工学",
+  "Consumer": "消費財・マーケティング・顧客対應",
+
+  "News": "情報",
 
   "Sector": "専門分野",
-
   "JobOpenings": "最新の求人 ",
 
   "Events": "ニュース",
@@ -32,30 +28,32 @@
   "Contact": "お問い合わせ",
 
   "ViewMore": "View More",
+
   "SignIn": "サインイン",
+
   "Language": "他言語版",
   "Facebook": "Facebook フェイスブック",
   "Instagram": "Instagram インスタ",
   "LinkedIn": "LinkedIn リンクトイン",
 
-  "Rights": "無断複写・転載を禁じます",
-  "Copyright": "著作権",
-  "OCG": "Osmium Consulting Group 全著作権所有",
-  "License": "Osmium Consulting Group Limited ( ライセンス番号 66295 )",
+  "License": "Osmium Consulting Group Limited ( ライセンス番号 69591 )",
 
-  "Office": "本社",
+  "Time": "営業時間",
+  "OfficeHours.1": "平日：09:00 - 18:00",
+  "OfficeHours.2": "休日：土曜日、日曜日、祝日",
+  "Office": "電話番号",
   "Email": "メールアドレス",
-  "Address": "アドレス",
+  "Address": "拠点一覧",
 
   "HK": "香港本社",
-  "HKAddress": "1802, 18/F, Fortis Tower, 77 Gloucester Road, Wan Chai, Hong Kong",
-  "HKAddress2": "Wan Chai",
+  "HKAddress": "22階、Artisan Lab、21 Luk Hop Street、啓徳、九龍、香港",
+  "HKAddress2": "啓徳",
 
   "SG": "シンガポール支店",
-  "SGAddress": "Level 42, Six Battery Road, 049909 Singapore",
+  "SGAddress": "Six Battery Road, Singapore",
   "SGAddress2": "Central Business District",
 
   "JP": "日本支店",
   "JPAddress": "京橋",
-  "JPAddress2": "中央区"
+  "JPAddress2": "東京都中央区"
 }
