@@ -100,7 +100,7 @@ export default function footer() {
             or send an email to{' '}
             <a href="mailto:info@osmiumcg.com">info@osmiumcg.com</a>
           </div>
-          <div>Copyright © 2022</div>
+          <div>Copyright © 2023</div>
         </div>
         <div className="grid grid-cols-4  justify-between pt-1">
           <div className="col-span-4 lg:col-span-3">
