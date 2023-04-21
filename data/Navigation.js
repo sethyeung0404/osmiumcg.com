@@ -43,6 +43,11 @@ export const navigation = {
   ],
   pages: [
     {
+      name: 'OHC',
+      newTab: 'true',
+      href: '/solutions/ohconsulting',
+    },
+    {
       name: 'News',
       newTab: 'true',
       href: 'https://osmiumcg.notion.site/News-and-Articles-5d3c73acbcce4d5b8446e01a4f030199',
