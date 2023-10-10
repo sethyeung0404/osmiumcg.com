@@ -13,7 +13,7 @@ import { navigation, language } from '../../../data/Navigation'
 import { useScrollPosition } from '../../../hooks/useScrollPosition'
 import clsx from 'clsx'
 
-function Navbar({ router, open, setOpen, t, i18n }) {
+function Navbar({ router, open, closeSidebar, openSidebar, t, i18n }) {
   const scrollPosition = useScrollPosition()
 
   return (
@@ -42,7 +42,7 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                     ? 'hidden'
                     : 'rounded-md bg-white p-2 text-gray-400 transition duration-1000 ease-in-out lg:hidden'
                 }`}
-                onClick={() => setOpen(true)}
+                onClick={openSidebar}
               >
                 <Bars2Icon className="h-6 w-6" aria-hidden="true" />
               </button>
@@ -53,7 +53,7 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                     ? 'rounded-md bg-white p-2 text-gray-400 lg:hidden'
                     : 'hidden'
                 }`}
-                onClick={() => setOpen(false)}
+                onClick={closeSidebar}
               >
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
@@ -120,8 +120,8 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                                         locale={i18n.language}
                                       >
                                         <a
-                                          onClick={() => setOpen(false)}
-                                          className="flex items-start rounded-2xl py-2 px-4 hover:bg-stone-50 hover:text-ocg-lightblue"
+                                          onClick={() => closeSidebar()}
+                                          className="flex items-start rounded-2xl px-4 py-2 hover:bg-stone-50 hover:text-ocg-lightblue"
                                         >
                                           {t(item.name)}
                                         </a>
@@ -260,7 +260,7 @@ function Navbar({ router, open, setOpen, t, i18n }) {
                             {language.map((item) => (
                               <li key={item.name} className="">
                                 <Link href={router.asPath} locale={item.locale}>
-                                  <a className="-m-3 flex items-start py-3 px-6 hover:bg-slate-50 hover:text-blue-600">
+                                  <a className="-m-3 flex items-start px-6 py-3 hover:bg-slate-50 hover:text-blue-600">
                                     {item.name}
                                   </a>
                                 </Link>
@@ -279,7 +279,7 @@ function Navbar({ router, open, setOpen, t, i18n }) {
             <div className="ml-4 inline-flex h-full border-b-2 border-transparent hover:border-ocg-blue">
               <Link href="/contact-us">
                 <a className="self-center">
-                  <button className="my-4 rounded-full bg-red-400 py-2 px-4 font-semibold text-white hover:bg-red-500 hover:duration-200">
+                  <button className="my-4 rounded-full bg-red-400 px-4 py-2 font-semibold text-white hover:bg-red-500 hover:duration-200">
                     {t('Contact')}
                   </button>
                 </a>

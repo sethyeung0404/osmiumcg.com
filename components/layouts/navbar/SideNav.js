@@ -1,11 +1,10 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import Sidebar from './Sidebar'
 import Navbar from './Navbar'
 
-export default function SideNav() {
-  const [open, setOpen] = useState(false)
+export default function SideNav({ open, closeSidebar, openSidebar }) {
   const { t, i18n } = useTranslation('common')
   const router = useRouter()
 
@@ -15,12 +14,19 @@ export default function SideNav() {
       <Sidebar
         router={router}
         open={open}
-        setOpen={setOpen}
+        closeSidebar={closeSidebar}
         t={t}
         i18n={i18n}
       />
       {/* Navbar*/}
-      <Navbar router={router} open={open} setOpen={setOpen} t={t} i18n={i18n} />
+      <Navbar
+        router={router}
+        open={open}
+        closeSidebar={closeSidebar}
+        openSidebar={openSidebar}
+        t={t}
+        i18n={i18n}
+      />
     </div>
   )
 }

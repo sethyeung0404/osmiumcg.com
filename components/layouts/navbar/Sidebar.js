@@ -1,33 +1,44 @@
-import { Fragment, React } from 'react'
+import { Fragment, React, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Disclosure, Dialog, Transition } from '@headlessui/react'
+import { Disclosure, Transition } from '@headlessui/react'
 import { faEarthAsia, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { navigation, language } from 'data/Navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-function Sidebar({ router, open, setOpen, t, i18n }) {
+function Sidebar({ router, open, closeSidebar, t, i18n }) {
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') {
+        closeSidebar()
+      }
+    }
+    document.addEventListener('keydown', handleEsc)
+
+    return () => {
+    document.removeEventListener('keydown', handleEsc)
+    }
+  })
+
   return (
     <div>
-      <Transition.Root show={open} as={Fragment}>
-        <Dialog
-          as="div"
-          open={open}
-          onClose={() => setOpen(false)}
-          className="fixed inset-0 z-40 flex lg:hidden"
-        >
+      <Transition show={open} as={Fragment}>
+        <div className="fixed top-0 z-20 flex w-full lg:hidden">
           {/* Mask Filter for background content */}
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
             enterFrom="opacity-0"
             enterTo="opacity-100"
-            leave="transition-opacity ease-linear duration-1000"
+            leave="transition-opacity ease-linear duration-300"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
+            <div
+              onClick={closeSidebar}
+              className="fixed inset-0 bg-black bg-opacity-25"
+            />
           </Transition.Child>
 
           {/* Dropdown & Dropdown Animation */}
@@ -36,7 +47,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
             enter="transition ease-in-out duration-1000"
             enterFrom="-translate-y-full"
             enterTo="translate-y-0"
-            leave="transition ease-in-out duration-700"
+            leave="transition ease-out duration-700"
             leaveFrom="translate-y-0"
             leaveTo="-translate-y-full"
           >
@@ -44,7 +55,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
             <div className="relative z-20 flex w-full flex-col overflow-y-auto bg-white pb-12 text-left font-medium shadow-xl">
               <div className="mx-auto w-10/12">
                 {/* Links with submenu */}
-                <div className="translate-y- mt-16 pt-6 pb-2">
+                <div className="translate-y- mt-16 pb-2 pt-6">
                   {navigation.categories.map((category) => (
                     <Disclosure key={category.name}>
                       {({ open }) => (
@@ -64,10 +75,10 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                           </Disclosure.Button>
                           <Transition
                             as={Fragment}
-                            enter="transition ease-out duration-500"
-                            enterFrom="-translate-y-8 opacity-0"
+                            enter="transition duration-300"
+                            enterFrom="-translate-y-4 opacity-0"
                             enterTo="translate-y-0 opacity-500"
-                            leave="transition-opacity duration-150"
+                            leave="transition-opacity duration-300"
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
@@ -84,7 +95,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                                       locale={i18n.language}
                                     >
                                       <a
-                                        onClick={() => setOpen(false)}
+                                        onClick={closeSidebar}
                                         className="my-0.5 ml-4 block rounded-xl p-2 pl-4 text-gray-500 hover:bg-stone-50 hover:text-ocg-lightblue hover:duration-200"
                                       >
                                         {t(item.name)}
@@ -102,7 +113,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                 </div>
 
                 {/* Links without submenu */}
-                <div className="space-y-4 border-t border-gray-200 py-6 px-4">
+                <div className="space-y-4 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => {
                     if (page.name == 'News' || page.name == 'Careers') {
                       return (
@@ -111,7 +122,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                             href={page.href}
                             rel="noreferrer"
                             target="_blank"
-                            onClick={() => setOpen(false)}
+                            onClick={closeSidebar}
                             className="-m-2 block px-2 py-3 font-medium text-gray-900 hover:text-ocg-lightblue hover:duration-200"
                           >
                             {t(page.name)}
@@ -123,7 +134,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                         <div key={page.name} className="flow-root">
                           <Link href={page.href} locale={i18n.language}>
                             <a
-                              onClick={() => setOpen(false)}
+                              onClick={closeSidebar}
                               className="-m-2 block px-2 py-3 font-medium text-gray-900 hover:text-ocg-lightblue hover:duration-200"
                             >
                               {t(page.name)}
@@ -136,7 +147,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                 </div>
 
                 {/* Icons */}
-                <div className="space-y-4 border-t border-gray-200 py-6 px-4 text-base font-medium ">
+                <div className="space-y-4 border-t border-gray-200 px-4 py-6 text-base font-medium ">
                   {/* Facebook Icon*/}
                   <div className="group text-left font-medium">
                     <a
@@ -234,8 +245,8 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                             </div>
                           </Disclosure.Button>
                           <Transition
-                            enter="transition ease-out duration-500"
-                            enterFrom="-translate-y-1/3 opacity-0"
+                            enter="transition duration-500"
+                            enterFrom="-translate-y-4 opacity-0"
                             enterTo="translate-y-0 opacity-100"
                             leave="transition-opacity duration-150"
                             leaveFrom="opacity-100"
@@ -254,7 +265,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
                                       locale={item.locale}
                                     >
                                       <a
-                                        onClick={() => setOpen(false)}
+                                        onClick={closeSidebar}
                                         className="text-gray-800 hover:text-zinc-400"
                                       >
                                         {item.name}
@@ -272,7 +283,7 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
 
                   <div className="">
                     <Link href="/contact-us">
-                      <a className="self-center">
+                      <a className="self-center" onClick={closeSidebar}>
                         <button className="focus:shadow-outline h-8 w-full rounded-lg bg-red-400 font-semibold text-white transition-colors duration-150 hover:bg-indigo-800">
                           {t('Contact')}
                         </button>
@@ -283,8 +294,8 @@ function Sidebar({ router, open, setOpen, t, i18n }) {
               </div>
             </div>
           </Transition.Child>
-        </Dialog>
-      </Transition.Root>
+        </div>
+      </Transition>
     </div>
   )
 }

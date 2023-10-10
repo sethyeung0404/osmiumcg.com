@@ -1,6 +1,6 @@
 body {
-  font-family: 'Inter var', -apple-system, 'Segoe UI', 'Helvetica',
-    'Arial', 'sans-serif';
+  font-family: 'Inter var', -apple-system, 'Segoe UI', 'Helvetica', 'Arial',
+    'sans-serif';
   -webkit-font-smoothing: auto;
   max-width: 100%;
   overflow-x: hidden;
@@ -16,42 +16,9 @@ body {
   }
 }
 
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
 .embla__slide {
   position: relative;
   flex: 0 0 100%;
-}
-
-.imgonbottom {
-  width: 70%;
-  top: 15px;
-  left: 50px;
-  position: relative;
-  border: 11px solid #034579;
-}
-
-.imgonbottom:after {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.imgontop {
-  content: '';
-  position: absolute;
-  width: 70%;
-  top: -8px;
-  left: 25px;
-}
-
-.imgontop {
-  content: '';
-  padding-bottom: 100%;
 }
 
 #map {
