@@ -1,7 +1,5 @@
 import Script from 'next/script'
 
-export const FACEBOOK_ID = process.env.NEXT_PUBLIC_FACEBOOK_ID
-
 export default function Facebook() {
   return (
     <div>
@@ -10,7 +8,7 @@ export default function Facebook() {
       <Script id="Facebook" strategy="lazyOnload">
         {`
           var chatbox = document.getElementById('fb-customer-chat');
-          chatbox.setAttribute("page_id", ${FACEBOOK_ID});
+          chatbox.setAttribute("page_id", ${process.env.NEXT_PUBLIC_FACEBOOK_ID});
           chatbox.setAttribute("attribution", "biz_inbox");
       
           window.fbAsyncInit = function() {
