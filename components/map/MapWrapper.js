@@ -3,6 +3,8 @@ import GoogleMapReact from 'google-map-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
+export const GMAP_API = process.env.GMAP_API
+
 const Marker = ({ lat, lng }) => (
   <FontAwesomeIcon
     lat={lat}
@@ -23,7 +25,7 @@ export default function MapWrapper({ Location }) {
   return (
     <div className="h-80 w-full">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyD79idHoy-q4euSg7fF3p84YL5a_4c7m70' }}
+        bootstrapURLKeys={{ key: GMAP_API }}
         defaultCenter={center[Location]}
         defaultZoom={zoom}
         options={{ mapId: '2b645f95dbe5807e' }}
