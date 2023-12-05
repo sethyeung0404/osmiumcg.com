@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { Wrapper, Status } from '@googlemaps/react-wrapper'
+import { Wrapper } from '@googlemaps/react-wrapper'
 
 function Map({ center, zoom }) {
   const ref = useRef()

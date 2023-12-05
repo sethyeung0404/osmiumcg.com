@@ -20,7 +20,10 @@ export default function MapDescription({
         <div className="text-base leading-7">
           {/* Office Hours */}
           <div className="mb-3">
-            <p className="font-extrabold text-blue-600">{t('Time')}{Time}</p>
+            <p className="font-extrabold text-blue-600">
+              {t('Time')}
+              {Time}
+            </p>
             <p>{t('OfficeHours.1')}</p>
             <p>{t('OfficeHours.2')}</p>
           </div>
