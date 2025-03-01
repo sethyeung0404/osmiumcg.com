@@ -140,7 +140,7 @@ function Navbar({ router, open, closeSidebar, openSidebar, t, i18n }) {
               ))}
 
               {navigation.pages.map((page) => {
-                if (page.name == 'News' || page.name == 'Careers') {
+                if (page.name == 'Immigration' || page.name == 'News' || page.name == 'Careers') {
                   return (
                     <a
                       key={page.name}

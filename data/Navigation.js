@@ -43,9 +43,9 @@ export const navigation = {
   ],
   pages: [
     {
-      name: 'OHC',
+      name: 'Immigration',
       newTab: 'true',
-      href: '/solutions/ohconsulting',
+      href: 'https://osmiumcg.notion.site/560c01fc90ad406da09544617f04d6f1',
     },
     {
       name: 'News',
