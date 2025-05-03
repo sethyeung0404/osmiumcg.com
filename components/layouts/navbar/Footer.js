@@ -61,7 +61,7 @@ export default function footer() {
           </a>
         </div>
 
-        <div className="mb-6 grid sm:grid-cols-2 lg:grid-cols-4 lg:space-x-6">
+        <div className="mb-6 grid sm:grid-cols-2 lg:grid-cols-3 lg:space-x-6">
           {navigation.categories.map((category) => (
             <div key={category.name} className="mb-2">
               <h5 className="my-2 font-bold text-slate-700">
