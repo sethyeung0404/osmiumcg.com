@@ -84,7 +84,7 @@ performanceManagement.getLayout = function getLayout(page) {
         </Head>
       }
     >
-      <LayoutPage title={t('About')} subtitle={t('Performance')}>
+      <LayoutPage title={t('HR')} subtitle={t('Performance')}>
         {page}
       </LayoutPage>
     </Layout>

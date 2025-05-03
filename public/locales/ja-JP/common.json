@@ -1,6 +1,16 @@
 {
   "Home": "ホーム",
 
+  "OurServices": "当社のサービス",
+  "Wealth": "ウェルス・プランニング",
+  "Insurance": "保険",
+  "RealEstate": "不動産",
+  "Cryptocurrency": "暗号資産",
+  "Education": "教育",
+  "Healthcare": "健康管理",
+  "Accounting": "会計",
+  "Marketing": "マーケティング",
+
   "About": "会社情報",
 
   "OurTeam": "会社概要",
@@ -11,7 +21,7 @@
   "Recruitment": "人材紹介",
   "HR": "人材派遣",
   "Performance": "パフォーマンス管理",
-  "Immigration": "Immigration",
+  "Immigration": "移民",
 
   "Specialization": "専門分野",
   "Banking": "金融と財務",

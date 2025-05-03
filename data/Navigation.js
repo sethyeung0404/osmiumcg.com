@@ -1,15 +1,23 @@
 export const navigation = {
   categories: [
     {
-      id: 'about',
-      name: 'About',
+      id: 'ourservices',
+      name: 'OurServices',
       items: [
         {
-          name: 'OurTeam',
-          href: '/about-us/our-team',
+          name: 'Wealth',
+          href: '/our-services/wealth-planning',
         },
-        { name: 'Philosophy', href: '/about-us/our-philosophy' },
-        { name: 'Sustainability', href: '/about-us/sustainability' },
+        {
+          name: 'Insurance',
+          href: '/our-services/insurance',
+        },
+        { name: 'RealEstate', href: '/our-services/real-estate' },
+        { name: 'Cryptocurrency', href: '/our-services/cryptocurrency' },
+        { name: 'Education', href: '/our-services/education' },
+        { name: 'Healthcare', href: '/our-services/healthcare' },
+        { name: 'Accounting', href: '/our-services/accounting' },
+        { name: 'Marketing', href: '/our-services/marketing' },
       ],
     },
     {
@@ -24,22 +32,22 @@ export const navigation = {
         },
       ],
     },
-    {
-      id: 'specialization',
-      name: 'Specialization',
-      items: [
-        {
-          name: 'Banking',
-          href: '/specialization/banking-and-financial-services',
-        },
-        { name: 'IT', href: '/specialization/technology' },
-        {
-          name: 'Construction',
-          href: '/specialization/industrial-and-construction',
-        },
-        { name: 'Consumer', href: '/specialization/consumer-markets' },
-      ],
-    },
+    // {
+    //   id: 'specialization',
+    //   name: 'Specialization',
+    //   items: [
+    //     {
+    //       name: 'Banking',
+    //       href: '/specialization/banking-and-financial-services',
+    //     },
+    //     { name: 'IT', href: '/specialization/technology' },
+    //     {
+    //       name: 'Construction',
+    //       href: '/specialization/industrial-and-construction',
+    //     },
+    //     { name: 'Consumer', href: '/specialization/consumer-markets' },
+    //   ],
+    // },
   ],
   pages: [
     {

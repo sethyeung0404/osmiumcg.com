@@ -18,28 +18,28 @@ export default function Home() {
         <BannerCard t={t} />
       </section>
 
-      {/* Banner Image & Slogan */}
-      {/* <section
-        id="main_page_text"
-        className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
+      {/* Our Vision */}
+      <section
+        id="our_vision"
+        className="mx-auto my-2 items-center bg-gray-50 p-5"
       >
-        <div className="m-4 mx-auto max-w-4xl xl:max-w-7xl">
+        <div className="m-4 mx-auto max-w-4xl xl:max-w-5xl">
           <p className="pb-4 text-4xl font-bold leading-tight">
-            {t('mainTextTitle')}
+            {t('ourVisionTitle')}
           </p>
-          <p className="text-justify text-lg">{t('mainTextContent')}</p>
+          <p className="text-justify text-lg">{t('ourVisionContent')}</p>
         </div>
-      </section> */}
+      </section>
 
-      {/* Signup Form */}
-      {/* <section
-        id="main_page_text"
-        className="mx-auto my-2 items-center p-5 md:max-w-3xl lg:max-w-7xl"
-      >
-        <div className="grid gap-5">
-          <SignupFormSession />
+      {/* Our Mission */}
+      <section id="our_vision" className="mx-auto my-2 items-center p-5">
+        <div className="m-4 mx-auto max-w-4xl xl:max-w-5xl">
+          <p className="pb-4 text-4xl font-bold leading-tight">
+            {t('ourMissionTitle')}
+          </p>
+          <p className="text-justify text-lg">{t('ourMissionContent')}</p>
         </div>
-      </section> */}
+      </section>
 
       {/* Section: Sector Coverage */}
       <section id="sector_coverage" className="my-2 bg-gray-50 p-5">
@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Section: Jobs Openings */}
-      <section id="home_job" className="my-2 items-center bg-white p-5">
+      {/* <section id="home_job" className="my-2 items-center bg-white p-5">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1">
             <h1 className="SectionTitle">{t('common:JobOpenings')} </h1>
@@ -62,7 +62,7 @@ export default function Home() {
             <RoundButton href="https://hk.jobsdb.com/hk/search-jobs/osmium-consulting-group/" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Awards */}
       <section id="Awards" className="mx-auto my-2 max-w-7xl p-5">

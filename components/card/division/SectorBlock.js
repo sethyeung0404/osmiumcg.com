@@ -7,19 +7,19 @@ import {
   TruckIcon,
 } from '@heroicons/react/24/outline'
 
-export default function SectorBlock({ t, name, href }) {
+export default function SectorBlock({ t, name, text }) {
   var icon
   switch (name) {
-    case 'Banking':
+    case 'Family Office':
       icon = <CircleStackIcon className="h-6 w-6" aria-hidden="true" />
       break
     case 'IT':
       icon = <CommandLineIcon className="h-6 w-6" aria-hidden="true" />
       break
-    case 'Construction':
+    case 'Immigration':
       icon = <TruckIcon className="h-6 w-6" aria-hidden="true" />
       break
-    case 'Consumer':
+    case 'HR Solutions':
       icon = (
         <ChatBubbleBottomCenterIcon className="h-6 w-6" aria-hidden="true" />
       )
@@ -27,13 +27,18 @@ export default function SectorBlock({ t, name, href }) {
   }
 
   return (
-    <Link href={href}>
-      <a className="hover:bg-slate-50 hover:text-ocg-lightblue">
-        <div className="flex rounded-2xl bg-white py-6 text-base">
-          <div className="mx-5">{icon}</div>
-          <div>{t(name)}</div>
+    // <Link href={href}>
+    // <a className="hover:bg-slate-50 hover:text-ocg-lightblue">
+    <p className="hover:bg-slate-50 hover:text-ocg-lightblue">
+      <div className="flex rounded-2xl bg-white py-6 text-base">
+        <div className="mx-5 self-center">{icon}</div>
+        <div>
+          <p className="font-bold">{t(name)}</p>
+          <p>{t(text)}</p>
         </div>
-      </a>
-    </Link>
+      </div>
+    </p>
+    // </a>
+    // </Link>
   )
 }

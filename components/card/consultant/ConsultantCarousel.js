@@ -55,7 +55,7 @@ function ConsultantCarousel({ Division }) {
               name="Carol LAU"
               title1="Director"
               title2="Head of Recruitment"
-              src="/img/pages/specialization/TBCG/Carol.webp"
+              src="/img/pages/specialization/TBCG/Carol.jpeg"
             />
             <Consultant
               name="Celine POON"

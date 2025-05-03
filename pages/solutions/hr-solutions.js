@@ -72,7 +72,7 @@ hrSolutions.getLayout = function getLayout(page) {
         </Head>
       }
     >
-      <LayoutPage title={t('About')} subtitle={t('HR')}>
+      <LayoutPage title={t('HR')} subtitle={t('HR')}>
         {page}
       </LayoutPage>
     </Layout>

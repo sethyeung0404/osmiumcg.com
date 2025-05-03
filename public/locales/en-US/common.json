@@ -2,13 +2,22 @@
   "Home": "Home",
 
   "About": "About",
-
   "OurTeam": "Our Team",
   "Philosophy": "Our Philosophy",
   "Sustainability": "Sustainability",
 
-  "Solutions": "HR Solutions",
+  "OurServices": "Our Services",
+  "Wealth": "Wealth Planning",
+  "Insurance": "Insurance",
+  "RealEstate": "Real Estate",
+  "Cryptocurrency": "Cryptocurrency",
+  "Education": "Education",
+  "Healthcare": "Healthcare",
+  "Accounting": "Accounting",
+  "Marketing": "Marketing",
   "Recruitment": "Recruitment",
+
+  "Solutions": "HR Solutions",
   "HR": "HR Solutions",
   "Performance": "Performance Management",
   "Immigration": "Immigration",
