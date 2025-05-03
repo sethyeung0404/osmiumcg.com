@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -29,11 +31,45 @@ module.exports = {
       },
       animation: {
         bounce: 'bounce 2s ease-in-out infinite',
+        fadeIn: 'fadeIn 1s ease-in',
+        slideIn: 'slideIn 1s ease-in',
+        slideIn2: 'slideIn 1.5s ease-in',
+        slideIn3: 'slideIn 2s ease-in',
       },
       transitionProperty: {
         height: 'height',
       },
     },
+    keyframes: {
+      fadeIn: {
+        '0%': {
+          opacity: '0',
+        },
+        '100%': { opacity: '1' },
+      },
+      slideIn: {
+        '0%': {
+          transform: 'translateX(-25%)',
+        },
+        '100%': {},
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          delay: (value) => {
+            return {
+              'transition-delay': value,
+              'animation-delay': value,
+            }
+          },
+        },
+        {
+          values: theme('transitionDelay'),
+        }
+      )
+    }),
+  ],
 }
