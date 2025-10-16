@@ -1,37 +1,37 @@
 export const navigation = {
   categories: [
-    {
-      id: 'ourservices',
-      name: 'OurServices',
-      items: [
-        {
-          name: 'Wealth',
-          href: '/our-services/wealth-planning',
-        },
-        {
-          name: 'Insurance',
-          href: '/our-services/insurance',
-        },
-        { name: 'RealEstate', href: '/our-services/real-estate' },
-        { name: 'Cryptocurrency', href: '/our-services/cryptocurrency' },
-        { name: 'Education', href: '/our-services/education' },
-        { name: 'Healthcare', href: '/our-services/healthcare' },
-        { name: 'Accounting', href: '/our-services/accounting' },
-        { name: 'Marketing', href: '/our-services/marketing' },
-      ],
-    },
-    {
-      id: 'solutions',
-      name: 'Solutions',
-      items: [
-        { name: 'Recruitment', href: '/solutions/recruitment' },
-        { name: 'HR', href: '/solutions/hr-solutions' },
-        {
-          name: 'Performance',
-          href: '/solutions/performance-management',
-        },
-      ],
-    },
+    // {
+    //   id: 'ourservices',
+    //   name: 'OurServices',
+    //   items: [
+    //     {
+    //       name: 'Wealth',
+    //       href: '/our-services/wealth-planning',
+    //     },
+    //     {
+    //       name: 'Insurance',
+    //       href: '/our-services/insurance',
+    //     },
+    //     { name: 'RealEstate', href: '/our-services/real-estate' },
+    //     { name: 'Cryptocurrency', href: '/our-services/cryptocurrency' },
+    //     { name: 'Education', href: '/our-services/education' },
+    //     { name: 'Healthcare', href: '/our-services/healthcare' },
+    //     { name: 'Accounting', href: '/our-services/accounting' },
+    //     { name: 'Marketing', href: '/our-services/marketing' },
+    //   ],
+    // },
+    // {
+    //   id: 'solutions',
+    //   name: 'Solutions',
+    //   items: [
+    //     { name: 'Recruitment', href: '/solutions/recruitment' },
+    //     { name: 'HR', href: '/solutions/hr-solutions' },
+    //     {
+    //       name: 'Performance',
+    //       href: '/solutions/performance-management',
+    //     },
+    //   ],
+    // },
     // {
     //   id: 'specialization',
     //   name: 'Specialization',
