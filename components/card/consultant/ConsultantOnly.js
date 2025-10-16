@@ -16,9 +16,8 @@ function ConsultantOnly({ Theme }) {
     return (
       <div className="flex">
         <Consultant
-          name="Andy LAM"
-          title1="Head of Insurance"
-          src="/img/pages/specialization/AndyLAM.jpg"
+          name="Seth Yeung"
+          title1="COO"
         />
       </div>
     )
@@ -36,9 +35,8 @@ function ConsultantOnly({ Theme }) {
     return (
       <div className="flex">
         <Consultant
-          name="Matthew CHU"
-          title1="Head of Cryptocurrency"
-          src="/img/pages/specialization/MatthewCHU.jpeg"
+          name="Seth Yeung"
+          title1="COO"
         />
       </div>
     )
@@ -46,9 +44,8 @@ function ConsultantOnly({ Theme }) {
     return (
       <div className="flex">
         <Consultant
-          name="Alisia CHEN"
-          title1="Head of Education"
-          src="/img/pages/specialization/AlisiaCHEN.png"
+          name="Seth Yeung"
+          title1="COO"
         />
       </div>
     )
@@ -86,10 +83,8 @@ function ConsultantOnly({ Theme }) {
     return (
       <div className="flex">
         <Consultant
-          name="Carol LAU"
-          title1="Director"
-          title2="Head of Recruitment"
-          src="/img/pages/specialization/TBCG/Carol.jpeg"
+          name="Seth Yeung"
+          title1="COO"
         />
       </div>
     )
